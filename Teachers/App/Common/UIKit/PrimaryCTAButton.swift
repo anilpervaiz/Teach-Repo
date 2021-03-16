@@ -19,5 +19,6 @@ class PrimaryCTAButton: UIButton {
         setTitleColor(Asset.Colors.primary.color, for: .normal)
         backgroundColor = Asset.Colors.aquaMarine.color
         cornerRadius = 4
+        
     }
 }
