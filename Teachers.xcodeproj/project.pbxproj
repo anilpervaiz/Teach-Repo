@@ -36,6 +36,21 @@
 		C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F5F260117CB00EBD873 /* Assets+Generated.swift */; };
 		C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F64260117F700EBD873 /* SecondaryCTAButton.swift */; };
 		C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F692601199100EBD873 /* NSAttributedString+Styling.swift */; };
+		C99B7F7E260122C000EBD873 /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F7D260122C000EBD873 /* HeadingLabel.swift */; };
+		C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F862601234300EBD873 /* BaseViewController.swift */; };
+		C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F8E2601234E00EBD873 /* BaseNavigationViewController.swift */; };
+		C99B7F942601238400EBD873 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F932601238400EBD873 /* UIViewController+Keyboard.swift */; };
+		C99B7F9C260123C500EBD873 /* UIBarButtonItem+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F9B260123C500EBD873 /* UIBarButtonItem+Empty.swift */; };
+		C99B7FA12601253100EBD873 /* PaddedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FA02601253100EBD873 /* PaddedTextField.swift */; };
+		C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FA62601256D00EBD873 /* LabelledTextField.swift */; };
+		C99B7FAF2601258A00EBD873 /* LabelledTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99B7FAE2601258A00EBD873 /* LabelledTextField.xib */; };
+		C99B7FB42601259700EBD873 /* FormatValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FB32601259700EBD873 /* FormatValidator.swift */; };
+		C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FB8260125B100EBD873 /* String+Regex.swift */; };
+		C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FBD260125D200EBD873 /* CustomNibView.swift */; };
+		C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FC32601261D00EBD873 /* AppDimension.swift */; };
+		C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */; };
+		C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FD4260126C900EBD873 /* CustomDatePicker.swift */; };
+		C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FD9260126E100EBD873 /* CustomDatePickerViewModel.swift */; };
 		CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */; };
 		CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE66C68025FF8F3A00A2FA72 /* Teachers.xcdatamodeld */; };
 		CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE66C68525FF8F3E00A2FA72 /* LaunchScreen.storyboard */; };
@@ -90,6 +105,21 @@
 		C99B7F5F260117CB00EBD873 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		C99B7F64260117F700EBD873 /* SecondaryCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCTAButton.swift; sourceTree = "<group>"; };
 		C99B7F692601199100EBD873 /* NSAttributedString+Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Styling.swift"; sourceTree = "<group>"; };
+		C99B7F7D260122C000EBD873 /* HeadingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
+		C99B7F862601234300EBD873 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C99B7F8E2601234E00EBD873 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		C99B7F932601238400EBD873 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		C99B7F9B260123C500EBD873 /* UIBarButtonItem+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Empty.swift"; sourceTree = "<group>"; };
+		C99B7FA02601253100EBD873 /* PaddedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedTextField.swift; sourceTree = "<group>"; };
+		C99B7FA62601256D00EBD873 /* LabelledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledTextField.swift; sourceTree = "<group>"; };
+		C99B7FAE2601258A00EBD873 /* LabelledTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelledTextField.xib; sourceTree = "<group>"; };
+		C99B7FB32601259700EBD873 /* FormatValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatValidator.swift; sourceTree = "<group>"; };
+		C99B7FB8260125B100EBD873 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		C99B7FBD260125D200EBD873 /* CustomNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNibView.swift; sourceTree = "<group>"; };
+		C99B7FC32601261D00EBD873 /* AppDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDimension.swift; sourceTree = "<group>"; };
+		C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
+		C99B7FD4260126C900EBD873 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		C99B7FD9260126E100EBD873 /* CustomDatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerViewModel.swift; sourceTree = "<group>"; };
 		CE66C67425FF8F3A00A2FA72 /* Teachers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teachers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE66C68125FF8F3A00A2FA72 /* Teachers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Teachers.xcdatamodel; sourceTree = "<group>"; };
@@ -131,6 +161,7 @@
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7F852601232D00EBD873 /* Base */,
 				C99B7EDC25FFD00300EBD873 /* Onboarding */,
 				C99B7EDB25FFCFF000EBD873 /* Signup */,
 			);
@@ -186,6 +217,7 @@
 		C99B7ED725FFCCF800EBD873 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7FC22601261400EBD873 /* Theme */,
 				C99B7EDA25FFCD1D00EBD873 /* UIKit */,
 				C99B7ED925FFCD1600EBD873 /* Extensions */,
 			);
@@ -198,6 +230,10 @@
 				C99B7EE225FFD07F00EBD873 /* UIView+Extensions.swift */,
 				C99B7F0725FFD66C00EBD873 /* UILabel+TapGesture.swift */,
 				C99B7F692601199100EBD873 /* NSAttributedString+Styling.swift */,
+				C99B7F932601238400EBD873 /* UIViewController+Keyboard.swift */,
+				C99B7F9B260123C500EBD873 /* UIBarButtonItem+Empty.swift */,
+				C99B7FB8260125B100EBD873 /* String+Regex.swift */,
+				C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -205,9 +241,14 @@
 		C99B7EDA25FFCD1D00EBD873 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7FD3260126BC00EBD873 /* DatePicker */,
+				C99B7FA52601256100EBD873 /* LabelledTextField */,
 				C99B7F49260114BA00EBD873 /* Fonts.swift */,
 				C99B7F442601145200EBD873 /* PrimaryCTAButton.swift */,
 				C99B7F64260117F700EBD873 /* SecondaryCTAButton.swift */,
+				C99B7F7D260122C000EBD873 /* HeadingLabel.swift */,
+				C99B7FA02601253100EBD873 /* PaddedTextField.swift */,
+				C99B7FBD260125D200EBD873 /* CustomNibView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -259,6 +300,42 @@
 				C99B7F5F260117CB00EBD873 /* Assets+Generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		C99B7F852601232D00EBD873 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7F862601234300EBD873 /* BaseViewController.swift */,
+				C99B7F8E2601234E00EBD873 /* BaseNavigationViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C99B7FA52601256100EBD873 /* LabelledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7FAE2601258A00EBD873 /* LabelledTextField.xib */,
+				C99B7FA62601256D00EBD873 /* LabelledTextField.swift */,
+				C99B7FB32601259700EBD873 /* FormatValidator.swift */,
+			);
+			path = LabelledTextField;
+			sourceTree = "<group>";
+		};
+		C99B7FC22601261400EBD873 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7FC32601261D00EBD873 /* AppDimension.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		C99B7FD3260126BC00EBD873 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7FD4260126C900EBD873 /* CustomDatePicker.swift */,
+				C99B7FD9260126E100EBD873 /* CustomDatePickerViewModel.swift */,
+			);
+			path = DatePicker;
 			sourceTree = "<group>";
 		};
 		CE66C66B25FF8F3A00A2FA72 = {
@@ -430,6 +507,7 @@
 				C99B7F3E2601135000EBD873 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				C99B7F382601135000EBD873 /* Poppins-LightItalic.ttf in Resources */,
 				C99B7F332601135000EBD873 /* Poppins-Medium.ttf in Resources */,
+				C99B7FAF2601258A00EBD873 /* LabelledTextField.xib in Resources */,
 				C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */,
 				C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */,
 				C99B7EDE25FFD01100EBD873 /* Onboarding.storyboard in Resources */,
@@ -481,16 +559,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */,
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
 				C99B7F0825FFD66C00EBD873 /* UILabel+TapGesture.swift in Sources */,
+				C99B7F942601238400EBD873 /* UIViewController+Keyboard.swift in Sources */,
+				C99B7F7E260122C000EBD873 /* HeadingLabel.swift in Sources */,
+				C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */,
+				C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */,
+				C99B7FB42601259700EBD873 /* FormatValidator.swift in Sources */,
+				C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */,
+				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
 				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,
 				CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */,
+				C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */,
 				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
+				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
+				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
 				C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */,
+				C99B7FA12601253100EBD873 /* PaddedTextField.swift in Sources */,
+				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
 				C99B7F0325FFD44500EBD873 /* OnboardingViewController.swift in Sources */,
+				C99B7F9C260123C500EBD873 /* UIBarButtonItem+Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
