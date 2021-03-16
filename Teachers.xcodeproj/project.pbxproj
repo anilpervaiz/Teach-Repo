@@ -9,8 +9,34 @@
 /* Begin PBXBuildFile section */
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
 		C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ED225FFC61100EBD873 /* Colors.xcassets */; };
+		C99B7EDE25FFD01100EBD873 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */; };
+		C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7EE225FFD07F00EBD873 /* UIView+Extensions.swift */; };
+		C99B7F0325FFD44500EBD873 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F0225FFD44500EBD873 /* OnboardingViewController.swift */; };
+		C99B7F0825FFD66C00EBD873 /* UILabel+TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F0725FFD66C00EBD873 /* UILabel+TapGesture.swift */; };
+		C99B7F2F2601135000EBD873 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F1D2601134F00EBD873 /* Poppins-Bold.ttf */; };
+		C99B7F302601135000EBD873 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F1E2601134F00EBD873 /* Poppins-Thin.ttf */; };
+		C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F1F2601134F00EBD873 /* Poppins-ExtraLight.ttf */; };
+		C99B7F322601135000EBD873 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F202601134F00EBD873 /* Poppins-MediumItalic.ttf */; };
+		C99B7F332601135000EBD873 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F212601134F00EBD873 /* Poppins-Medium.ttf */; };
+		C99B7F342601135000EBD873 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F222601134F00EBD873 /* Poppins-Regular.ttf */; };
+		C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F232601134F00EBD873 /* Poppins-ThinItalic.ttf */; };
+		C99B7F362601135000EBD873 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F242601134F00EBD873 /* Poppins-ExtraBoldItalic.ttf */; };
+		C99B7F372601135000EBD873 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F252601134F00EBD873 /* Poppins-BoldItalic.ttf */; };
+		C99B7F382601135000EBD873 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F262601134F00EBD873 /* Poppins-LightItalic.ttf */; };
+		C99B7F392601135000EBD873 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F272601135000EBD873 /* Poppins-Italic.ttf */; };
+		C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F282601135000EBD873 /* Poppins-ExtraBold.ttf */; };
+		C99B7F3B2601135000EBD873 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F292601135000EBD873 /* Poppins-Light.ttf */; };
+		C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F2A2601135000EBD873 /* Poppins-BlackItalic.ttf */; };
+		C99B7F3D2601135000EBD873 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F2B2601135000EBD873 /* Poppins-SemiBoldItalic.ttf */; };
+		C99B7F3E2601135000EBD873 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F2C2601135000EBD873 /* Poppins-ExtraLightItalic.ttf */; };
+		C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F2D2601135000EBD873 /* Poppins-SemiBold.ttf */; };
+		C99B7F402601135000EBD873 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F2E2601135000EBD873 /* Poppins-Black.ttf */; };
+		C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F442601145200EBD873 /* PrimaryCTAButton.swift */; };
+		C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F49260114BA00EBD873 /* Fonts.swift */; };
+		C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F5F260117CB00EBD873 /* Assets+Generated.swift */; };
+		C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F64260117F700EBD873 /* SecondaryCTAButton.swift */; };
+		C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F692601199100EBD873 /* NSAttributedString+Styling.swift */; };
 		CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */; };
-		CE66C67A25FF8F3A00A2FA72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C67925FF8F3A00A2FA72 /* SceneDelegate.swift */; };
 		CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE66C68025FF8F3A00A2FA72 /* Teachers.xcdatamodeld */; };
 		CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE66C68525FF8F3E00A2FA72 /* LaunchScreen.storyboard */; };
 		CE66C69225FF8F3E00A2FA72 /* TeachersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C69125FF8F3E00A2FA72 /* TeachersTests.swift */; };
@@ -37,9 +63,35 @@
 /* Begin PBXFileReference section */
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C99B7ED225FFC61100EBD873 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		C99B7EE225FFD07F00EBD873 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		C99B7F0225FFD44500EBD873 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C99B7F0725FFD66C00EBD873 /* UILabel+TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+TapGesture.swift"; sourceTree = "<group>"; };
+		C99B7F1D2601134F00EBD873 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		C99B7F1E2601134F00EBD873 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		C99B7F1F2601134F00EBD873 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		C99B7F202601134F00EBD873 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F212601134F00EBD873 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		C99B7F222601134F00EBD873 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		C99B7F232601134F00EBD873 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F242601134F00EBD873 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F252601134F00EBD873 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F262601134F00EBD873 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F272601135000EBD873 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		C99B7F282601135000EBD873 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C99B7F292601135000EBD873 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		C99B7F2A2601135000EBD873 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F2B2601135000EBD873 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F2C2601135000EBD873 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		C99B7F2D2601135000EBD873 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		C99B7F2E2601135000EBD873 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		C99B7F442601145200EBD873 /* PrimaryCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCTAButton.swift; sourceTree = "<group>"; };
+		C99B7F49260114BA00EBD873 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C99B7F5F260117CB00EBD873 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
+		C99B7F64260117F700EBD873 /* SecondaryCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCTAButton.swift; sourceTree = "<group>"; };
+		C99B7F692601199100EBD873 /* NSAttributedString+Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Styling.swift"; sourceTree = "<group>"; };
 		CE66C67425FF8F3A00A2FA72 /* Teachers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teachers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE66C67925FF8F3A00A2FA72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE66C68125FF8F3A00A2FA72 /* Teachers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Teachers.xcdatamodel; sourceTree = "<group>"; };
 		CE66C68625FF8F3E00A2FA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE66C68825FF8F3E00A2FA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +131,8 @@
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7EDC25FFD00300EBD873 /* Onboarding */,
+				C99B7EDB25FFCFF000EBD873 /* Signup */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -97,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */,
-				CE66C67925FF8F3A00A2FA72 /* SceneDelegate.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -114,6 +167,8 @@
 		C99B7EC225FFC58A00EBD873 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7F5B260117B200EBD873 /* Generated */,
+				C99B7F1C2601133B00EBD873 /* Font */,
 				C99B7EC325FFC5A300EBD873 /* Resources */,
 			);
 			path = Common;
@@ -140,6 +195,9 @@
 		C99B7ED925FFCD1600EBD873 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7EE225FFD07F00EBD873 /* UIView+Extensions.swift */,
+				C99B7F0725FFD66C00EBD873 /* UILabel+TapGesture.swift */,
+				C99B7F692601199100EBD873 /* NSAttributedString+Styling.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -147,8 +205,60 @@
 		C99B7EDA25FFCD1D00EBD873 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7F49260114BA00EBD873 /* Fonts.swift */,
+				C99B7F442601145200EBD873 /* PrimaryCTAButton.swift */,
+				C99B7F64260117F700EBD873 /* SecondaryCTAButton.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		C99B7EDB25FFCFF000EBD873 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		C99B7EDC25FFD00300EBD873 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */,
+				C99B7F0225FFD44500EBD873 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		C99B7F1C2601133B00EBD873 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7F2E2601135000EBD873 /* Poppins-Black.ttf */,
+				C99B7F2A2601135000EBD873 /* Poppins-BlackItalic.ttf */,
+				C99B7F1D2601134F00EBD873 /* Poppins-Bold.ttf */,
+				C99B7F252601134F00EBD873 /* Poppins-BoldItalic.ttf */,
+				C99B7F282601135000EBD873 /* Poppins-ExtraBold.ttf */,
+				C99B7F242601134F00EBD873 /* Poppins-ExtraBoldItalic.ttf */,
+				C99B7F1F2601134F00EBD873 /* Poppins-ExtraLight.ttf */,
+				C99B7F2C2601135000EBD873 /* Poppins-ExtraLightItalic.ttf */,
+				C99B7F272601135000EBD873 /* Poppins-Italic.ttf */,
+				C99B7F292601135000EBD873 /* Poppins-Light.ttf */,
+				C99B7F262601134F00EBD873 /* Poppins-LightItalic.ttf */,
+				C99B7F212601134F00EBD873 /* Poppins-Medium.ttf */,
+				C99B7F202601134F00EBD873 /* Poppins-MediumItalic.ttf */,
+				C99B7F222601134F00EBD873 /* Poppins-Regular.ttf */,
+				C99B7F2D2601135000EBD873 /* Poppins-SemiBold.ttf */,
+				C99B7F2B2601135000EBD873 /* Poppins-SemiBoldItalic.ttf */,
+				C99B7F1E2601134F00EBD873 /* Poppins-Thin.ttf */,
+				C99B7F232601134F00EBD873 /* Poppins-ThinItalic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		C99B7F5B260117B200EBD873 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7F5F260117CB00EBD873 /* Assets+Generated.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		CE66C66B25FF8F3A00A2FA72 = {
@@ -207,6 +317,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE66C6A125FF8F3E00A2FA72 /* Build configuration list for PBXNativeTarget "Teachers" */;
 			buildPhases = (
+				C99B7F5A2601174700EBD873 /* [SWIFTGEN] Generate code */,
 				CE66C67025FF8F3A00A2FA72 /* Sources */,
 				CE66C67125FF8F3A00A2FA72 /* Frameworks */,
 				CE66C67225FF8F3A00A2FA72 /* Resources */,
@@ -303,9 +414,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C99B7F362601135000EBD873 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				C99B7F3D2601135000EBD873 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				C99B7F3B2601135000EBD873 /* Poppins-Light.ttf in Resources */,
 				C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */,
+				C99B7F372601135000EBD873 /* Poppins-BoldItalic.ttf in Resources */,
+				C99B7F392601135000EBD873 /* Poppins-Italic.ttf in Resources */,
+				C99B7F322601135000EBD873 /* Poppins-MediumItalic.ttf in Resources */,
 				C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */,
+				C99B7F402601135000EBD873 /* Poppins-Black.ttf in Resources */,
+				C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */,
+				C99B7F2F2601135000EBD873 /* Poppins-Bold.ttf in Resources */,
+				C99B7F302601135000EBD873 /* Poppins-Thin.ttf in Resources */,
 				CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */,
+				C99B7F3E2601135000EBD873 /* Poppins-ExtraLightItalic.ttf in Resources */,
+				C99B7F382601135000EBD873 /* Poppins-LightItalic.ttf in Resources */,
+				C99B7F332601135000EBD873 /* Poppins-Medium.ttf in Resources */,
+				C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */,
+				C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */,
+				C99B7EDE25FFD01100EBD873 /* Onboarding.storyboard in Resources */,
+				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
+				C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */,
+				C99B7F342601135000EBD873 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,14 +455,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C99B7F5A2601174700EBD873 /* [SWIFTGEN] Generate code */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SWIFTGEN] Generate code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# If you're running on Apple Silicon with SwiftGen installed through Homebrew\n# and you need to force it to run through Rosetta, put the following lines\n# in ~/.bash_profile\n#\n# alias swiftgen=\"arch -x86_64 swiftgen\"\n#\n# As of 20/12/2020 Homebrew's SwiftGen seems to be a universal binary,\n# but the arm64 slice doesn't execute.\n\nPROFILE_PATH=\"$HOME/.bash_profile\"\n\nif [[ -f \"$PROFILE_PATH\" ]]; then\n  source \"$PROFILE_PATH\"\nfi\n\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE66C67025FF8F3A00A2FA72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
+				C99B7F0825FFD66C00EBD873 /* UILabel+TapGesture.swift in Sources */,
+				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,
 				CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */,
-				CE66C67A25FF8F3A00A2FA72 /* SceneDelegate.swift in Sources */,
+				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,
+				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
+				C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */,
+				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
+				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
+				C99B7F0325FFD44500EBD873 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -485,7 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -498,11 +656,11 @@
 		CE66C6A225FF8F3E00A2FA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TAFGX4K33;
-				INFOPLIST_FILE = Teachers/Info.plist;
+				INFOPLIST_FILE = "Teachers/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -517,11 +675,11 @@
 		CE66C6A325FF8F3E00A2FA72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6TAFGX4K33;
-				INFOPLIST_FILE = Teachers/Info.plist;
+				INFOPLIST_FILE = "Teachers/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
