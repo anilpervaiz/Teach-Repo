@@ -221,6 +221,7 @@ class LabelledTextField: CustomNibView {
         setNormalState()
 
         inputTextField.textAlignment = .left
+        inputTextField.backgroundColor = Asset.Colors.dullWhite.color
     }
 
     @discardableResult

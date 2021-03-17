@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46F4BBAB8AB33C0289B96E78 /* Pods_Teachers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781F8A1176301CF2E8283669 /* Pods_Teachers.framework */; };
+		C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */; };
+		C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */; };
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
 		C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ED225FFC61100EBD873 /* Colors.xcassets */; };
 		C99B7EDE25FFD01100EBD873 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */; };
@@ -83,6 +86,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		435B834905BF7FA36344C14E /* Pods-Teachers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teachers.release.xcconfig"; path = "Target Support Files/Pods-Teachers/Pods-Teachers.release.xcconfig"; sourceTree = "<group>"; };
+		781F8A1176301CF2E8283669 /* Pods_Teachers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teachers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
+		C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMobileNumberViewController.swift; sourceTree = "<group>"; };
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C99B7ED225FFC61100EBD873 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
@@ -145,6 +152,7 @@
 		CE66C69825FF8F3E00A2FA72 /* TeachersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeachersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C69C25FF8F3E00A2FA72 /* TeachersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersUITests.swift; sourceTree = "<group>"; };
 		CE66C69E25FF8F3E00A2FA72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B1A06AC3024409DBE75729 /* Pods-Teachers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teachers.debug.xcconfig"; path = "Target Support Files/Pods-Teachers/Pods-Teachers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F4BBAB8AB33C0289B96E78 /* Pods_Teachers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +181,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B817F91947055D9E72B989D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8B1A06AC3024409DBE75729 /* Pods-Teachers.debug.xcconfig */,
+				435B834905BF7FA36344C14E /* Pods-Teachers.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		837443432A4CB189928ED639 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				781F8A1176301CF2E8283669 /* Pods_Teachers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +302,8 @@
 				C99B7FE426012BE700EBD873 /* Signup.storyboard */,
 				C99B7FE926012E2D00EBD873 /* SignupPersonalInformationViewController.swift */,
 				C99B7FEE26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift */,
+				C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */,
+				C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -374,6 +402,8 @@
 				CE66C69025FF8F3E00A2FA72 /* TeachersTests */,
 				CE66C69B25FF8F3E00A2FA72 /* TeachersUITests */,
 				CE66C67525FF8F3A00A2FA72 /* Products */,
+				0B817F91947055D9E72B989D /* Pods */,
+				837443432A4CB189928ED639 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -423,10 +453,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE66C6A125FF8F3E00A2FA72 /* Build configuration list for PBXNativeTarget "Teachers" */;
 			buildPhases = (
+				41D5F179764D389F40CEE38E /* [CP] Check Pods Manifest.lock */,
 				C99B7F5A2601174700EBD873 /* [SWIFTGEN] Generate code */,
 				CE66C67025FF8F3A00A2FA72 /* Sources */,
 				CE66C67125FF8F3A00A2FA72 /* Frameworks */,
 				CE66C67225FF8F3A00A2FA72 /* Resources */,
+				FF213B3082E00371F37A628F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -481,6 +513,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					CE66C67325FF8F3A00A2FA72 = {
 						CreatedOnToolsVersion = 12.4;
@@ -564,6 +597,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		41D5F179764D389F40CEE38E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teachers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C99B7F5A2601174700EBD873 /* [SWIFTGEN] Generate code */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -581,6 +636,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# If you're running on Apple Silicon with SwiftGen installed through Homebrew\n# and you need to force it to run through Rosetta, put the following lines\n# in ~/.bash_profile\n#\n# alias swiftgen=\"arch -x86_64 swiftgen\"\n#\n# As of 20/12/2020 Homebrew's SwiftGen seems to be a universal binary,\n# but the arm64 slice doesn't execute.\n\nPROFILE_PATH=\"$HOME/.bash_profile\"\n\nif [[ -f \"$PROFILE_PATH\" ]]; then\n  source \"$PROFILE_PATH\"\nfi\n\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
+		};
+		FF213B3082E00371F37A628F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teachers/Pods-Teachers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teachers/Pods-Teachers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Teachers/Pods-Teachers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -602,6 +674,7 @@
 				C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */,
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
 				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,
+				C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */,
 				CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */,
 				C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */,
 				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,
@@ -611,6 +684,7 @@
 				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,
 				C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */,
 				C99B7FA12601253100EBD873 /* PaddedTextField.swift in Sources */,
+				C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */,
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
@@ -783,6 +857,7 @@
 		};
 		CE66C6A225FF8F3E00A2FA72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B1A06AC3024409DBE75729 /* Pods-Teachers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -802,6 +877,7 @@
 		};
 		CE66C6A325FF8F3E00A2FA72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 435B834905BF7FA36344C14E /* Pods-Teachers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

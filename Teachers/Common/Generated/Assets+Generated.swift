@@ -26,6 +26,7 @@ internal enum Asset {
     internal static let aquaMarine = ColorAsset(name: "aquaMarine")
     internal static let darkBlue = ColorAsset(name: "darkBlue")
     internal static let disableGray = ColorAsset(name: "disableGray")
+    internal static let dullWhite = ColorAsset(name: "dullWhite")
     internal static let gray = ColorAsset(name: "gray")
     internal static let halfBaked = ColorAsset(name: "halfBaked")
     internal static let lightGray = ColorAsset(name: "lightGray")
@@ -36,6 +37,7 @@ internal enum Asset {
   }
   internal enum Media {
     internal static let backArrow = ImageAsset(name: "backArrow")
+    internal static let downArrow = ImageAsset(name: "down-arrow")
     internal static let errorIcon = ImageAsset(name: "errorIcon")
     internal static let female = ImageAsset(name: "female")
     internal static let forwardArrow = ImageAsset(name: "forward-arrow")

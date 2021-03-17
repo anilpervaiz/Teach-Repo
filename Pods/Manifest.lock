@@ -1,0 +1,31 @@
+PODS:
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - SVPinView (1.0.11)
+
+DEPENDENCIES:
+  - FlagPhoneNumber (from `https://github.com/rahimkhalid/FlagPhoneNumber.git`, branch `UI-Fixes`)
+  - SVPinView
+
+SPEC REPOS:
+  trunk:
+    - SVPinView
+
+EXTERNAL SOURCES:
+  FlagPhoneNumber:
+    :branch: UI-Fixes
+    :git: https://github.com/rahimkhalid/FlagPhoneNumber.git
+
+CHECKOUT OPTIONS:
+  FlagPhoneNumber:
+    :commit: f03d1ab9527958b937c0c2255c3f97b8d215e835
+    :git: https://github.com/rahimkhalid/FlagPhoneNumber.git
+
+SPEC CHECKSUMS:
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
+
+PODFILE CHECKSUM: cf37d6d6407082dd6adbe85354726aa7576203e5
+
+COCOAPODS: 1.10.0
