@@ -17,7 +17,7 @@ class BaseViewController: UIViewController {
 
     private func setBackButtonStyle() {
 
-        navigationController?.navigationBar.tintColor = Asset.Colors.pureWhite.color
+        navigationController?.navigationBar.tintColor = Asset.Colors.gray.color
         let navController = navigationController as? BaseNavigationController
         removeBackButtonTitleOfPushedController()
         navController?.applyCustomBackButtonStyle()

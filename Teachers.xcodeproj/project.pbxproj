@@ -51,6 +51,13 @@
 		C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */; };
 		C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FD4260126C900EBD873 /* CustomDatePicker.swift */; };
 		C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FD9260126E100EBD873 /* CustomDatePickerViewModel.swift */; };
+		C99B7FE526012BE700EBD873 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99B7FE426012BE700EBD873 /* Signup.storyboard */; };
+		C99B7FEA26012E2D00EBD873 /* SignupPersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FE926012E2D00EBD873 /* SignupPersonalInformationViewController.swift */; };
+		C99B7FEF26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FEE26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift */; };
+		C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FF32601301300EBD873 /* FlowDescriptionLabel.swift */; };
+		C99B7FF92601B23200EBD873 /* OptionSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FF82601B23200EBD873 /* OptionSelectionView.swift */; };
+		C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FFE2601B2F800EBD873 /* OptionView.swift */; };
+		C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B80062601B34300EBD873 /* UIView+Autolayout.swift */; };
 		CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */; };
 		CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE66C68025FF8F3A00A2FA72 /* Teachers.xcdatamodeld */; };
 		CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE66C68525FF8F3E00A2FA72 /* LaunchScreen.storyboard */; };
@@ -120,6 +127,13 @@
 		C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
 		C99B7FD4260126C900EBD873 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		C99B7FD9260126E100EBD873 /* CustomDatePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePickerViewModel.swift; sourceTree = "<group>"; };
+		C99B7FE426012BE700EBD873 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		C99B7FE926012E2D00EBD873 /* SignupPersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPersonalInformationViewController.swift; sourceTree = "<group>"; };
+		C99B7FEE26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupAuthenticationDetailsViewController.swift; sourceTree = "<group>"; };
+		C99B7FF32601301300EBD873 /* FlowDescriptionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowDescriptionLabel.swift; sourceTree = "<group>"; };
+		C99B7FF82601B23200EBD873 /* OptionSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectionView.swift; sourceTree = "<group>"; };
+		C99B7FFE2601B2F800EBD873 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		C99B80062601B34300EBD873 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
 		CE66C67425FF8F3A00A2FA72 /* Teachers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teachers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE66C68125FF8F3A00A2FA72 /* Teachers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Teachers.xcdatamodel; sourceTree = "<group>"; };
@@ -234,6 +248,7 @@
 				C99B7F9B260123C500EBD873 /* UIBarButtonItem+Empty.swift */,
 				C99B7FB8260125B100EBD873 /* String+Regex.swift */,
 				C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */,
+				C99B80062601B34300EBD873 /* UIView+Autolayout.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +256,7 @@
 		C99B7EDA25FFCD1D00EBD873 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7FFD2601B2E100EBD873 /* OptionSelectionView */,
 				C99B7FD3260126BC00EBD873 /* DatePicker */,
 				C99B7FA52601256100EBD873 /* LabelledTextField */,
 				C99B7F49260114BA00EBD873 /* Fonts.swift */,
@@ -249,6 +265,7 @@
 				C99B7F7D260122C000EBD873 /* HeadingLabel.swift */,
 				C99B7FA02601253100EBD873 /* PaddedTextField.swift */,
 				C99B7FBD260125D200EBD873 /* CustomNibView.swift */,
+				C99B7FF32601301300EBD873 /* FlowDescriptionLabel.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -256,6 +273,9 @@
 		C99B7EDB25FFCFF000EBD873 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				C99B7FE426012BE700EBD873 /* Signup.storyboard */,
+				C99B7FE926012E2D00EBD873 /* SignupPersonalInformationViewController.swift */,
+				C99B7FEE26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -336,6 +356,15 @@
 				C99B7FD9260126E100EBD873 /* CustomDatePickerViewModel.swift */,
 			);
 			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		C99B7FFD2601B2E100EBD873 /* OptionSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C99B7FF82601B23200EBD873 /* OptionSelectionView.swift */,
+				C99B7FFE2601B2F800EBD873 /* OptionView.swift */,
+			);
+			path = OptionSelectionView;
 			sourceTree = "<group>";
 		};
 		CE66C66B25FF8F3A00A2FA72 = {
@@ -513,6 +542,7 @@
 				C99B7EDE25FFD01100EBD873 /* Onboarding.storyboard in Resources */,
 				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
 				C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */,
+				C99B7FE526012BE700EBD873 /* Signup.storyboard in Resources */,
 				C99B7F342601135000EBD873 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,10 +591,12 @@
 			files = (
 				C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */,
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
+				C99B7FF92601B23200EBD873 /* OptionSelectionView.swift in Sources */,
 				C99B7F0825FFD66C00EBD873 /* UILabel+TapGesture.swift in Sources */,
 				C99B7F942601238400EBD873 /* UIViewController+Keyboard.swift in Sources */,
 				C99B7F7E260122C000EBD873 /* HeadingLabel.swift in Sources */,
 				C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */,
+				C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */,
 				C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */,
 				C99B7FB42601259700EBD873 /* FormatValidator.swift in Sources */,
 				C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */,
@@ -576,12 +608,16 @@
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
+				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,
 				C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */,
 				C99B7FA12601253100EBD873 /* PaddedTextField.swift in Sources */,
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
+				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
 				C99B7F0325FFD44500EBD873 /* OnboardingViewController.swift in Sources */,
+				C99B7FEF26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift in Sources */,
+				C99B7FEA26012E2D00EBD873 /* SignupPersonalInformationViewController.swift in Sources */,
 				C99B7F9C260123C500EBD873 /* UIBarButtonItem+Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

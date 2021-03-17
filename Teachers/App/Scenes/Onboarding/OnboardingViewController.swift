@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController {
+class OnboardingViewController: BaseViewController {
 
     private lazy var termsAndConditionAttributedString: NSAttributedString = {
 

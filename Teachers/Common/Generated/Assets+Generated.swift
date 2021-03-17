@@ -37,6 +37,9 @@ internal enum Asset {
   internal enum Media {
     internal static let backArrow = ImageAsset(name: "backArrow")
     internal static let errorIcon = ImageAsset(name: "errorIcon")
+    internal static let female = ImageAsset(name: "female")
+    internal static let forwardArrow = ImageAsset(name: "forward-arrow")
+    internal static let male = ImageAsset(name: "male")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

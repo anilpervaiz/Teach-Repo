@@ -7,7 +7,11 @@
 
 import UIKit
 
+@IBDesignable
 class SecondaryCTAButton: UIButton {
+
+    @IBInspectable
+    var buttonThemeColor: UIColor = Asset.Colors.aquaMarine.color
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,7 +23,7 @@ class SecondaryCTAButton: UIButton {
         backgroundColor = .clear
         cornerRadius = 4
         borderWidth = 1
-        borderColor = Asset.Colors.aquaMarine.color
-        setTitleColor(Asset.Colors.aquaMarine.color, for: .normal)
+        borderColor = buttonThemeColor
+        setTitleColor(buttonThemeColor, for: .normal)
     }
 }

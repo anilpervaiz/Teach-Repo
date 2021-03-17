@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LabelledTextField" customModule="ToptalTrip" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
             <connections>
                 <outlet property="bottomDescriptionLabel" destination="aLo-bY-xZw" id="wba-VW-VDI"/>
                 <outlet property="errorIconImageView" destination="Mpq-3s-L0W" id="sA0-RQ-OJE"/>
@@ -25,19 +25,19 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBl-c1-bQ0">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyF-VV-K31">
-                            <rect key="frame" x="0.0" y="43" width="414" height="48"/>
+                            <rect key="frame" x="0.0" y="35" width="414" height="56"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-9K-E51" customClass="PaddedTextField" customModule="ToptalTrip" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                <textField opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-9K-E51" customClass="PaddedTextField" customModule="Teachers" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="48" id="z2d-p5-k9q"/>
+                                        <constraint firstAttribute="height" constant="56" id="z2d-p5-k9q"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -46,7 +46,7 @@
                                     </connections>
                                 </textField>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mpq-3s-L0W">
-                                    <rect key="frame" x="378" y="15" width="18" height="18"/>
+                                    <rect key="frame" x="378" y="19" width="18" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="18" id="F3a-D1-fvZ"/>
                                         <constraint firstAttribute="width" secondItem="Mpq-3s-L0W" secondAttribute="height" id="QNn-Dz-1re"/>
@@ -55,7 +55,7 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="48" id="07F-yf-9af"/>
+                                <constraint firstAttribute="height" constant="56" id="07F-yf-9af"/>
                                 <constraint firstItem="Mpq-3s-L0W" firstAttribute="centerY" secondItem="VyF-VV-K31" secondAttribute="centerY" id="6Pp-5M-sMy"/>
                                 <constraint firstAttribute="right" secondItem="Xws-9K-E51" secondAttribute="right" id="Ejr-rD-S0v"/>
                                 <constraint firstAttribute="right" secondItem="Mpq-3s-L0W" secondAttribute="right" constant="18" id="OoJ-66-ou3"/>
@@ -85,4 +85,9 @@
             <point key="canvasLocation" x="150.72463768115944" y="163.05803571428569"/>
         </view>
     </objects>
+    <designables>
+        <designable name="Xws-9K-E51">
+            <size key="intrinsicContentSize" width="32" height="34"/>
+        </designable>
+    </designables>
 </document>
