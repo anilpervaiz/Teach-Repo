@@ -11,8 +11,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LabelledTextField" customModule="Teachers" customModuleProvider="target">
             <connections>
                 <outlet property="bottomDescriptionLabel" destination="aLo-bY-xZw" id="wba-VW-VDI"/>
-                <outlet property="errorIconImageView" destination="Mpq-3s-L0W" id="sA0-RQ-OJE"/>
+                <outlet property="errorIconImageView" destination="TVw-9w-rsu" id="gB6-dQ-IOc"/>
+                <outlet property="errorview" destination="Cod-Ud-XWS" id="jgl-Oo-yhG"/>
                 <outlet property="inputTextField" destination="Xws-9K-E51" id="ez3-Gi-lfK"/>
+                <outlet property="textFieldTrailingIconImageView" destination="Mpq-3s-L0W" id="L86-AE-lo3"/>
                 <outlet property="titleLabel" destination="eBl-c1-bQ0" id="PW8-Pv-sB8"/>
             </connections>
         </placeholder>
@@ -25,13 +27,13 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBl-c1-bQ0">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="27"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="3"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VyF-VV-K31">
-                            <rect key="frame" x="0.0" y="35" width="414" height="56"/>
+                            <rect key="frame" x="0.0" y="11" width="414" height="56"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-9K-E51" customClass="PaddedTextField" customModule="Teachers" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
@@ -64,12 +66,33 @@
                                 <constraint firstAttribute="bottom" secondItem="Xws-9K-E51" secondAttribute="bottom" id="wab-F9-47Y"/>
                             </constraints>
                         </view>
-                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLo-bY-xZw">
-                            <rect key="frame" x="0.0" y="91" width="414" height="0.0"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cod-Ud-XWS">
+                            <rect key="frame" x="0.0" y="75" width="414" height="16"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TVw-9w-rsu">
+                                    <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="TVw-9w-rsu" secondAttribute="height" id="PfG-1J-SwL"/>
+                                        <constraint firstAttribute="width" constant="16" id="UXp-x4-AiL"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLo-bY-xZw">
+                                    <rect key="frame" x="24" y="0.0" width="382" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="aLo-bY-xZw" secondAttribute="bottom" id="2Z9-CF-zcx"/>
+                                <constraint firstItem="TVw-9w-rsu" firstAttribute="leading" secondItem="Cod-Ud-XWS" secondAttribute="leading" id="BhZ-Zg-UUf"/>
+                                <constraint firstAttribute="bottom" secondItem="TVw-9w-rsu" secondAttribute="bottom" id="bbv-Ht-sU7"/>
+                                <constraint firstItem="TVw-9w-rsu" firstAttribute="top" secondItem="Cod-Ud-XWS" secondAttribute="top" id="bu4-HU-H6G"/>
+                                <constraint firstAttribute="trailing" secondItem="aLo-bY-xZw" secondAttribute="trailing" constant="8" id="cGR-XG-DE0"/>
+                                <constraint firstItem="aLo-bY-xZw" firstAttribute="leading" secondItem="TVw-9w-rsu" secondAttribute="trailing" constant="8" id="dzD-jW-Ghq"/>
+                                <constraint firstItem="aLo-bY-xZw" firstAttribute="top" secondItem="Cod-Ud-XWS" secondAttribute="top" id="h1A-UQ-Cwg"/>
+                            </constraints>
+                        </view>
                     </subviews>
                 </stackView>
             </subviews>
@@ -82,7 +105,7 @@
                 <constraint firstItem="Ipw-K1-hdG" firstAttribute="top" secondItem="XbO-Kf-UyH" secondAttribute="top" id="Q0q-xK-oBZ"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="150.72463768115944" y="163.05803571428569"/>
+            <point key="canvasLocation" x="150.72463768115944" y="162.38839285714286"/>
         </view>
     </objects>
     <designables>

@@ -17,8 +17,17 @@ class LabelledTextField: CustomNibView {
     //IBOutlets
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var inputTextField: PaddedTextField!
-    @IBOutlet private weak var errorIconImageView: UIImageView!
     @IBOutlet private weak var bottomDescriptionLabel: UILabel!
+    @IBOutlet weak var errorview: UIView!
+    @IBOutlet weak var errorIconImageView: UIImageView!
+
+    @IBOutlet private weak var textFieldTrailingIconImageView: UIImageView! {
+        didSet {
+            textFieldTrailingIconImageView.isUserInteractionEnabled = true
+            textFieldTrailingIconImageView.addGestureRecognizer(UITapGestureRecognizer(target: self,
+                                                                  action: #selector(didTapTrailingIcon)))
+        }
+    }
 
     var onTextFieldChanged: TextFieldChangedCallBack?
     var onTextFieldTapped: TextFieldTappedCallBack?
@@ -195,6 +204,12 @@ class LabelledTextField: CustomNibView {
         }
     }
 
+    var trailingIconStyle: TrailingIconStyle = .none {
+        didSet {
+            setupTrailingIconStyle()
+        }
+    }
+
     @IBInspectable
     var errorIcon: UIImage = Asset.Media.errorIcon.image
 
@@ -270,21 +285,25 @@ class LabelledTextField: CustomNibView {
     }
 
     private func setErrorState(error: String?) {
+        errorview.isHidden = false
         errorIconImageView.isHidden = false
         errorIconImageView.image = errorIcon
         setTextViewBorder(with: Asset.Colors.tomatoRed.color)
         bottomDescriptionLabel.text = error
         bottomDescriptionLabel.isHidden = error?.isBlank ?? true
+        inputTextField.placeHolderColor = Asset.Colors.tomatoRed.color
         setupDefaultErrorStyle()
     }
 
     private func setNormalState() {
+        errorview.isHidden = true
         errorIconImageView.isHidden = true
         errorIconImageView.image = UIImage()
         setTextViewBorder(with: Asset.Colors.lightGray.color)
 
         bottomDescriptionLabel.text = textViewDescription
         bottomDescriptionLabel.isHidden = textViewDescription?.isBlank ?? true
+        inputTextField.placeHolderColor = placeholderTextColor
     }
 
     func setTextViewBorder(with color: UIColor) {
@@ -301,6 +320,32 @@ class LabelledTextField: CustomNibView {
     func setupTextFieldGesture() {
         tap = UITapGestureRecognizer(target: self, action: #selector(self.didTapTextField(_:)))
         inputTextField.addGestureRecognizer(tap!)
+    }
+
+    func setupTrailingIconStyle() {
+        switch trailingIconStyle {
+        case .static(let icon):
+            textFieldTrailingIconImageView.image = icon
+        case .obscure:
+            updateTextfieldTrailingIcon(for: trailingIconStyle)
+        case .none:
+            textFieldTrailingIconImageView.image = nil
+        }
+    }
+
+    @objc
+    func didTapTrailingIcon() {
+        if trailingIconStyle.isSecure {
+            inputTextField.isSecureTextEntry = !inputTextField.isSecureTextEntry
+        }
+        setupTrailingIconStyle()
+    }
+
+    func updateTextfieldTrailingIcon(for style: TrailingIconStyle) {
+        if case let .obscure(icon, secureColor, insecureColor) = style {
+            textFieldTrailingIconImageView.image = icon
+            textFieldTrailingIconImageView.tintColor = inputTextField.isSecureTextEntry ? secureColor : insecureColor
+        }
     }
 
     func removeTextFieldGesture() {
@@ -333,5 +378,20 @@ extension LabelledTextField: UITextFieldDelegate {
         }
 
         onTextFieldFocusChange?(inputTextField.text)
+    }
+
+    enum TrailingIconStyle {
+        case `static`(icon: UIImage)
+        case obscure(switchIcon: UIImage,
+                     secureStateColor: UIColor,
+                     insecureStateColor: UIColor)
+        case none
+
+        var isSecure: Bool {
+            switch self {
+            case .obscure: return true
+            default: return false
+            }
+        }
     }
 }

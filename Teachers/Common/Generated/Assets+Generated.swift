@@ -39,6 +39,7 @@ internal enum Asset {
     internal static let backArrow = ImageAsset(name: "backArrow")
     internal static let downArrow = ImageAsset(name: "down-arrow")
     internal static let errorIcon = ImageAsset(name: "errorIcon")
+    internal static let eyeIcon = ImageAsset(name: "eyeIcon")
     internal static let female = ImageAsset(name: "female")
     internal static let forwardArrow = ImageAsset(name: "forward-arrow")
     internal static let male = ImageAsset(name: "male")

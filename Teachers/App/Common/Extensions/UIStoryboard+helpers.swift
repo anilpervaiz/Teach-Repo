@@ -1,0 +1,33 @@
+//
+//  UIStoryboard+helpers.swift
+//  Teachers
+//
+//  Created by Rahim on 18/03/2021.
+//
+
+import UIKit
+
+protocol Initializable where Self: UIViewController {
+    static var storyboardName: UIStoryboard.Name { get }
+}
+
+extension Initializable {
+
+    private static var identifier: String {
+        let name = String.init(describing: Self.self)
+        return name
+    }
+
+    static func getInstance() -> Self {
+        let storyboard = UIStoryboard(name: self.storyboardName.rawValue, bundle: Bundle.main)
+        let instance = storyboard.instantiateViewController(withIdentifier: identifier)
+        return instance as! Self
+    }
+}
+
+extension UIStoryboard {
+    enum Name: String {
+        case signup = "Signup"
+        case successState = "SuccessState"
+    }
+}

@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		46F4BBAB8AB33C0289B96E78 /* Pods_Teachers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781F8A1176301CF2E8283669 /* Pods_Teachers.framework */; };
+		C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */; };
+		C9281F852602F775006E97CC /* SuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F842602F775006E97CC /* SuccessStateViewModel.swift */; };
+		C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */; };
+		C9281F8F2602F93C006E97CC /* UIStoryboard+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F8E2602F93C006E97CC /* UIStoryboard+helpers.swift */; };
+		C9281F942602F951006E97CC /* SuccessState.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9281F932602F951006E97CC /* SuccessState.storyboard */; };
+		C9281F9A260304C0006E97CC /* NumberVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F99260304C0006E97CC /* NumberVerificationViewModel.swift */; };
+		C9281FA326030B54006E97CC /* ItemPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281FA226030B54006E97CC /* ItemPickerView.swift */; };
+		C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281FAA26030B69006E97CC /* ItemPickerViewModel.swift */; };
+		C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281FAF26030C0B006E97CC /* LocationPickerViewModel.swift */; };
 		C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */; };
 		C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */; };
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
@@ -88,6 +97,15 @@
 /* Begin PBXFileReference section */
 		435B834905BF7FA36344C14E /* Pods-Teachers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teachers.release.xcconfig"; path = "Target Support Files/Pods-Teachers/Pods-Teachers.release.xcconfig"; sourceTree = "<group>"; };
 		781F8A1176301CF2E8283669 /* Pods_Teachers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teachers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewController.swift; sourceTree = "<group>"; };
+		C9281F842602F775006E97CC /* SuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewModel.swift; sourceTree = "<group>"; };
+		C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCompletedSuccessStateViewModel.swift; sourceTree = "<group>"; };
+		C9281F8E2602F93C006E97CC /* UIStoryboard+helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+helpers.swift"; sourceTree = "<group>"; };
+		C9281F932602F951006E97CC /* SuccessState.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SuccessState.storyboard; sourceTree = "<group>"; };
+		C9281F99260304C0006E97CC /* NumberVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewModel.swift; sourceTree = "<group>"; };
+		C9281FA226030B54006E97CC /* ItemPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPickerView.swift; sourceTree = "<group>"; };
+		C9281FAA26030B69006E97CC /* ItemPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPickerViewModel.swift; sourceTree = "<group>"; };
+		C9281FAF26030C0B006E97CC /* LocationPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewModel.swift; sourceTree = "<group>"; };
 		C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
 		C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMobileNumberViewController.swift; sourceTree = "<group>"; };
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -198,9 +216,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C9281F7D2602F731006E97CC /* SuccessState */ = {
+			isa = PBXGroup;
+			children = (
+				C9281F832602F764006E97CC /* ViewModel */,
+				C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */,
+				C9281F932602F951006E97CC /* SuccessState.storyboard */,
+			);
+			path = SuccessState;
+			sourceTree = "<group>";
+		};
+		C9281F832602F764006E97CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9281F842602F775006E97CC /* SuccessStateViewModel.swift */,
+				C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C9281F98260304B1006E97CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C9281F99260304C0006E97CC /* NumberVerificationViewModel.swift */,
+				C9281FAF26030C0B006E97CC /* LocationPickerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C9281FA126030B4B006E97CC /* ItemPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C9281FA226030B54006E97CC /* ItemPickerView.swift */,
+				C9281FAA26030B69006E97CC /* ItemPickerViewModel.swift */,
+			);
+			path = ItemPickerView;
+			sourceTree = "<group>";
+		};
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C9281F7D2602F731006E97CC /* SuccessState */,
 				C99B7F852601232D00EBD873 /* Base */,
 				C99B7EDC25FFD00300EBD873 /* Onboarding */,
 				C99B7EDB25FFCFF000EBD873 /* Signup */,
@@ -275,6 +331,7 @@
 				C99B7FB8260125B100EBD873 /* String+Regex.swift */,
 				C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */,
 				C99B80062601B34300EBD873 /* UIView+Autolayout.swift */,
+				C9281F8E2602F93C006E97CC /* UIStoryboard+helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -282,6 +339,7 @@
 		C99B7EDA25FFCD1D00EBD873 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C9281FA126030B4B006E97CC /* ItemPickerView */,
 				C99B7FFD2601B2E100EBD873 /* OptionSelectionView */,
 				C99B7FD3260126BC00EBD873 /* DatePicker */,
 				C99B7FA52601256100EBD873 /* LabelledTextField */,
@@ -299,6 +357,7 @@
 		C99B7EDB25FFCFF000EBD873 /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				C9281F98260304B1006E97CC /* ViewModel */,
 				C99B7FE426012BE700EBD873 /* Signup.storyboard */,
 				C99B7FE926012E2D00EBD873 /* SignupPersonalInformationViewController.swift */,
 				C99B7FEE26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift */,
@@ -561,6 +620,7 @@
 				C99B7F392601135000EBD873 /* Poppins-Italic.ttf in Resources */,
 				C99B7F322601135000EBD873 /* Poppins-MediumItalic.ttf in Resources */,
 				C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */,
+				C9281F942602F951006E97CC /* SuccessState.storyboard in Resources */,
 				C99B7F402601135000EBD873 /* Poppins-Black.ttf in Resources */,
 				C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */,
 				C99B7F2F2601135000EBD873 /* Poppins-Bold.ttf in Resources */,
@@ -664,19 +724,25 @@
 				C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */,
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
 				C99B7FF92601B23200EBD873 /* OptionSelectionView.swift in Sources */,
+				C9281FA326030B54006E97CC /* ItemPickerView.swift in Sources */,
 				C99B7F0825FFD66C00EBD873 /* UILabel+TapGesture.swift in Sources */,
 				C99B7F942601238400EBD873 /* UIViewController+Keyboard.swift in Sources */,
 				C99B7F7E260122C000EBD873 /* HeadingLabel.swift in Sources */,
+				C9281F8F2602F93C006E97CC /* UIStoryboard+helpers.swift in Sources */,
+				C9281F852602F775006E97CC /* SuccessStateViewModel.swift in Sources */,
 				C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */,
 				C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */,
+				C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */,
 				C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */,
 				C99B7FB42601259700EBD873 /* FormatValidator.swift in Sources */,
 				C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */,
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
+				C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */,
 				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,
 				C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */,
 				CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */,
 				C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */,
+				C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
@@ -687,8 +753,10 @@
 				C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */,
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
+				C9281F9A260304C0006E97CC /* NumberVerificationViewModel.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
+				C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */,
 				C99B7F0325FFD44500EBD873 /* OnboardingViewController.swift in Sources */,
 				C99B7FEF26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift in Sources */,
 				C99B7FEA26012E2D00EBD873 /* SignupPersonalInformationViewController.swift in Sources */,

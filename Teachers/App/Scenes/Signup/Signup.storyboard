@@ -85,7 +85,6 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="titleLabelText" value="Location"/>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="Select Location"/>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTappable" value="YES"/>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
@@ -158,6 +157,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="SS6-6o-rlg"/>
                     <connections>
+                        <outlet property="ctaButtonBottomConstraint" destination="jhT-9E-O3z" id="QlF-hF-CjQ"/>
+                        <outlet property="firstNameTextField" destination="0Zb-7g-Wuj" id="F1P-gI-PIk"/>
+                        <outlet property="locationTextField" destination="AxT-y7-PVC" id="PUH-Gl-7tr"/>
                         <outlet property="optionSelectionContainerView" destination="VwR-RD-yMZ" id="5Jx-v3-WZv"/>
                     </connections>
                 </viewController>
@@ -290,6 +292,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fdp-0e-dL7"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="0gJ-PJ-BKt" id="aOh-XA-x6g"/>
+                        <outlet property="ctaButtonBottomConstraint" destination="Wr3-7q-yf8" id="mGg-59-pNg"/>
+                        <outlet property="emailTextField" destination="Hnr-hl-BWO" id="IIN-f8-lQ7"/>
+                        <outlet property="passwordTextField" destination="fXo-4J-8yR" id="iIk-rv-z9j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUK-6t-QiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -319,14 +327,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Rxl-DZ-ljX" kind="show" id="Mav-W4-Tyq"/>
+                                    <action selector="didTapVerifyNumberButton:" destination="IHA-Fm-VqY" eventType="touchUpInside" id="FWK-5w-yf5"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCy-mC-krL">
                                 <rect key="frame" x="0.0" y="16" width="414" height="696"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhU-xa-B5U">
-                                        <rect key="frame" x="16" y="0.0" width="382" height="213.5"/>
+                                        <rect key="frame" x="16" y="0.0" width="382" height="222"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEo-ib-08c" customClass="FlowDescriptionLabel" customModule="Teachers" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -341,16 +349,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Od0-F5-ko2">
-                                                <rect key="frame" x="0.0" y="85" width="382" height="128.5"/>
+                                                <rect key="frame" x="0.0" y="85" width="382" height="137"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWb-f7-M28">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="gray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xti-cK-phr" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                                                        <rect key="frame" x="0.0" y="24.5" width="382" height="56"/>
+                                                        <rect key="frame" x="0.0" y="28" width="382" height="56"/>
                                                         <color key="backgroundColor" name="dullWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="56" id="rlg-Jf-EaO"/>
@@ -368,8 +376,8 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you a verification code on your number." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-hz-Xi4">
-                                                        <rect key="frame" x="0.0" y="88.5" width="382" height="40"/>
-                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                                                        <rect key="frame" x="0.0" y="92" width="382" height="45"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                         <color key="textColor" name="gray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -417,6 +425,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KuD-21-esU"/>
                     <connections>
+                        <outlet property="ctaButtonBottomConstraint" destination="F2N-r8-OFQ" id="ngn-fG-sB2"/>
                         <outlet property="phoneNumberTextField" destination="Xti-cK-phr" id="yxZ-Rd-oPo"/>
                     </connections>
                 </viewController>
@@ -427,13 +436,13 @@
         <!--Number Verification View Controller-->
         <scene sceneID="K6v-e7-HBT">
             <objects>
-                <viewController id="Rxl-DZ-ljX" customClass="NumberVerificationViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NumberVerificationViewController" id="Rxl-DZ-ljX" customClass="NumberVerificationViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eQq-FV-gIJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8y-jY-EFk" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="16" y="736" width="382" height="56"/>
+                                <rect key="frame" x="16" y="790" width="382" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="jDy-LX-Zei"/>
                                 </constraints>
@@ -448,14 +457,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="9ma-ut-mAr" kind="presentation" modalPresentationStyle="overFullScreen" id="QQS-qh-AEv"/>
+                                    <action selector="didTapPrimaryCTAButton:" destination="Rxl-DZ-ljX" eventType="touchUpInside" id="tkD-xf-YNU"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hR-57-5qS">
-                                <rect key="frame" x="0.0" y="16" width="414" height="696"/>
+                                <rect key="frame" x="0.0" y="60" width="414" height="706"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-4k-F0T">
-                                        <rect key="frame" x="16" y="0.0" width="382" height="262"/>
+                                        <rect key="frame" x="16" y="0.0" width="382" height="271.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10n-Gd-TOL" customClass="FlowDescriptionLabel" customModule="Teachers" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -513,26 +522,32 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn’t receive an SMS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-3c-OmA">
-                                                <rect key="frame" x="0.0" y="189" width="382" height="19"/>
+                                                <rect key="frame" x="0.0" y="189" width="382" height="22.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                 <color key="textColor" name="gray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend in 00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aum-Hr-XOx">
-                                                <rect key="frame" x="140.5" y="216" width="101.5" height="30"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aum-Hr-XOx">
+                                                <rect key="frame" x="191" y="219.5" width="0.0" height="36"/>
                                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
                                                 <color key="textColor" name="darkBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-AW-25E" customClass="SecondaryCTAButton" customModule="Teachers" customModuleProvider="target">
-                                                <rect key="frame" x="145" y="216" width="92" height="30"/>
-                                                <inset key="titleEdgeInsets" minX="14" minY="10" maxX="14" maxY="10"/>
+                                                <rect key="frame" x="121" y="219.5" width="140" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="1a8-iY-YnA"/>
+                                                    <constraint firstAttribute="width" constant="140" id="bXR-y7-ODl"/>
+                                                </constraints>
                                                 <state key="normal" title="Resend Code"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
                                                         <color key="value" name="halfBaked"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapResentCodeButton:" destination="Rxl-DZ-ljX" eventType="touchUpInside" id="hd1-wo-XOO"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -584,90 +599,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="Iz3-aa-Rur"/>
                     <connections>
+                        <outlet property="ctaButtonBottomConstraint" destination="f7D-22-eWm" id="ZxS-LE-ESc"/>
                         <outlet property="pinView" destination="l32-4e-9pd" id="fU9-bO-Edl"/>
+                        <outlet property="resentCodeButton" destination="QJ3-AW-25E" id="NRF-H4-bQv"/>
+                        <outlet property="resentCodeTimerLabel" destination="aum-Hr-XOx" id="j2a-9f-0jf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvP-Pk-sYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2430.434782608696" y="233.70535714285714"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="NqK-Vh-wmY">
-            <objects>
-                <viewController id="9ma-ut-mAr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YBU-eU-eYp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="noo-XK-rir">
-                                <rect key="frame" x="32" y="216" width="350" height="464.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YWN-xR-auh">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
-                                        <color key="backgroundColor" name="SapphireLightTranslucent"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="YWN-xR-auh" secondAttribute="height" id="kgi-a1-OMC"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiK-Ok-opk" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="398" width="350" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you need to complete your profile to be able to join Edukko family." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1h-2K-7Gi">
-                                        <rect key="frame" x="0.0" y="427" width="350" height="37.5"/>
-                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
-                                        <color key="textColor" name="gray"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="j1h-2K-7Gi" firstAttribute="top" secondItem="GiK-Ok-opk" secondAttribute="bottom" constant="8" id="BZA-Tf-igt"/>
-                                    <constraint firstItem="j1h-2K-7Gi" firstAttribute="leading" secondItem="noo-XK-rir" secondAttribute="leading" id="CqC-gj-1pz"/>
-                                    <constraint firstItem="YWN-xR-auh" firstAttribute="leading" secondItem="noo-XK-rir" secondAttribute="leading" id="DEK-J7-Ygb"/>
-                                    <constraint firstAttribute="bottom" secondItem="j1h-2K-7Gi" secondAttribute="bottom" id="FqX-SP-tmp"/>
-                                    <constraint firstAttribute="trailing" secondItem="j1h-2K-7Gi" secondAttribute="trailing" id="Q3o-9F-xzU"/>
-                                    <constraint firstItem="GiK-Ok-opk" firstAttribute="top" secondItem="YWN-xR-auh" secondAttribute="bottom" constant="48" id="SfG-TK-l2L"/>
-                                    <constraint firstAttribute="trailing" secondItem="GiK-Ok-opk" secondAttribute="trailing" id="Xgb-wA-e1G"/>
-                                    <constraint firstItem="YWN-xR-auh" firstAttribute="top" secondItem="noo-XK-rir" secondAttribute="top" id="cb5-Ud-SaJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="YWN-xR-auh" secondAttribute="trailing" id="eSG-cK-Duf"/>
-                                    <constraint firstItem="GiK-Ok-opk" firstAttribute="leading" secondItem="noo-XK-rir" secondAttribute="leading" id="gP8-FX-3Kf"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ley-Sj-unk" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="16" y="790" width="382" height="56"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="fGd-In-Za4"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Complete My Profile"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonBackgroundColor">
-                                        <color key="value" name="primary"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonThemeColor">
-                                        <color key="value" name="aquaMarine"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="QLH-DF-OOd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="QLH-DF-OOd" firstAttribute="bottom" secondItem="ley-Sj-unk" secondAttribute="bottom" constant="16" id="3po-XX-PQQ"/>
-                            <constraint firstItem="ley-Sj-unk" firstAttribute="leading" secondItem="QLH-DF-OOd" secondAttribute="leading" constant="16" id="YIF-cx-NwQ"/>
-                            <constraint firstItem="noo-XK-rir" firstAttribute="leading" secondItem="QLH-DF-OOd" secondAttribute="leading" constant="32" id="bFa-aJ-60a"/>
-                            <constraint firstItem="QLH-DF-OOd" firstAttribute="trailing" secondItem="noo-XK-rir" secondAttribute="trailing" constant="32" id="ecf-Rj-XPI"/>
-                            <constraint firstItem="noo-XK-rir" firstAttribute="centerY" secondItem="YBU-eU-eYp" secondAttribute="centerY" id="hYz-50-KZK"/>
-                            <constraint firstAttribute="trailing" secondItem="ley-Sj-unk" secondAttribute="trailing" constant="16" id="ial-rh-TvR"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ko5-tK-diQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3337.68115942029" y="233.70535714285714"/>
         </scene>
     </scenes>
     <designables>
@@ -682,9 +622,6 @@
         </designable>
         <designable name="EPF-fI-jI3">
             <size key="intrinsicContentSize" width="135.5" height="20.5"/>
-        </designable>
-        <designable name="GiK-Ok-opk">
-            <size key="intrinsicContentSize" width="85" height="20.5"/>
         </designable>
         <designable name="LEo-ib-08c">
             <size key="intrinsicContentSize" width="88.5" height="20.5"/>
@@ -710,18 +647,12 @@
         <designable name="lHn-pN-SyG">
             <size key="intrinsicContentSize" width="88.5" height="20.5"/>
         </designable>
-        <designable name="ley-Sj-unk">
-            <size key="intrinsicContentSize" width="163" height="34"/>
-        </designable>
         <designable name="lgv-Rb-lKy">
             <size key="intrinsicContentSize" width="97" height="24"/>
         </designable>
     </designables>
     <resources>
         <image name="forward-arrow" width="24" height="24"/>
-        <namedColor name="SapphireLightTranslucent">
-            <color red="0.83921568627450982" green="0.8901960784313725" blue="0.97647058823529409" alpha="0.31999999284744263" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="aquaMarine">
             <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
