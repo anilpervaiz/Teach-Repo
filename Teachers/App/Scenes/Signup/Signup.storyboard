@@ -334,7 +334,7 @@
                                 <rect key="frame" x="0.0" y="16" width="414" height="696"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhU-xa-B5U">
-                                        <rect key="frame" x="16" y="0.0" width="382" height="222"/>
+                                        <rect key="frame" x="16" y="0.0" width="382" height="192.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEo-ib-08c" customClass="FlowDescriptionLabel" customModule="Teachers" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -349,16 +349,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Od0-F5-ko2">
-                                                <rect key="frame" x="0.0" y="85" width="382" height="137"/>
+                                                <rect key="frame" x="0.0" y="85" width="382" height="107.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWb-f7-M28">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="16.5"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                         <color key="textColor" name="gray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xti-cK-phr" customClass="FPNTextField" customModule="FlagPhoneNumber">
-                                                        <rect key="frame" x="0.0" y="28" width="382" height="56"/>
+                                                        <rect key="frame" x="0.0" y="24.5" width="382" height="56"/>
                                                         <color key="backgroundColor" name="dullWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="56" id="rlg-Jf-EaO"/>
@@ -376,7 +376,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you a verification code on your number." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7n-hz-Xi4">
-                                                        <rect key="frame" x="0.0" y="92" width="382" height="45"/>
+                                                        <rect key="frame" x="0.0" y="88.5" width="382" height="19"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                         <color key="textColor" name="gray"/>
                                                         <nil key="highlightedColor"/>
@@ -464,7 +464,7 @@
                                 <rect key="frame" x="0.0" y="60" width="414" height="706"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-4k-F0T">
-                                        <rect key="frame" x="16" y="0.0" width="382" height="271.5"/>
+                                        <rect key="frame" x="16" y="0.0" width="382" height="268"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10n-Gd-TOL" customClass="FlowDescriptionLabel" customModule="Teachers" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
@@ -522,19 +522,19 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn’t receive an SMS?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWU-3c-OmA">
-                                                <rect key="frame" x="0.0" y="189" width="382" height="22.5"/>
+                                                <rect key="frame" x="0.0" y="189" width="382" height="19"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                 <color key="textColor" name="gray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aum-Hr-XOx">
-                                                <rect key="frame" x="191" y="219.5" width="0.0" height="36"/>
+                                                <rect key="frame" x="191" y="216" width="0.0" height="36"/>
                                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
                                                 <color key="textColor" name="darkBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJ3-AW-25E" customClass="SecondaryCTAButton" customModule="Teachers" customModuleProvider="target">
-                                                <rect key="frame" x="121" y="219.5" width="140" height="36"/>
+                                                <rect key="frame" x="121" y="216" width="140" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="1a8-iY-YnA"/>
                                                     <constraint firstAttribute="width" constant="140" id="bXR-y7-ODl"/>
