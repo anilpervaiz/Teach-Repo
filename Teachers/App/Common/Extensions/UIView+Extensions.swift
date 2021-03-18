@@ -106,4 +106,47 @@ extension UIView {
             layer.masksToBounds = newValue
         }
     }
+
+    /// Remove all subviews inside a view.
+    func removeSubviews() {
+        for subview in self.subviews {
+            subview.removeFromSuperview()
+        }
+    }
+
+    // retrieves all constraints that mention the view
+    func getAllConstraints() -> [NSLayoutConstraint] {
+
+        // array will contain self and all superviews
+        var views = [self]
+
+        // get all superviews
+        var view = self
+        while let superview = view.superview {
+            views.append(superview)
+            view = superview
+        }
+
+        // transform views to constraints and filter only those
+        // constraints that include the view itself
+        return views.flatMap({ $0.constraints }).filter { constraint in
+            return constraint.firstItem as? UIView == self ||
+                constraint.secondItem as? UIView == self
+        }
+    }
+
+    func getWidthConstraints() -> [NSLayoutConstraint] {
+        return getAllConstraints().filter( {
+            ($0.firstAttribute == .width && $0.firstItem as? UIView == self) ||
+                ($0.secondAttribute == .width && $0.secondItem as? UIView == self)
+        } )
+    }
+
+    func changeWidth(to value: CGFloat) {
+        getAllConstraints().filter( {
+            $0.firstAttribute == .width &&
+                $0.relation == .equal &&
+                $0.secondAttribute == .notAnAttribute
+        } ).forEach( {$0.constant = value })
+    }
 }

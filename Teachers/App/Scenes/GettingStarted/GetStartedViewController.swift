@@ -1,5 +1,5 @@
 //
-//  OnboardingViewController.swift
+//  GetStartedViewController.swift
 //  Teachers
 //
 //  Created by Rahim on 15/03/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboardingViewController: BaseViewController {
+class GetStartedViewController: BaseViewController {
 
     private lazy var termsAndConditionAttributedString: NSAttributedString = {
 
@@ -41,7 +41,7 @@ class OnboardingViewController: BaseViewController {
 }
 
 // MARK: - label section tapped handling.
-extension OnboardingViewController {
+extension GetStartedViewController {
     @objc func labelTapped(gesture: UITapGestureRecognizer) {
         guard let text = termsAndConditionLabel.text,
               let termsRange = text.range(of: "Terms & Conditions") else {

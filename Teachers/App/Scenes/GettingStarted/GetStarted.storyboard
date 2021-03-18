@@ -8,11 +8,19 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Onboarding View Controller-->
+        <!--Get Started View Controller-->
         <scene sceneID="VUY-6o-HFu">
             <objects>
-                <viewController id="axf-YN-DU5" customClass="OnboardingViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="axf-YN-DU5" customClass="GetStartedViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q6T-Zo-1lk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,12 +76,53 @@
                                     <constraint firstItem="PrN-xB-mhP" firstAttribute="leading" secondItem="CZk-by-03z" secondAttribute="leading" id="g3X-n0-mXk"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weE-9l-KVk">
+                                <rect key="frame" x="0.0" y="138.5" width="414" height="531"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getStartedIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="onF-Dc-g4k">
+                                        <rect key="frame" x="32" y="0.0" width="350" height="350"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="onF-Dc-g4k" secondAttribute="height" id="q5D-SN-NiN"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build your student network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-f3-P1W">
+                                        <rect key="frame" x="32" y="390" width="350" height="79.5"/>
+                                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="34"/>
+                                        <color key="textColor" name="pureWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ny-qi-p0d">
+                                        <rect key="frame" x="32" y="477.5" width="350" height="37.5"/>
+                                        <string key="text">Choose from 100,000 online 
+certified teachers.</string>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                        <color key="textColor" name="sapphireLight"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZWI-f3-P1W" secondAttribute="trailing" constant="32" id="0Sk-VV-hyk"/>
+                                    <constraint firstItem="onF-Dc-g4k" firstAttribute="leading" secondItem="weE-9l-KVk" secondAttribute="leading" constant="32" id="8Mg-L6-EN5"/>
+                                    <constraint firstAttribute="trailing" secondItem="onF-Dc-g4k" secondAttribute="trailing" constant="32" id="MRA-jC-Ssl"/>
+                                    <constraint firstItem="ZWI-f3-P1W" firstAttribute="leading" secondItem="weE-9l-KVk" secondAttribute="leading" constant="32" id="MmR-uc-wvd"/>
+                                    <constraint firstItem="onF-Dc-g4k" firstAttribute="top" secondItem="weE-9l-KVk" secondAttribute="top" id="Tpd-YE-NxK"/>
+                                    <constraint firstItem="ZWI-f3-P1W" firstAttribute="top" secondItem="onF-Dc-g4k" secondAttribute="bottom" constant="40" id="XSN-Sn-0Bh"/>
+                                    <constraint firstItem="8ny-qi-p0d" firstAttribute="leading" secondItem="weE-9l-KVk" secondAttribute="leading" constant="32" id="cQP-6F-ogQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8ny-qi-p0d" secondAttribute="trailing" constant="32" id="g8A-BY-M6Y"/>
+                                    <constraint firstItem="8ny-qi-p0d" firstAttribute="top" secondItem="ZWI-f3-P1W" secondAttribute="bottom" constant="8" id="irt-n5-zpw"/>
+                                    <constraint firstAttribute="bottom" secondItem="8ny-qi-p0d" secondAttribute="bottom" constant="16" id="uot-vl-MaV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ttP-EA-1a3"/>
                         <color key="backgroundColor" name="primary"/>
                         <constraints>
+                            <constraint firstItem="weE-9l-KVk" firstAttribute="leading" secondItem="ttP-EA-1a3" secondAttribute="leading" id="17z-Sf-qUx"/>
                             <constraint firstItem="ttP-EA-1a3" firstAttribute="bottom" secondItem="CZk-by-03z" secondAttribute="bottom" constant="16" id="FJ2-MH-lMK"/>
+                            <constraint firstItem="CZk-by-03z" firstAttribute="top" secondItem="weE-9l-KVk" secondAttribute="bottom" constant="16" id="NAE-R2-QFs"/>
                             <constraint firstItem="CZk-by-03z" firstAttribute="leading" secondItem="ttP-EA-1a3" secondAttribute="leading" constant="16" id="Pbh-KN-bhr"/>
+                            <constraint firstItem="ttP-EA-1a3" firstAttribute="trailing" secondItem="weE-9l-KVk" secondAttribute="trailing" id="RRm-1f-Oop"/>
+                            <constraint firstItem="weE-9l-KVk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="q6T-Zo-1lk" secondAttribute="top" constant="24" id="YjP-je-nhW"/>
                             <constraint firstItem="ttP-EA-1a3" firstAttribute="trailing" secondItem="CZk-by-03z" secondAttribute="trailing" constant="16" id="eSS-vF-VLL"/>
                         </constraints>
                     </view>
@@ -122,8 +171,15 @@
         </designable>
     </designables>
     <resources>
+        <image name="getStartedIllustration" width="287" height="287"/>
         <namedColor name="primary">
             <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sapphireLight">
+            <color red="0.83921568627450982" green="0.8901960784313725" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

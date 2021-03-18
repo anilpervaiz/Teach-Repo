@@ -17,13 +17,17 @@
 		C9281FA326030B54006E97CC /* ItemPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281FA226030B54006E97CC /* ItemPickerView.swift */; };
 		C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281FAA26030B69006E97CC /* ItemPickerViewModel.swift */; };
 		C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281FAF26030C0B006E97CC /* LocationPickerViewModel.swift */; };
+		C92821012603BD6B006E97CC /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C92821002603BD6B006E97CC /* Onboarding.storyboard */; };
+		C92821062603BD80006E97CC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821052603BD80006E97CC /* OnboardingViewController.swift */; };
+		C928210B2603BDC3006E97CC /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928210A2603BDC3006E97CC /* PageControlView.swift */; };
+		C92821192603BFCA006E97CC /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92821182603BFCA006E97CC /* OnboardingCollectionViewCell.xib */; };
 		C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */; };
 		C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */; };
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
 		C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ED225FFC61100EBD873 /* Colors.xcassets */; };
-		C99B7EDE25FFD01100EBD873 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */; };
+		C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99B7EDD25FFD01100EBD873 /* GetStarted.storyboard */; };
 		C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7EE225FFD07F00EBD873 /* UIView+Extensions.swift */; };
-		C99B7F0325FFD44500EBD873 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F0225FFD44500EBD873 /* OnboardingViewController.swift */; };
+		C99B7F0325FFD44500EBD873 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F0225FFD44500EBD873 /* GetStartedViewController.swift */; };
 		C99B7F0825FFD66C00EBD873 /* UILabel+TapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7F0725FFD66C00EBD873 /* UILabel+TapGesture.swift */; };
 		C99B7F2F2601135000EBD873 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F1D2601134F00EBD873 /* Poppins-Bold.ttf */; };
 		C99B7F302601135000EBD873 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C99B7F1E2601134F00EBD873 /* Poppins-Thin.ttf */; };
@@ -106,13 +110,17 @@
 		C9281FA226030B54006E97CC /* ItemPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPickerView.swift; sourceTree = "<group>"; };
 		C9281FAA26030B69006E97CC /* ItemPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPickerViewModel.swift; sourceTree = "<group>"; };
 		C9281FAF26030C0B006E97CC /* LocationPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewModel.swift; sourceTree = "<group>"; };
+		C92821002603BD6B006E97CC /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		C92821052603BD80006E97CC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C928210A2603BDC3006E97CC /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
+		C92821182603BFCA006E97CC /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
 		C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMobileNumberViewController.swift; sourceTree = "<group>"; };
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C99B7ED225FFC61100EBD873 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		C99B7EDD25FFD01100EBD873 /* GetStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetStarted.storyboard; sourceTree = "<group>"; };
 		C99B7EE225FFD07F00EBD873 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		C99B7F0225FFD44500EBD873 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		C99B7F0225FFD44500EBD873 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		C99B7F0725FFD66C00EBD873 /* UILabel+TapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+TapGesture.swift"; sourceTree = "<group>"; };
 		C99B7F1D2601134F00EBD873 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		C99B7F1E2601134F00EBD873 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
@@ -253,12 +261,31 @@
 			path = ItemPickerView;
 			sourceTree = "<group>";
 		};
+		C92820FF2603BD5A006E97CC /* OnboardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C928210F2603BF9C006E97CC /* Cell */,
+				C92821002603BD6B006E97CC /* Onboarding.storyboard */,
+				C92821052603BD80006E97CC /* OnboardingViewController.swift */,
+			);
+			path = OnboardingViewController;
+			sourceTree = "<group>";
+		};
+		C928210F2603BF9C006E97CC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C92821182603BFCA006E97CC /* OnboardingCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C92820FF2603BD5A006E97CC /* OnboardingViewController */,
 				C9281F7D2602F731006E97CC /* SuccessState */,
 				C99B7F852601232D00EBD873 /* Base */,
-				C99B7EDC25FFD00300EBD873 /* Onboarding */,
+				C99B7EDC25FFD00300EBD873 /* GettingStarted */,
 				C99B7EDB25FFCFF000EBD873 /* Signup */,
 			);
 			path = Scenes;
@@ -350,6 +377,7 @@
 				C99B7FA02601253100EBD873 /* PaddedTextField.swift */,
 				C99B7FBD260125D200EBD873 /* CustomNibView.swift */,
 				C99B7FF32601301300EBD873 /* FlowDescriptionLabel.swift */,
+				C928210A2603BDC3006E97CC /* PageControlView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -367,13 +395,13 @@
 			path = Signup;
 			sourceTree = "<group>";
 		};
-		C99B7EDC25FFD00300EBD873 /* Onboarding */ = {
+		C99B7EDC25FFD00300EBD873 /* GettingStarted */ = {
 			isa = PBXGroup;
 			children = (
-				C99B7EDD25FFD01100EBD873 /* Onboarding.storyboard */,
-				C99B7F0225FFD44500EBD873 /* OnboardingViewController.swift */,
+				C99B7EDD25FFD01100EBD873 /* GetStarted.storyboard */,
+				C99B7F0225FFD44500EBD873 /* GetStartedViewController.swift */,
 			);
-			path = Onboarding;
+			path = GettingStarted;
 			sourceTree = "<group>";
 		};
 		C99B7F1C2601133B00EBD873 /* Font */ = {
@@ -615,7 +643,9 @@
 				C99B7F362601135000EBD873 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				C99B7F3D2601135000EBD873 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				C99B7F3B2601135000EBD873 /* Poppins-Light.ttf in Resources */,
+				C92821012603BD6B006E97CC /* Onboarding.storyboard in Resources */,
 				C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */,
+				C92821192603BFCA006E97CC /* OnboardingCollectionViewCell.xib in Resources */,
 				C99B7F372601135000EBD873 /* Poppins-BoldItalic.ttf in Resources */,
 				C99B7F392601135000EBD873 /* Poppins-Italic.ttf in Resources */,
 				C99B7F322601135000EBD873 /* Poppins-MediumItalic.ttf in Resources */,
@@ -632,7 +662,7 @@
 				C99B7FAF2601258A00EBD873 /* LabelledTextField.xib in Resources */,
 				C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */,
 				C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */,
-				C99B7EDE25FFD01100EBD873 /* Onboarding.storyboard in Resources */,
+				C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */,
 				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
 				C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */,
 				C99B7FE526012BE700EBD873 /* Signup.storyboard in Resources */,
@@ -744,6 +774,7 @@
 				C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */,
 				C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,
+				C928210B2603BDC3006E97CC /* PageControlView.swift in Sources */,
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
@@ -754,10 +785,11 @@
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
 				C9281F9A260304C0006E97CC /* NumberVerificationViewModel.swift in Sources */,
+				C92821062603BD80006E97CC /* OnboardingViewController.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
 				C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */,
-				C99B7F0325FFD44500EBD873 /* OnboardingViewController.swift in Sources */,
+				C99B7F0325FFD44500EBD873 /* GetStartedViewController.swift in Sources */,
 				C99B7FEF26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift in Sources */,
 				C99B7FEA26012E2D00EBD873 /* SignupPersonalInformationViewController.swift in Sources */,
 				C99B7F9C260123C500EBD873 /* UIBarButtonItem+Empty.swift in Sources */,
