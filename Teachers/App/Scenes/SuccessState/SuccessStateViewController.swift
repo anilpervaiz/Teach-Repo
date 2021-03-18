@@ -11,7 +11,7 @@ class SuccessStateViewController: UIViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel! {
         didSet {
-            descriptionLabel.text = viewModel?.title
+            descriptionLabel.text = viewModel?.message
         }
     }
     @IBOutlet weak var titleImageView: UIImageView! {
