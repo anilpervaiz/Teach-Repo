@@ -36,6 +36,9 @@ internal enum Asset {
     internal static let tomatoRed = ColorAsset(name: "tomatoRed")
   }
   internal enum Media {
+    internal static let onboardingPage1 = ImageAsset(name: "onboardingPage1")
+    internal static let onboardingPage2 = ImageAsset(name: "onboardingPage2")
+    internal static let onboardingPage3 = ImageAsset(name: "onboardingPage3")
     internal static let backArrow = ImageAsset(name: "backArrow")
     internal static let downArrow = ImageAsset(name: "down-arrow")
     internal static let errorIcon = ImageAsset(name: "errorIcon")

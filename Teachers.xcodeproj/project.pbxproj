@@ -21,6 +21,9 @@
 		C92821062603BD80006E97CC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821052603BD80006E97CC /* OnboardingViewController.swift */; };
 		C928210B2603BDC3006E97CC /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928210A2603BDC3006E97CC /* PageControlView.swift */; };
 		C92821192603BFCA006E97CC /* OnboardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C92821182603BFCA006E97CC /* OnboardingCollectionViewCell.xib */; };
+		C92821212603CA82006E97CC /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821202603CA82006E97CC /* OnboardingPage.swift */; };
+		C92821312603CC9A006E97CC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821302603CC9A006E97CC /* ReusableView.swift */; };
+		C92821362603CD4D006E97CC /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821352603CD4D006E97CC /* OnboardingCollectionViewCell.swift */; };
 		C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */; };
 		C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */; };
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
@@ -114,6 +117,9 @@
 		C92821052603BD80006E97CC /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		C928210A2603BDC3006E97CC /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
 		C92821182603BFCA006E97CC /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		C92821202603CA82006E97CC /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
+		C92821302603CC9A006E97CC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		C92821352603CD4D006E97CC /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
 		C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMobileNumberViewController.swift; sourceTree = "<group>"; };
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -267,6 +273,7 @@
 				C928210F2603BF9C006E97CC /* Cell */,
 				C92821002603BD6B006E97CC /* Onboarding.storyboard */,
 				C92821052603BD80006E97CC /* OnboardingViewController.swift */,
+				C92821202603CA82006E97CC /* OnboardingPage.swift */,
 			);
 			path = OnboardingViewController;
 			sourceTree = "<group>";
@@ -275,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				C92821182603BFCA006E97CC /* OnboardingCollectionViewCell.xib */,
+				C92821352603CD4D006E97CC /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -359,6 +367,7 @@
 				C99B7FCE2601266C00EBD873 /* UITextField+Placeholder.swift */,
 				C99B80062601B34300EBD873 /* UIView+Autolayout.swift */,
 				C9281F8E2602F93C006E97CC /* UIStoryboard+helpers.swift */,
+				C92821302603CC9A006E97CC /* ReusableView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -761,11 +770,14 @@
 				C9281F8F2602F93C006E97CC /* UIStoryboard+helpers.swift in Sources */,
 				C9281F852602F775006E97CC /* SuccessStateViewModel.swift in Sources */,
 				C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */,
+				C92821212603CA82006E97CC /* OnboardingPage.swift in Sources */,
 				C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */,
 				C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */,
 				C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */,
 				C99B7FB42601259700EBD873 /* FormatValidator.swift in Sources */,
+				C92821312603CC9A006E97CC /* ReusableView.swift in Sources */,
 				C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */,
+				C92821362603CD4D006E97CC /* OnboardingCollectionViewCell.swift in Sources */,
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
 				C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */,
 				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,

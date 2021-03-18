@@ -10,6 +10,11 @@ import UIKit
 @IBDesignable
 extension UIView {
 
+    @objc class var nibName: String {
+        let name = "\(self)".components(separatedBy: ".").first ?? ""
+        return name
+    }
+
     @IBInspectable public var borderColor: UIColor? {
         get {
             guard let color = layer.borderColor else {
