@@ -20,7 +20,7 @@
         <!--Get Started View Controller-->
         <scene sceneID="VUY-6o-HFu">
             <objects>
-                <viewController id="axf-YN-DU5" customClass="GetStartedViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="axf-YN-DU5" customClass="GetStartedViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q6T-Zo-1lk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +148,7 @@ certified teachers.</string>
         <!--Base Navigation Controller-->
         <scene sceneID="HdN-g3-66z">
             <objects>
-                <navigationController id="AUE-nM-29g" customClass="BaseNavigationController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="AUE-nM-29g" customClass="BaseNavigationController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UMM-Xh-Yre">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

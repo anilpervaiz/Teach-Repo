@@ -38,6 +38,14 @@ class GetStartedViewController: BaseViewController {
             termsAndConditionLabel.attributedText = termsAndConditionAttributedString
         }
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
+        navigationController?.navigationBar.barStyle = .blackTranslucent
+    }
 }
 
 // MARK: - label section tapped handling.

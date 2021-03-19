@@ -27,6 +27,7 @@ class BaseNavigationController: UINavigationController {
         navigationBar.shadowImage = UIImage()
         navigationBar.isTranslucent = true
         navigationBar.backgroundColor = .clear
+        navigationBar.barStyle = .blackTranslucent
     }
 
     func opaque(with color: UIColor) {
