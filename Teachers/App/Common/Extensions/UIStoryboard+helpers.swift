@@ -29,5 +29,6 @@ extension UIStoryboard {
     enum Name: String {
         case signup = "Signup"
         case successState = "SuccessState"
+        case login = "Login"
     }
 }

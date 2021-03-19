@@ -53,6 +53,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="1rl-em-qPB" kind="show" id="IcO-vF-Og2"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you accept our Terms &amp; Conditions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-xB-mhP">
                                         <rect key="frame" x="0.0" y="140" width="382" height="20.5"/>
@@ -144,6 +147,16 @@ certified teachers.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wiz-np-ZeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756" y="26"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="6qR-o9-2VZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="1rl-em-qPB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cvc-OP-x3t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmt-1o-x2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="225"/>
         </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="HdN-g3-66z">

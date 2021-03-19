@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		46F4BBAB8AB33C0289B96E78 /* Pods_Teachers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781F8A1176301CF2E8283669 /* Pods_Teachers.framework */; };
+		C90C69F6260471EE0075D776 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69F5260471EE0075D776 /* ErrorView.swift */; };
+		C90C69FB260473E90075D776 /* LoginPendingProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */; };
+		C90C6A00260473FF0075D776 /* LoginPendingProcessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */; };
+		C90C6A0B260476700075D776 /* LoginAccountWaitingReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */; };
+		C90C6A10260478930075D776 /* LoginProfileRejectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */; };
 		C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */; };
 		C9281F852602F775006E97CC /* SuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F842602F775006E97CC /* SuccessStateViewModel.swift */; };
 		C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */; };
@@ -24,6 +29,12 @@
 		C92821212603CA82006E97CC /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821202603CA82006E97CC /* OnboardingPage.swift */; };
 		C92821312603CC9A006E97CC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821302603CC9A006E97CC /* ReusableView.swift */; };
 		C92821362603CD4D006E97CC /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92821352603CD4D006E97CC /* OnboardingCollectionViewCell.swift */; };
+		C9282145260455F5006E97CC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9282144260455F5006E97CC /* Login.storyboard */; };
+		C928214A26045E2F006E97CC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928214926045E2F006E97CC /* LoginViewController.swift */; };
+		C928215026045FD1006E97CC /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C928214F26045FD1006E97CC /* ResetPassword.storyboard */; };
+		C928215526046168006E97CC /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928215426046168006E97CC /* ResetPasswordViewController.swift */; };
+		C928215A26046172006E97CC /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928215926046172006E97CC /* NewPasswordViewController.swift */; };
+		C928215F2604625D006E97CC /* UINavigationController+Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C928215E2604625D006E97CC /* UINavigationController+Pop.swift */; };
 		C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */; };
 		C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */; };
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
@@ -104,6 +115,11 @@
 /* Begin PBXFileReference section */
 		435B834905BF7FA36344C14E /* Pods-Teachers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teachers.release.xcconfig"; path = "Target Support Files/Pods-Teachers/Pods-Teachers.release.xcconfig"; sourceTree = "<group>"; };
 		781F8A1176301CF2E8283669 /* Pods_Teachers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teachers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90C69F5260471EE0075D776 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewController.swift; sourceTree = "<group>"; };
+		C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewModel.swift; sourceTree = "<group>"; };
+		C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAccountWaitingReviewViewModel.swift; sourceTree = "<group>"; };
+		C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProfileRejectViewModel.swift; sourceTree = "<group>"; };
 		C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewController.swift; sourceTree = "<group>"; };
 		C9281F842602F775006E97CC /* SuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewModel.swift; sourceTree = "<group>"; };
 		C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCompletedSuccessStateViewModel.swift; sourceTree = "<group>"; };
@@ -120,6 +136,12 @@
 		C92821202603CA82006E97CC /* OnboardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage.swift; sourceTree = "<group>"; };
 		C92821302603CC9A006E97CC /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		C92821352603CD4D006E97CC /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9282144260455F5006E97CC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		C928214926045E2F006E97CC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C928214F26045FD1006E97CC /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
+		C928215426046168006E97CC /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		C928215926046172006E97CC /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
+		C928215E2604625D006E97CC /* UINavigationController+Pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Pop.swift"; sourceTree = "<group>"; };
 		C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
 		C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMobileNumberViewController.swift; sourceTree = "<group>"; };
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -287,9 +309,42 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C9282143260455ED006E97CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C92821632604672B006E97CC /* LoginErrorState */,
+				C9282144260455F5006E97CC /* Login.storyboard */,
+				C928214926045E2F006E97CC /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C928214E26045FC0006E97CC /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				C928214F26045FD1006E97CC /* ResetPassword.storyboard */,
+				C928215426046168006E97CC /* ResetPasswordViewController.swift */,
+				C928215926046172006E97CC /* NewPasswordViewController.swift */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		C92821632604672B006E97CC /* LoginErrorState */ = {
+			isa = PBXGroup;
+			children = (
+				C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */,
+				C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */,
+				C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */,
+				C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */,
+			);
+			path = LoginErrorState;
+			sourceTree = "<group>";
+		};
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C928214E26045FC0006E97CC /* ResetPassword */,
+				C9282143260455ED006E97CC /* Login */,
 				C92820FF2603BD5A006E97CC /* OnboardingViewController */,
 				C9281F7D2602F731006E97CC /* SuccessState */,
 				C99B7F852601232D00EBD873 /* Base */,
@@ -368,6 +423,7 @@
 				C99B80062601B34300EBD873 /* UIView+Autolayout.swift */,
 				C9281F8E2602F93C006E97CC /* UIStoryboard+helpers.swift */,
 				C92821302603CC9A006E97CC /* ReusableView.swift */,
+				C928215E2604625D006E97CC /* UINavigationController+Pop.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -387,6 +443,7 @@
 				C99B7FBD260125D200EBD873 /* CustomNibView.swift */,
 				C99B7FF32601301300EBD873 /* FlowDescriptionLabel.swift */,
 				C928210A2603BDC3006E97CC /* PageControlView.swift */,
+				C90C69F5260471EE0075D776 /* ErrorView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -665,12 +722,14 @@
 				C99B7F2F2601135000EBD873 /* Poppins-Bold.ttf in Resources */,
 				C99B7F302601135000EBD873 /* Poppins-Thin.ttf in Resources */,
 				CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */,
+				C9282145260455F5006E97CC /* Login.storyboard in Resources */,
 				C99B7F3E2601135000EBD873 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				C99B7F382601135000EBD873 /* Poppins-LightItalic.ttf in Resources */,
 				C99B7F332601135000EBD873 /* Poppins-Medium.ttf in Resources */,
 				C99B7FAF2601258A00EBD873 /* LabelledTextField.xib in Resources */,
 				C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */,
 				C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */,
+				C928215026045FD1006E97CC /* ResetPassword.storyboard in Resources */,
 				C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */,
 				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
 				C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */,
@@ -776,6 +835,7 @@
 				C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */,
 				C99B7FB42601259700EBD873 /* FormatValidator.swift in Sources */,
 				C92821312603CC9A006E97CC /* ReusableView.swift in Sources */,
+				C928215526046168006E97CC /* ResetPasswordViewController.swift in Sources */,
 				C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */,
 				C92821362603CD4D006E97CC /* OnboardingCollectionViewCell.swift in Sources */,
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
@@ -784,23 +844,31 @@
 				C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */,
 				CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */,
 				C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */,
+				C90C69F6260471EE0075D776 /* ErrorView.swift in Sources */,
 				C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,
+				C928214A26045E2F006E97CC /* LoginViewController.swift in Sources */,
 				C928210B2603BDC3006E97CC /* PageControlView.swift in Sources */,
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
 				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,
+				C90C6A00260473FF0075D776 /* LoginPendingProcessViewModel.swift in Sources */,
 				C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */,
 				C99B7FA12601253100EBD873 /* PaddedTextField.swift in Sources */,
 				C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */,
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
+				C928215A26046172006E97CC /* NewPasswordViewController.swift in Sources */,
 				C9281F9A260304C0006E97CC /* NumberVerificationViewModel.swift in Sources */,
+				C928215F2604625D006E97CC /* UINavigationController+Pop.swift in Sources */,
 				C92821062603BD80006E97CC /* OnboardingViewController.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
 				C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */,
+				C90C6A10260478930075D776 /* LoginProfileRejectViewModel.swift in Sources */,
+				C90C69FB260473E90075D776 /* LoginPendingProcessViewController.swift in Sources */,
+				C90C6A0B260476700075D776 /* LoginAccountWaitingReviewViewModel.swift in Sources */,
 				C99B7F0325FFD44500EBD873 /* GetStartedViewController.swift in Sources */,
 				C99B7FEF26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift in Sources */,
 				C99B7FEA26012E2D00EBD873 /* SignupPersonalInformationViewController.swift in Sources */,

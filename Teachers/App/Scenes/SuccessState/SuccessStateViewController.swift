@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SuccessStateViewController: UIViewController {
+class SuccessStateViewController: BaseViewController {
 
     @IBOutlet weak var descriptionLabel: UILabel! {
         didSet {
