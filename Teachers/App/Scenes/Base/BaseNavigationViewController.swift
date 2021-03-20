@@ -38,6 +38,10 @@ class BaseNavigationController: UINavigationController {
         navigationBar.backgroundColor = color
     }
 
+    func showShadow() {
+        self.navigationBar.shadowImage = Asset.Colors.lightGray.color.image()
+    }
+
     /// Call this method on the pushed view Controller
     func applyCustomBackButtonStyle() {
         let backImage = Asset.Media.backArrow.image

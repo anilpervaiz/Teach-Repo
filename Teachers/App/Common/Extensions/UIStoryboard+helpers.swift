@@ -30,5 +30,7 @@ extension UIStoryboard {
         case signup = "Signup"
         case successState = "SuccessState"
         case login = "Login"
+        case createProfile = "CreateProfile"
+        case bottomSheet = "BottomSheet"
     }
 }

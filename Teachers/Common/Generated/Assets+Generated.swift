@@ -25,6 +25,7 @@ internal enum Asset {
     internal static let sapphireLightTranslucent = ColorAsset(name: "SapphireLightTranslucent")
     internal static let aquaMarine = ColorAsset(name: "aquaMarine")
     internal static let darkBlue = ColorAsset(name: "darkBlue")
+    internal static let darkOverlay = ColorAsset(name: "darkOverlay")
     internal static let disableGray = ColorAsset(name: "disableGray")
     internal static let dullWhite = ColorAsset(name: "dullWhite")
     internal static let gray = ColorAsset(name: "gray")
@@ -33,15 +34,20 @@ internal enum Asset {
     internal static let primary = ColorAsset(name: "primary")
     internal static let pureWhite = ColorAsset(name: "pureWhite")
     internal static let sapphireLight = ColorAsset(name: "sapphireLight")
+    internal static let successGreen = ColorAsset(name: "successGreen")
     internal static let tomatoRed = ColorAsset(name: "tomatoRed")
   }
   internal enum Media {
+    internal static let add = ImageAsset(name: "Add")
+    internal static let checkedCircle = ImageAsset(name: "checkedCircle")
+    internal static let uncheckedCircle = ImageAsset(name: "uncheckedCircle")
     internal static let onboardingPage1 = ImageAsset(name: "onboardingPage1")
     internal static let onboardingPage2 = ImageAsset(name: "onboardingPage2")
     internal static let onboardingPage3 = ImageAsset(name: "onboardingPage3")
     internal static let facebookIcon = ImageAsset(name: "facebookIcon")
     internal static let googleIcon = ImageAsset(name: "googleIcon")
     internal static let backArrow = ImageAsset(name: "backArrow")
+    internal static let circularAddIcon = ImageAsset(name: "circularAddIcon")
     internal static let crossIcon = ImageAsset(name: "crossIcon")
     internal static let downArrow = ImageAsset(name: "down-arrow")
     internal static let errorIcon = ImageAsset(name: "errorIcon")
@@ -50,6 +56,8 @@ internal enum Asset {
     internal static let forwardArrow = ImageAsset(name: "forward-arrow")
     internal static let getStartedIllustration = ImageAsset(name: "getStartedIllustration")
     internal static let male = ImageAsset(name: "male")
+    internal static let radioButtonEmpty = ImageAsset(name: "radioButtonEmpty")
+    internal static let radioButtonSelected = ImageAsset(name: "radioButtonSelected")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

@@ -210,6 +210,14 @@ class LabelledTextField: CustomNibView {
         }
     }
 
+    var leadingImage: UIImage = .init() {
+        didSet {
+            let imageView = UIImageView(frame: CGRect(x: 8, y: 0, width: 24, height: 24))
+            imageView.image = leadingImage
+            inputTextField.leftView = imageView
+        }
+    }
+
     @IBInspectable
     var errorIcon: UIImage = Asset.Media.errorIcon.image
 

@@ -61,6 +61,16 @@ extension GetStartedViewController {
                                                inRange: termsNSRange) {
             // Perform Terms and condition navigation
             print("Terms and condition tapped")
+
+            let viewController = BottomSheet.getInstance()
+            viewController.modalPresentationStyle = .overCurrentContext
+            viewController.modalTransitionStyle = .crossDissolve
+            viewController.viewModel = BottomSheetViewModel(with: "Education Type", items: [
+                BottomSheetListCellViewModel(isSelected: false, title: "Kindergarten"),
+                BottomSheetListCellViewModel(isSelected: false, title: "Kindergarten"),
+                BottomSheetListCellViewModel(isSelected: true, title: "Kindergarten"),
+            ])
+            present(viewController, animated: true, completion: nil)
         }
     }
 }
