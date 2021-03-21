@@ -19,7 +19,7 @@ class TagFlowLayout: UICollectionViewFlowLayout {
         for attribute in attributes {
             if currentRowY != attribute.frame.origin.y {
                 currentRowY = attribute.frame.origin.y
-                rows.append(Row(spacing: 10))
+                rows.append(Row(spacing: 6))
             }
             rows.last?.add(attribute: attribute)
         }
@@ -42,7 +42,7 @@ class Row {
     }
 
     func tagLayout(collectionViewWidth: CGFloat) {
-        let padding = 10
+        let padding = 6
         var offset = padding
         for attribute in attributes {
             attribute.frame.origin.x = CGFloat(offset)

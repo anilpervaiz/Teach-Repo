@@ -35,9 +35,9 @@ class AvailibilityViewModel {
         for index in 0..<days.count {
             days[index].isSelected = false
         }
-        days[index].isSelected = true
+        days[index].isSelected = !days[index].isSelected
     }
-    func didSelectHour(at index: Int) { hours[index].isSelected = true }
+    func didSelectHour(at index: Int) { hours[index].isSelected = !hours[index].isSelected }
 }
 
 enum Days: String, CaseIterable {

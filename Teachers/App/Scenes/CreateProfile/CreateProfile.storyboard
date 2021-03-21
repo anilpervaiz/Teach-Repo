@@ -33,13 +33,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Complete the following info before we can contact you." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHa-LR-jdA">
-                                <rect key="frame" x="16" y="93" width="382" height="67.5"/>
+                                <rect key="frame" x="16" y="93" width="382" height="56"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
                                 <color key="textColor" name="darkBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JtZ-ch-F3p">
-                                <rect key="frame" x="16" y="192.5" width="382" height="565.5"/>
+                                <rect key="frame" x="16" y="181" width="382" height="577"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
                             </tableView>
@@ -619,7 +619,7 @@
                                 <rect key="frame" x="0.0" y="45" width="414" height="817"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MpT-tB-Blx">
-                                        <rect key="frame" x="32" y="213.5" width="350" height="390"/>
+                                        <rect key="frame" x="32" y="226.5" width="350" height="364"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-c6-sPT">
                                                 <rect key="frame" x="40.5" y="0.0" width="269" height="268.5"/>
@@ -635,7 +635,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="You do not have any registered subjects yet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91a-8C-flC">
-                                                <rect key="frame" x="0.0" y="345" width="350" height="45"/>
+                                                <rect key="frame" x="0.0" y="345" width="350" height="19"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                 <color key="textColor" name="gray"/>
                                                 <nil key="highlightedColor"/>
@@ -725,7 +725,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74Z-mQ-c4H">
-                                <rect key="frame" x="16" y="69" width="382" height="22.5"/>
+                                <rect key="frame" x="16" y="69" width="382" height="19"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                                 <color key="textColor" name="darkBlue"/>
                                 <nil key="highlightedColor"/>
@@ -738,7 +738,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="whF-a4-q0X">
-                                <rect key="frame" x="16" y="107.5" width="382" height="56"/>
+                                <rect key="frame" x="16" y="104" width="382" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="j6G-iu-8Qx"/>
@@ -752,19 +752,19 @@
                                 <cells/>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2th-Iw-l8f">
-                                <rect key="frame" x="16" y="187.5" width="382" height="22.5"/>
+                                <rect key="frame" x="16" y="184" width="382" height="19"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                                 <color key="textColor" name="darkBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XFs-g8-i8h">
-                                <rect key="frame" x="16" y="226" width="382" height="548"/>
+                                <rect key="frame" x="16" y="219" width="382" height="555"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lth-dK-HLu" customClass="TagFlowLayout" customModule="Teachers" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="6" id="Lth-dK-HLu" customClass="TagFlowLayout" customModule="Teachers" customModuleProvider="target">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -985,23 +985,23 @@
                                 <rect key="frame" x="0.0" y="45" width="414" height="817"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQd-Qu-NK5">
-                                        <rect key="frame" x="32" y="213.5" width="350" height="390"/>
+                                        <rect key="frame" x="32" y="217" width="350" height="383"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vQj-o1-uSN">
-                                                <rect key="frame" x="40.5" y="0.0" width="269" height="268.5"/>
+                                                <rect key="frame" x="40.5" y="0.0" width="269" height="269"/>
                                                 <color key="backgroundColor" name="SapphireLightTranslucent"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="vQj-o1-uSN" secondAttribute="height" id="PSB-1h-Vne"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="No Files Uploaded!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4R-OC-c17" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="316.5" width="350" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="317" width="350" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="National ID copy or passport copy clearly showing your picture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlR-zu-xDB">
-                                                <rect key="frame" x="0.0" y="345" width="350" height="45"/>
+                                                <rect key="frame" x="0.0" y="345.5" width="350" height="37.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                                 <color key="textColor" name="gray"/>
                                                 <nil key="highlightedColor"/>
@@ -1094,13 +1094,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please describe yourself in 1-min video." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7w-sS-bhL">
-                                <rect key="frame" x="16" y="60" width="382" height="67.5"/>
+                                <rect key="frame" x="16" y="60" width="382" height="56"/>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="24"/>
                                 <color key="textColor" name="darkBlue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moM-l3-9uk" customClass="PrimaryCTAButton" customModule="Teachers" customModuleProvider="target">
-                                <rect key="frame" x="16" y="159.5" width="382" height="52"/>
+                                <rect key="frame" x="16" y="148" width="382" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="mFl-tr-l4Q"/>
                                 </constraints>
@@ -1125,14 +1125,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDl-N8-y94">
-                                <rect key="frame" x="0.0" y="243.5" width="414" height="1"/>
+                                <rect key="frame" x="0.0" y="230.5" width="414" height="1"/>
                                 <color key="backgroundColor" name="disableGray"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Hle-vU-Lp9"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJ9-B9-c0d">
-                                <rect key="frame" x="191" y="235.5" width="32" height="17"/>
+                                <rect key="frame" x="191" y="224" width="32" height="14"/>
                                 <color key="backgroundColor" name="pureWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="32" id="nrc-UF-XzP"/>
@@ -1142,7 +1142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ee1-6a-hY3">
-                                <rect key="frame" x="16" y="276.5" width="382" height="124"/>
+                                <rect key="frame" x="16" y="262" width="382" height="120.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uploadFile" translatesAutoresizingMaskIntoConstraints="NO" id="HSz-Gn-edZ">
                                         <rect key="frame" x="171" y="24" width="40" height="40"/>
@@ -1152,7 +1152,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Video" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEB-YX-lb4">
-                                        <rect key="frame" x="16" y="80" width="350" height="20"/>
+                                        <rect key="frame" x="16" y="80" width="350" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
                                         <color key="textColor" name="primary"/>
                                         <nil key="highlightedColor"/>
@@ -1174,10 +1174,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kEN-q4-kgl">
-                                <rect key="frame" x="16" y="416.5" width="382" height="361.5"/>
+                                <rect key="frame" x="16" y="398.5" width="382" height="379.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure your video answering these questions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-5o-wU0">
-                                        <rect key="frame" x="0.0" y="171" width="382" height="20"/>
+                                        <rect key="frame" x="0.0" y="181.5" width="382" height="16.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
                                         <color key="textColor" name="tomatoRed"/>
                                         <nil key="highlightedColor"/>
