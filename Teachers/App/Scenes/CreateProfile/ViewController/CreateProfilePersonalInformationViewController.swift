@@ -9,6 +9,12 @@ import UIKit
 
 class CreateProfilePersonalInformationViewController: BaseViewController {
     
+    @IBOutlet weak var profileImageContainerView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(openImagePickerDrawer))
+            profileImageContainerView.addGestureRecognizer(gesture)
+        }
+    }
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var addProfileImageIconView: UIImageView!
     @IBOutlet weak var firstNameLabel: UILabel! {
@@ -170,6 +176,20 @@ class CreateProfilePersonalInformationViewController: BaseViewController {
 
         profileImageView.circular = true
         addProfileImageIconView.circular = true
+    }
+}
+
+@objc
+extension CreateProfilePersonalInformationViewController {
+    func openImagePickerDrawer() {
+        let drawer = ImagePickerOptionSheetViewController.getInstance()
+        drawer.onDismissWithSelection = { [weak self] data in
+            guard let data = data else { return }
+            self?.profileImageView.image = UIImage(data: data)
+        }
+        drawer.modalPresentationStyle = .overFullScreen
+        drawer.modalTransitionStyle = .crossDissolve
+        present(drawer, animated: true, completion: nil)
     }
 }
 
