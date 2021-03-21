@@ -74,3 +74,7 @@ extension GetStartedViewController {
         }
     }
 }
+
+extension GetStartedViewController: Initializable {
+    static var storyboardName: UIStoryboard.Name { .getStarted }
+}

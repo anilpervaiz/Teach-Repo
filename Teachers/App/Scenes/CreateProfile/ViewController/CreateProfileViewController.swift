@@ -25,6 +25,15 @@ class CreateProfileViewController: BaseViewController {
 
     }
 
+    @IBAction func didTapCTAButton(_ sender: Any) {
+        let viewController = SuccessStateViewController.getInstance()
+        viewController.viewModel = ProfileCreatedSuccessStateViewModel(router: SignupSuccessStateRouter(with: self))
+
+        viewController.modalPresentationStyle = .fullScreen
+        viewController.modalTransitionStyle = .coverVertical
+        present(viewController, animated: true, completion: nil)
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.barStyle = .default

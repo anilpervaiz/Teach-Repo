@@ -30,6 +30,10 @@ class CreateProfileViewModel {
         return sectionViewModels[index]
     }
 
+    func completedSection(at index: Int) {
+        section(at: index).isCompleted = true
+    }
+
     func didTapSection(at index: Int) {
         let section = sectionViewModels[index].section
         switch section {
@@ -38,15 +42,17 @@ class CreateProfileViewModel {
         case .subjects:
             router.navigateToRegisterSubject()
         case .availability:
-            break
+            router.navigateToAvilibilitySelection()
         case .paymentMethod:
-            break
+            router.navigateToAddPaymentMethod()
         case .idCard:
-            break
+            router.navigateToAddIdCard()
         case .teachingLicense:
-            break
+            router.navigateToAddTeacherLicense()
         case .video:
-            break
+            router.navigateToUploadVideo()
         }
+
+        completedSection(at: index)
     }
 }

@@ -22,6 +22,7 @@ class ErrorView: UIView {
     lazy var titleLabel: UILabel = {
         let title = UILabel().preparedForAutolayout()
 
+        title.setContentCompressionResistancePriority(.required, for: .vertical)
         title.font = .init(commonFont: PoppinsFontStyle.semiBold, size: 14)
         title.textColor = Asset.Colors.darkBlue.color
 
@@ -31,6 +32,7 @@ class ErrorView: UIView {
     lazy var errorStackView: UIStackView = {
         let stackView = UIStackView().preparedForAutolayout()
 
+        stackView.setContentCompressionResistancePriority(.required, for: .vertical)
         stackView.axis = .vertical
         stackView.spacing = 0
         return stackView
@@ -72,6 +74,7 @@ class ErrorView: UIView {
         for error in errors {
             let label = UILabel().preparedForAutolayout()
 
+            label.setContentCompressionResistancePriority(.required, for: .vertical)
             label.font = .init(commonFont: PoppinsFontStyle.regular, size: 14)
             label.textColor = Asset.Colors.darkBlue.color
             label.text = "• \(error)"

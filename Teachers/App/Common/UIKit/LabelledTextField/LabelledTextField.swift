@@ -19,7 +19,11 @@ class LabelledTextField: CustomNibView {
     @IBOutlet private weak var inputTextField: PaddedTextField!
     @IBOutlet private weak var bottomDescriptionLabel: UILabel!
     @IBOutlet weak var errorview: UIView!
-    @IBOutlet weak var errorIconImageView: UIImageView!
+    @IBOutlet weak var errorIconImageView: UIImageView! {
+        didSet {
+            errorIconImageView.tintColor = Asset.Colors.tomatoRed.color
+        }
+    }
 
     @IBOutlet private weak var textFieldTrailingIconImageView: UIImageView! {
         didSet {
@@ -37,6 +41,13 @@ class LabelledTextField: CustomNibView {
 
     //Regex validator
     var formatValidator: FormatValidatorType?
+
+    @IBOutlet weak var trailingLabel: UILabel! {
+        didSet {
+            trailingLabel.font = .init(commonFont: PoppinsFontStyle.medium, size: 16)
+            trailingLabel.textColor = Asset.Colors.darkBlue.color
+        }
+    }
 
     //IBInspectable
     @IBInspectable
@@ -296,6 +307,7 @@ class LabelledTextField: CustomNibView {
         errorview.isHidden = false
         errorIconImageView.isHidden = false
         errorIconImageView.image = errorIcon
+
         setTextViewBorder(with: Asset.Colors.tomatoRed.color)
         bottomDescriptionLabel.text = error
         bottomDescriptionLabel.isHidden = error?.isBlank ?? true
@@ -334,6 +346,8 @@ class LabelledTextField: CustomNibView {
         switch trailingIconStyle {
         case .static(let icon):
             textFieldTrailingIconImageView.image = icon
+        case .text(let string):
+            trailingLabel.text = string
         case .obscure:
             updateTextfieldTrailingIcon(for: trailingIconStyle)
         case .none:
@@ -390,6 +404,7 @@ extension LabelledTextField: UITextFieldDelegate {
 
     enum TrailingIconStyle {
         case `static`(icon: UIImage)
+        case text(string: String)
         case obscure(switchIcon: UIImage,
                      secureStateColor: UIColor,
                      insecureStateColor: UIColor)

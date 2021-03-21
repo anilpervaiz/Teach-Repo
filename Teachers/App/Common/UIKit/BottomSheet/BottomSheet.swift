@@ -26,6 +26,7 @@ class BottomSheet: UIViewController {
     }
     @IBOutlet weak var ctaButton: PrimaryCTAButton!
 
+    var onDismissWithSelection: ((String?) -> Void)?
     var viewModel: BottomSheetViewModel? {
         didSet {
             setupView()
@@ -65,10 +66,11 @@ class BottomSheet: UIViewController {
     @objc
     func dismissView() {
         bottomSheetBottomSpacing.constant -= view.frame.height * 0.75
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
-        } completion: { _ in
-            self.dismiss(animated: true, completion: nil)
+        } completion: { [weak self] _ in
+            self?.onDismissWithSelection?(self?.viewModel?.selectedItem)
+            self?.dismiss(animated: true, completion: nil)
         }
 
     }

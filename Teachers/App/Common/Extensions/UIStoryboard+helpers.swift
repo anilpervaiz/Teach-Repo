@@ -32,5 +32,8 @@ extension UIStoryboard {
         case login = "Login"
         case createProfile = "CreateProfile"
         case bottomSheet = "BottomSheet"
+        case addSubject = "AddSubject"
+        case imagePickerBottomSheet = "ImagePickerOptionSheet"
+        case getStarted = "GetStarted"
     }
 }

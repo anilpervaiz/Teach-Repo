@@ -25,4 +25,12 @@ class SignupSuccessStateRouter: BaseRouter {
         viewController.viewModel = CreateProfileViewModel(router: CreateProfileRouter(with: navigationController))
         window.switchRoot(to: navigationController)
     }
+
+    func navigateToGetStarted() {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        guard let window = appDelegate?.window else { return }
+        // Animatedly update root view controller
+        guard let viewController = UIStoryboard(name: "GetStarted", bundle: .main).instantiateInitialViewController() else { return }
+        window.switchRoot(to: viewController)
+    }
 }

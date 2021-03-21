@@ -54,8 +54,28 @@
 		C95B6344260623120088506C /* BottomSheetListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95B6343260623120088506C /* BottomSheetListCell.xib */; };
 		C95B6349260625650088506C /* BottomSheetListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B6348260625650088506C /* BottomSheetListCellViewModel.swift */; };
 		C95B635126062F9B0088506C /* BottomSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B635026062F9B0088506C /* BottomSheetViewModel.swift */; };
+		C95B6357260685470088506C /* AddSubject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95B6356260685470088506C /* AddSubject.storyboard */; };
+		C95B635C260685590088506C /* AddSubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B635B260685590088506C /* AddSubjectViewController.swift */; };
+		C95B636126068DC20088506C /* AddSubjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B636026068DC20088506C /* AddSubjectViewModel.swift */; };
+		C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B6365260709920088506C /* RegisteredSubjectsViewModel.swift */; };
+		C95B636B26070AF20088506C /* RegisteredSubjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B636A26070AF20088506C /* RegisteredSubjectTableViewCell.swift */; };
+		C95B637026070AFB0088506C /* RegisteredSubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95B636F26070AFB0088506C /* RegisteredSubjectTableViewCell.xib */; };
 		C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */; };
 		C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */; };
+		C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */; };
+		C985373426071ED400EE1F45 /* AvailibilityHourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C985373326071ED400EE1F45 /* AvailibilityHourCell.xib */; };
+		C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985373826071EFF00EE1F45 /* AvailibilityDayCell.swift */; };
+		C985373E26071F0E00EE1F45 /* AvailibilityHourCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985373D26071F0E00EE1F45 /* AvailibilityHourCell.swift */; };
+		C985374326071F6900EE1F45 /* AvailibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985374226071F6900EE1F45 /* AvailibilityViewController.swift */; };
+		C98537482607202800EE1F45 /* AvailibilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98537472607202800EE1F45 /* AvailibilityViewModel.swift */; };
+		C985374D2607208F00EE1F45 /* AvailibilityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985374C2607208F00EE1F45 /* AvailibilityCellViewModel.swift */; };
+		C9853752260727DC00EE1F45 /* PaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9853751260727DC00EE1F45 /* PaymentMethodViewController.swift */; };
+		C985375826072F4700EE1F45 /* ImagePickerOptionSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985375726072F4700EE1F45 /* ImagePickerOptionSheetViewController.swift */; };
+		C985376026072F6500EE1F45 /* ImagePickerOptionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C985375F26072F6500EE1F45 /* ImagePickerOptionSheet.storyboard */; };
+		C98537652607347B00EE1F45 /* UploadImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98537642607347B00EE1F45 /* UploadImageViewController.swift */; };
+		C985376D260735CC00EE1F45 /* UploadImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985376C260735CC00EE1F45 /* UploadImageViewModel.swift */; };
+		C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985377A2607421C00EE1F45 /* UploadVideoViewController.swift */; };
+		C98537932607496100EE1F45 /* TagFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98537922607496100EE1F45 /* TagFlowLayout.swift */; };
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
 		C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ED225FFC61100EBD873 /* Colors.xcassets */; };
 		C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99B7EDD25FFD01100EBD873 /* GetStarted.storyboard */; };
@@ -180,8 +200,28 @@
 		C95B6343260623120088506C /* BottomSheetListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetListCell.xib; sourceTree = "<group>"; };
 		C95B6348260625650088506C /* BottomSheetListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetListCellViewModel.swift; sourceTree = "<group>"; };
 		C95B635026062F9B0088506C /* BottomSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewModel.swift; sourceTree = "<group>"; };
+		C95B6356260685470088506C /* AddSubject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddSubject.storyboard; sourceTree = "<group>"; };
+		C95B635B260685590088506C /* AddSubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjectViewController.swift; sourceTree = "<group>"; };
+		C95B636026068DC20088506C /* AddSubjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubjectViewModel.swift; sourceTree = "<group>"; };
+		C95B6365260709920088506C /* RegisteredSubjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredSubjectsViewModel.swift; sourceTree = "<group>"; };
+		C95B636A26070AF20088506C /* RegisteredSubjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredSubjectTableViewCell.swift; sourceTree = "<group>"; };
+		C95B636F26070AFB0088506C /* RegisteredSubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisteredSubjectTableViewCell.xib; sourceTree = "<group>"; };
 		C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
 		C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMobileNumberViewController.swift; sourceTree = "<group>"; };
+		C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailibilityDayCell.xib; sourceTree = "<group>"; };
+		C985373326071ED400EE1F45 /* AvailibilityHourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailibilityHourCell.xib; sourceTree = "<group>"; };
+		C985373826071EFF00EE1F45 /* AvailibilityDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailibilityDayCell.swift; sourceTree = "<group>"; };
+		C985373D26071F0E00EE1F45 /* AvailibilityHourCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailibilityHourCell.swift; sourceTree = "<group>"; };
+		C985374226071F6900EE1F45 /* AvailibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailibilityViewController.swift; sourceTree = "<group>"; };
+		C98537472607202800EE1F45 /* AvailibilityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailibilityViewModel.swift; sourceTree = "<group>"; };
+		C985374C2607208F00EE1F45 /* AvailibilityCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailibilityCellViewModel.swift; sourceTree = "<group>"; };
+		C9853751260727DC00EE1F45 /* PaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewController.swift; sourceTree = "<group>"; };
+		C985375726072F4700EE1F45 /* ImagePickerOptionSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerOptionSheetViewController.swift; sourceTree = "<group>"; };
+		C985375F26072F6500EE1F45 /* ImagePickerOptionSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImagePickerOptionSheet.storyboard; sourceTree = "<group>"; };
+		C98537642607347B00EE1F45 /* UploadImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewController.swift; sourceTree = "<group>"; };
+		C985376C260735CC00EE1F45 /* UploadImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewModel.swift; sourceTree = "<group>"; };
+		C985377A2607421C00EE1F45 /* UploadVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoViewController.swift; sourceTree = "<group>"; };
+		C98537922607496100EE1F45 /* TagFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFlowLayout.swift; sourceTree = "<group>"; };
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C99B7ED225FFC61100EBD873 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C99B7EDD25FFD01100EBD873 /* GetStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetStarted.storyboard; sourceTree = "<group>"; };
@@ -395,6 +435,12 @@
 			children = (
 				C95B62E02605FE1F0088506C /* CreateProfileSectionTableViewCell.xib */,
 				C95B62E52605FEC40088506C /* CreateProfileSectionTableViewCell.swift */,
+				C95B636A26070AF20088506C /* RegisteredSubjectTableViewCell.swift */,
+				C95B636F26070AFB0088506C /* RegisteredSubjectTableViewCell.xib */,
+				C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */,
+				C985373326071ED400EE1F45 /* AvailibilityHourCell.xib */,
+				C985373826071EFF00EE1F45 /* AvailibilityDayCell.swift */,
+				C985373D26071F0E00EE1F45 /* AvailibilityHourCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -405,6 +451,10 @@
 				C95B62EB2605FEEA0088506C /* CreateProfileSectionTableCellViewModel.swift */,
 				C95B62F02605FF130088506C /* ProfileSection.swift */,
 				C95B62FE260606F70088506C /* CreateProfileViewModel.swift */,
+				C95B6365260709920088506C /* RegisteredSubjectsViewModel.swift */,
+				C98537472607202800EE1F45 /* AvailibilityViewModel.swift */,
+				C985374C2607208F00EE1F45 /* AvailibilityCellViewModel.swift */,
+				C985376C260735CC00EE1F45 /* UploadImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -414,6 +464,10 @@
 			children = (
 				C95B62F6260605390088506C /* CreateProfileViewController.swift */,
 				C95B631E26061AA00088506C /* RegisteredSubjectsViewController.swift */,
+				C985374226071F6900EE1F45 /* AvailibilityViewController.swift */,
+				C9853751260727DC00EE1F45 /* PaymentMethodViewController.swift */,
+				C98537642607347B00EE1F45 /* UploadImageViewController.swift */,
+				C985377A2607421C00EE1F45 /* UploadVideoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -439,9 +493,29 @@
 			path = BottomSheet;
 			sourceTree = "<group>";
 		};
+		C95B63552606853C0088506C /* AddSubject */ = {
+			isa = PBXGroup;
+			children = (
+				C95B6356260685470088506C /* AddSubject.storyboard */,
+				C95B635B260685590088506C /* AddSubjectViewController.swift */,
+				C95B636026068DC20088506C /* AddSubjectViewModel.swift */,
+			);
+			path = AddSubject;
+			sourceTree = "<group>";
+		};
+		C985375626072F3400EE1F45 /* ImagePickerOptionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				C985375726072F4700EE1F45 /* ImagePickerOptionSheetViewController.swift */,
+				C985375F26072F6500EE1F45 /* ImagePickerOptionSheet.storyboard */,
+			);
+			path = ImagePickerOptionSheet;
+			sourceTree = "<group>";
+		};
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C95B63552606853C0088506C /* AddSubject */,
 				C95B62D92605FD440088506C /* CreateProfile */,
 				C928214E26045FC0006E97CC /* ResetPassword */,
 				C9282143260455ED006E97CC /* Login */,
@@ -533,6 +607,7 @@
 		C99B7EDA25FFCD1D00EBD873 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				C985375626072F3400EE1F45 /* ImagePickerOptionSheet */,
 				C95B632B26061DB90088506C /* BottomSheet */,
 				C9281FA126030B4B006E97CC /* ItemPickerView */,
 				C99B7FFD2601B2E100EBD873 /* OptionSelectionView */,
@@ -547,6 +622,7 @@
 				C99B7FF32601301300EBD873 /* FlowDescriptionLabel.swift */,
 				C928210A2603BDC3006E97CC /* PageControlView.swift */,
 				C90C69F5260471EE0075D776 /* ErrorView.swift */,
+				C98537922607496100EE1F45 /* TagFlowLayout.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -813,6 +889,7 @@
 			files = (
 				C99B7F362601135000EBD873 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				C99B7F3D2601135000EBD873 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				C95B637026070AFB0088506C /* RegisteredSubjectTableViewCell.xib in Resources */,
 				C99B7F3B2601135000EBD873 /* Poppins-Light.ttf in Resources */,
 				C92821012603BD6B006E97CC /* Onboarding.storyboard in Resources */,
 				C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */,
@@ -821,11 +898,14 @@
 				C99B7F392601135000EBD873 /* Poppins-Italic.ttf in Resources */,
 				C99B7F322601135000EBD873 /* Poppins-MediumItalic.ttf in Resources */,
 				C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */,
+				C985373426071ED400EE1F45 /* AvailibilityHourCell.xib in Resources */,
 				C9281F942602F951006E97CC /* SuccessState.storyboard in Resources */,
 				C99B7F402601135000EBD873 /* Poppins-Black.ttf in Resources */,
+				C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */,
 				C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */,
 				C99B7F2F2601135000EBD873 /* Poppins-Bold.ttf in Resources */,
 				C95B62DB2605FD520088506C /* CreateProfile.storyboard in Resources */,
+				C95B6357260685470088506C /* AddSubject.storyboard in Resources */,
 				C99B7F302601135000EBD873 /* Poppins-Thin.ttf in Resources */,
 				CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */,
 				C9282145260455F5006E97CC /* Login.storyboard in Resources */,
@@ -838,6 +918,7 @@
 				C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */,
 				C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */,
 				C928215026045FD1006E97CC /* ResetPassword.storyboard in Resources */,
+				C985376026072F6500EE1F45 /* ImagePickerOptionSheet.storyboard in Resources */,
 				C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */,
 				C95B633A26061DF00088506C /* BottomSheet.storyboard in Resources */,
 				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
@@ -938,15 +1019,21 @@
 				C99B7F7E260122C000EBD873 /* HeadingLabel.swift in Sources */,
 				C95B630726060A760088506C /* BaseRouter.swift in Sources */,
 				C9281F8F2602F93C006E97CC /* UIStoryboard+helpers.swift in Sources */,
+				C985374326071F6900EE1F45 /* AvailibilityViewController.swift in Sources */,
 				C9281F852602F775006E97CC /* SuccessStateViewModel.swift in Sources */,
 				C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */,
 				C92821212603CA82006E97CC /* OnboardingPage.swift in Sources */,
+				C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */,
 				C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */,
 				C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */,
 				C95B62F12605FF130088506C /* ProfileSection.swift in Sources */,
 				C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */,
 				C99B7FB42601259700EBD873 /* FormatValidator.swift in Sources */,
+				C985373E26071F0E00EE1F45 /* AvailibilityHourCell.swift in Sources */,
+				C95B636126068DC20088506C /* AddSubjectViewModel.swift in Sources */,
 				C95B62F7260605390088506C /* CreateProfileViewController.swift in Sources */,
+				C985375826072F4700EE1F45 /* ImagePickerOptionSheetViewController.swift in Sources */,
+				C985376D260735CC00EE1F45 /* UploadImageViewModel.swift in Sources */,
 				C92821312603CC9A006E97CC /* ReusableView.swift in Sources */,
 				C95B631226060B650088506C /* SignupSuccessStateRouter.swift in Sources */,
 				C928215526046168006E97CC /* ResetPasswordViewController.swift in Sources */,
@@ -966,25 +1053,33 @@
 				C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,
 				C95B635126062F9B0088506C /* BottomSheetViewModel.swift in Sources */,
+				C98537482607202800EE1F45 /* AvailibilityViewModel.swift in Sources */,
 				C928214A26045E2F006E97CC /* LoginViewController.swift in Sources */,
 				C928210B2603BDC3006E97CC /* PageControlView.swift in Sources */,
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
+				C985374D2607208F00EE1F45 /* AvailibilityCellViewModel.swift in Sources */,
 				C95B633226061DD40088506C /* BottomSheet.swift in Sources */,
+				C95B635C260685590088506C /* AddSubjectViewController.swift in Sources */,
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
 				C95B6349260625650088506C /* BottomSheetListCellViewModel.swift in Sources */,
 				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,
 				C90C6A00260473FF0075D776 /* LoginPendingProcessViewModel.swift in Sources */,
+				C98537652607347B00EE1F45 /* UploadImageViewController.swift in Sources */,
 				C99B7EE325FFD07F00EBD873 /* UIView+Extensions.swift in Sources */,
 				C99B7FA12601253100EBD873 /* PaddedTextField.swift in Sources */,
+				C9853752260727DC00EE1F45 /* PaymentMethodViewController.swift in Sources */,
+				C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */,
 				C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */,
 				C95B62E62605FEC40088506C /* CreateProfileSectionTableViewCell.swift in Sources */,
+				C95B636B26070AF20088506C /* RegisteredSubjectTableViewCell.swift in Sources */,
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
 				C928215A26046172006E97CC /* NewPasswordViewController.swift in Sources */,
 				C9281F9A260304C0006E97CC /* NumberVerificationViewModel.swift in Sources */,
 				C928215F2604625D006E97CC /* UINavigationController+Pop.swift in Sources */,
 				C92821062603BD80006E97CC /* OnboardingViewController.swift in Sources */,
+				C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */,
 				C95B62EC2605FEEA0088506C /* CreateProfileSectionTableCellViewModel.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
@@ -994,6 +1089,7 @@
 				C95B633F2606230A0088506C /* BottomSheetListCell.swift in Sources */,
 				C90C6A0B260476700075D776 /* LoginAccountWaitingReviewViewModel.swift in Sources */,
 				C99B7F0325FFD44500EBD873 /* GetStartedViewController.swift in Sources */,
+				C98537932607496100EE1F45 /* TagFlowLayout.swift in Sources */,
 				C99B7FEF26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift in Sources */,
 				C99B7FEA26012E2D00EBD873 /* SignupPersonalInformationViewController.swift in Sources */,
 				C99B7F9C260123C500EBD873 /* UIBarButtonItem+Empty.swift in Sources */,
@@ -1165,14 +1261,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TAFGX4K33;
+				DEVELOPMENT_TEAM = HJRXZJM3V8;
 				INFOPLIST_FILE = "Teachers/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.itxal.Teachers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Teachers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1185,14 +1281,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TAFGX4K33;
+				DEVELOPMENT_TEAM = HJRXZJM3V8;
 				INFOPLIST_FILE = "Teachers/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.itxal.Teachers;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Teachers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -11,6 +11,7 @@ protocol SuccessStateViewModel {
     var title: String { get }
     var message: String { get }
     var imageName: String? { get }
+    var ctaButtonTitle: String { get }
 
     func didTapCTAButton()
 }

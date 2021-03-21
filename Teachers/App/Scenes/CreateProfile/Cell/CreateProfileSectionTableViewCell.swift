@@ -51,11 +51,15 @@ class CreateProfileSectionTableViewCell: UITableViewCell,
         if viewModel?.isCompleted ?? false {
             contentView.backgroundColor = Asset.Colors.successGreen.color
             statusImageView.image = Asset.Media.checkedCircle.image
+            sectionTitleLabel.textColor = Asset.Colors.pureWhite.color
+            sectionTitleLabel.font = .init(commonFont: PoppinsFontStyle.medium, size: 16)
         } else {
             contentView.backgroundColor = Asset.Colors.pureWhite.color
             statusImageView.image = Asset.Media.uncheckedCircle.image
             contentView.borderColor = Asset.Colors.lightGray.color
             contentView.borderWidth = 1
+            sectionTitleLabel.textColor = Asset.Colors.darkBlue.color
+            sectionTitleLabel.font = .init(commonFont: PoppinsFontStyle.regular, size: 16)
         }
     }
 }

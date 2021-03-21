@@ -33,13 +33,13 @@
                                             <constraint firstAttribute="width" secondItem="TDX-N8-4Cc" secondAttribute="height" id="RKq-Qw-gGF"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M06-P2-KyJ" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Thank You!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M06-P2-KyJ" customClass="HeadingLabel" customModule="Teachers" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="398" width="350" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you need to complete your profile to be able to join Edukko family." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-6c-IS8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Now you need to complete your profile to be able to join Edukko family." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYU-6c-IS8">
                                         <rect key="frame" x="0.0" y="427" width="350" height="37.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
                                         <color key="textColor" name="gray"/>
@@ -88,10 +88,12 @@
                             <constraint firstItem="sST-YQ-AMd" firstAttribute="leading" secondItem="59A-iP-ctg" secondAttribute="leading" constant="16" id="4Pd-sH-WWL"/>
                             <constraint firstItem="59A-iP-ctg" firstAttribute="bottom" secondItem="sST-YQ-AMd" secondAttribute="bottom" constant="16" id="KP5-1s-jbv"/>
                             <constraint firstItem="FbY-Cb-U1e" firstAttribute="centerY" secondItem="KZx-Ll-FhB" secondAttribute="centerY" id="ixR-eQ-KzO"/>
+                            <constraint firstItem="sST-YQ-AMd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FbY-Cb-U1e" secondAttribute="bottom" constant="24" id="jtq-qq-8Am"/>
                             <constraint firstItem="FbY-Cb-U1e" firstAttribute="leading" secondItem="59A-iP-ctg" secondAttribute="leading" constant="32" id="k6x-ac-cy4"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ctaButton" destination="sST-YQ-AMd" id="OuS-ad-Ruj"/>
                         <outlet property="descriptionLabel" destination="zYU-6c-IS8" id="KQs-Ni-cCu"/>
                         <outlet property="titleImageView" destination="TDX-N8-4Cc" id="L4R-ZJ-F1u"/>
                         <outlet property="titleLabel" destination="M06-P2-KyJ" id="gxL-8n-PGE"/>

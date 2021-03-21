@@ -287,7 +287,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnG-eE-W8l" customClass="ErrorView" customModule="Teachers" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="HnG-eE-W8l" customClass="ErrorView" customModule="Teachers" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="312" width="350" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>

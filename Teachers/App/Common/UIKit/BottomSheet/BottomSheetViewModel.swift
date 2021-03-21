@@ -15,6 +15,12 @@ class BottomSheetViewModel {
         items.count
     }
 
+    var selectedItem: String? {
+        return items.first {
+            $0.isSelected
+        }?.title
+    }
+
     init(with title: String,
          items: [BottomSheetListCellViewModel]) {
         self.title = title
