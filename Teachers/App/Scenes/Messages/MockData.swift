@@ -20,7 +20,7 @@ struct MockData {
             senderName: "Waleed Husein",
             lastMessage: "Good luck and take care",
             lastMessageTime: "10:00 AM",
-            newMessagesCount: "100",
+            newMessagesCount: nil,
             senderActiveStatus: .offline
         ),
         MessageViewModel(

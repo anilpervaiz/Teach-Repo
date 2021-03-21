@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct MessageViewModel {
     let senderImageName: String
@@ -18,5 +19,14 @@ extension MessageViewModel {
     enum UserActiveStatus: CaseIterable {
         case online
         case offline
+        
+        func color() -> UIColor {
+            switch self {
+            case .online:
+                return Asset.Colors.successGreen.color
+            case .offline:
+                return Asset.Colors.lightGray.color
+            }
+        }
     }
 }

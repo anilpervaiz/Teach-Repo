@@ -35,7 +35,7 @@ class MessageCell: UITableViewCell, ReusableView {
     lazy private var oldMessageStyle: MessageTextStyle = {
         return MessageTextStyle(
             font: .init( commonFont: PoppinsFontStyle.regular, size: 14),
-            color: Asset.Colors.darkBlue.color
+            color: Asset.Colors.gray.color
         )
     }()
     
@@ -51,7 +51,8 @@ class MessageCell: UITableViewCell, ReusableView {
         
         let messageStyle = hasNewMessages ? newMessageStyle : oldMessageStyle
         lastMessage.font = messageStyle.font
-        lastMessage.textColor = messageStyle.color
+        lastMessage.textColor = messageStyle.color        
+        senderActiveStatusView.backgroundColor = messageVM.senderActiveStatus.color()
     }
     
     override func layoutSubviews() {
