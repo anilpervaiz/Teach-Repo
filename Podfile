@@ -9,4 +9,5 @@ target 'Teachers' do
   pod 'FlagPhoneNumber', :git => 'https://github.com/rahimkhalid/FlagPhoneNumber.git', :branch => 'UI-Fixes'
   pod 'SwiftGen'
 
+  pod 'UITextView+Placeholder'
 end

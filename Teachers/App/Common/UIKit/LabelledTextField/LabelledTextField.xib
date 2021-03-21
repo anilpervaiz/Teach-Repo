@@ -16,6 +16,7 @@
                 <outlet property="inputTextField" destination="Xws-9K-E51" id="ez3-Gi-lfK"/>
                 <outlet property="textFieldTrailingIconImageView" destination="Mpq-3s-L0W" id="L86-AE-lo3"/>
                 <outlet property="titleLabel" destination="eBl-c1-bQ0" id="PW8-Pv-sB8"/>
+                <outlet property="trailingLabel" destination="Plt-Wk-YZI" id="rhL-vM-y2g"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -54,15 +55,23 @@
                                         <constraint firstAttribute="width" secondItem="Mpq-3s-L0W" secondAttribute="height" id="QNn-Dz-1re"/>
                                     </constraints>
                                 </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plt-Wk-YZI">
+                                    <rect key="frame" x="402" y="28" width="0.0" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="56" id="07F-yf-9af"/>
                                 <constraint firstItem="Mpq-3s-L0W" firstAttribute="centerY" secondItem="VyF-VV-K31" secondAttribute="centerY" id="6Pp-5M-sMy"/>
                                 <constraint firstAttribute="right" secondItem="Xws-9K-E51" secondAttribute="right" id="Ejr-rD-S0v"/>
+                                <constraint firstItem="Plt-Wk-YZI" firstAttribute="centerY" secondItem="Xws-9K-E51" secondAttribute="centerY" id="N6W-P2-b6c"/>
                                 <constraint firstAttribute="right" secondItem="Mpq-3s-L0W" secondAttribute="right" constant="18" id="OoJ-66-ou3"/>
                                 <constraint firstItem="Xws-9K-E51" firstAttribute="top" secondItem="VyF-VV-K31" secondAttribute="top" id="buR-JP-phE"/>
                                 <constraint firstItem="Xws-9K-E51" firstAttribute="left" secondItem="VyF-VV-K31" secondAttribute="left" id="hEI-FH-8IB"/>
+                                <constraint firstAttribute="trailing" secondItem="Plt-Wk-YZI" secondAttribute="trailing" constant="12" id="po0-qp-W6E"/>
                                 <constraint firstAttribute="bottom" secondItem="Xws-9K-E51" secondAttribute="bottom" id="wab-F9-47Y"/>
                             </constraints>
                         </view>

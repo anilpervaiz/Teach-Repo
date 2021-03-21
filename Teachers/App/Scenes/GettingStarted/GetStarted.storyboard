@@ -20,7 +20,7 @@
         <!--Get Started View Controller-->
         <scene sceneID="VUY-6o-HFu">
             <objects>
-                <viewController id="axf-YN-DU5" customClass="GetStartedViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="axf-YN-DU5" customClass="GetStartedViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q6T-Zo-1lk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,6 +53,9 @@
                                                 <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="1rl-em-qPB" kind="show" id="IcO-vF-Og2"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you accept our Terms &amp; Conditions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrN-xB-mhP">
                                         <rect key="frame" x="0.0" y="140" width="382" height="20.5"/>
@@ -77,7 +80,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="weE-9l-KVk">
-                                <rect key="frame" x="0.0" y="138.5" width="414" height="531"/>
+                                <rect key="frame" x="0.0" y="201.5" width="414" height="468"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41S-pC-kIn">
                                         <rect key="frame" x="300" y="10" width="104" height="36"/>
@@ -94,19 +97,16 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="getStartedIllustration" translatesAutoresizingMaskIntoConstraints="NO" id="onF-Dc-g4k">
-                                        <rect key="frame" x="32" y="0.0" width="350" height="350"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="onF-Dc-g4k" secondAttribute="height" id="q5D-SN-NiN"/>
-                                        </constraints>
+                                        <rect key="frame" x="32" y="0.0" width="350" height="287"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build your student network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-f3-P1W">
-                                        <rect key="frame" x="32" y="390" width="350" height="79.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Build your student network" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-f3-P1W">
+                                        <rect key="frame" x="32" y="327" width="350" height="79.5"/>
                                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="34"/>
                                         <color key="textColor" name="pureWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ny-qi-p0d">
-                                        <rect key="frame" x="32" y="477.5" width="350" height="37.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ny-qi-p0d">
+                                        <rect key="frame" x="32" y="414.5" width="350" height="37.5"/>
                                         <string key="text">Choose from 100,000 online 
 certified teachers.</string>
                                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
@@ -161,10 +161,20 @@ certified teachers.</string>
             </objects>
             <point key="canvasLocation" x="756" y="26"/>
         </scene>
+        <!--Login-->
+        <scene sceneID="6qR-o9-2VZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="1rl-em-qPB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cvc-OP-x3t"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmt-1o-x2Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="225"/>
+        </scene>
         <!--Base Navigation Controller-->
         <scene sceneID="HdN-g3-66z">
             <objects>
-                <navigationController id="AUE-nM-29g" customClass="BaseNavigationController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController interfaceStyle="light" id="AUE-nM-29g" customClass="BaseNavigationController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UMM-Xh-Yre">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

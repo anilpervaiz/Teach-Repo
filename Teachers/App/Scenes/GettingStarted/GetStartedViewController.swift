@@ -38,6 +38,14 @@ class GetStartedViewController: BaseViewController {
             termsAndConditionLabel.attributedText = termsAndConditionAttributedString
         }
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
+        navigationController?.navigationBar.barStyle = .blackTranslucent
+    }
 }
 
 // MARK: - label section tapped handling.
@@ -53,6 +61,20 @@ extension GetStartedViewController {
                                                inRange: termsNSRange) {
             // Perform Terms and condition navigation
             print("Terms and condition tapped")
+
+            let viewController = BottomSheet.getInstance()
+            viewController.modalPresentationStyle = .overCurrentContext
+            viewController.modalTransitionStyle = .crossDissolve
+            viewController.viewModel = BottomSheetViewModel(with: "Education Type", items: [
+                BottomSheetListCellViewModel(isSelected: false, title: "Kindergarten"),
+                BottomSheetListCellViewModel(isSelected: false, title: "Kindergarten"),
+                BottomSheetListCellViewModel(isSelected: true, title: "Kindergarten"),
+            ])
+            present(viewController, animated: true, completion: nil)
         }
     }
+}
+
+extension GetStartedViewController: Initializable {
+    static var storyboardName: UIStoryboard.Name { .getStarted }
 }

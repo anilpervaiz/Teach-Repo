@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnboardingViewController: UIViewController {
+class OnboardingViewController: BaseViewController {
 
     var pages = OnboardingPage.allCases
 
@@ -26,6 +26,13 @@ class OnboardingViewController: UIViewController {
         didSet {
             pageControl.numberOfPages = pages.count
         }
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
     }
 }
 
@@ -54,6 +61,7 @@ extension OnboardingViewController: UIScrollViewDelegate {
         if currentPage == CGFloat(currentPageAbs) &&
             currentPageAbs != pageControl.currentPage {
             pageControl.currentPage = currentPageAbs
+            skipButton.isHidden = currentPageAbs == (pages.count - 1)
         }
     }
 }

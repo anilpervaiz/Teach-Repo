@@ -7,8 +7,13 @@
 
 import UIKit
 
-class SuccessStateViewController: UIViewController {
+class SuccessStateViewController: BaseViewController {
 
+    @IBOutlet weak var ctaButton: PrimaryCTAButton! {
+        didSet {
+            ctaButton.setTitle(viewModel?.ctaButtonTitle ?? "", for: .normal)
+        }
+    }
     @IBOutlet weak var descriptionLabel: UILabel! {
         didSet {
             descriptionLabel.text = viewModel?.message

@@ -49,9 +49,12 @@ class SignupPersonalInformationViewController: BaseViewController {
         }
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle { .default }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupKeyboardNotification()
+        navigationController?.navigationBar.barStyle = .default
     }
 }
 

@@ -27,6 +27,7 @@ class BaseNavigationController: UINavigationController {
         navigationBar.shadowImage = UIImage()
         navigationBar.isTranslucent = true
         navigationBar.backgroundColor = .clear
+        navigationBar.barStyle = .blackTranslucent
     }
 
     func opaque(with color: UIColor) {
@@ -35,6 +36,10 @@ class BaseNavigationController: UINavigationController {
         navigationBar.isTranslucent = false
         navigationBar.barTintColor = color
         navigationBar.backgroundColor = color
+    }
+
+    func showShadow() {
+        self.navigationBar.shadowImage = Asset.Colors.lightGray.color.image()
     }
 
     /// Call this method on the pushed view Controller
