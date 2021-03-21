@@ -658,6 +658,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="eeC-Sc-hhw"/>
                                         </constraints>
+                                        <color key="tintColor" name="primary"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
                                         <state key="normal" title="Add Subject" image="Add"/>
                                         <userDefinedRuntimeAttributes>
@@ -1023,6 +1024,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="9NT-zZ-gRf"/>
                                         </constraints>
+                                        <color key="tintColor" name="primary"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
                                         <state key="normal" title="Add ID Card" image="Add"/>
                                         <userDefinedRuntimeAttributes>

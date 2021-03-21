@@ -44,13 +44,6 @@ class BottomSheet: UIViewController {
             self?.bottomSheetBottomSpacing.constant = -10
             self?.view.layoutIfNeeded()
         }
-
-
-        bottomSheetBottomSpacing.constant = 0
-        UIView.animate(withDuration: 3) {
-
-            self.view.layoutIfNeeded()
-        }
     }
 
     func setupViewGesture() {
