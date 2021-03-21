@@ -3,14 +3,17 @@ PODS:
     - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
   - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
   - SVPinView (1.0.11)
+  - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
   - FlagPhoneNumber (from `https://github.com/rahimkhalid/FlagPhoneNumber.git`, branch `UI-Fixes`)
   - SVPinView
+  - "UITextView+Placeholder"
 
 SPEC REPOS:
   trunk:
     - SVPinView
+    - "UITextView+Placeholder"
 
 EXTERNAL SOURCES:
   FlagPhoneNumber:
@@ -25,7 +28,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
   SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
+  "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: cf37d6d6407082dd6adbe85354726aa7576203e5
+PODFILE CHECKSUM: 4cd7bf0774d90d7d6ef9f4796694b7f15ef405ec
 
 COCOAPODS: 1.10.0

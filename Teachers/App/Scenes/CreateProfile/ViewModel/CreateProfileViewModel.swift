@@ -38,7 +38,7 @@ class CreateProfileViewModel {
         let section = sectionViewModels[index].section
         switch section {
         case .personalInformation:
-            break
+            router.navigateToAddPersonalInformation()
         case .subjects:
             router.navigateToRegisterSubject()
         case .availability:

@@ -76,6 +76,7 @@
 		C985376D260735CC00EE1F45 /* UploadImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985376C260735CC00EE1F45 /* UploadImageViewModel.swift */; };
 		C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985377A2607421C00EE1F45 /* UploadVideoViewController.swift */; };
 		C98537932607496100EE1F45 /* TagFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98537922607496100EE1F45 /* TagFlowLayout.swift */; };
+		C98537A0260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985379F260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift */; };
 		C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ECD25FFC60800EBD873 /* Media.xcassets */; };
 		C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C99B7ED225FFC61100EBD873 /* Colors.xcassets */; };
 		C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99B7EDD25FFD01100EBD873 /* GetStarted.storyboard */; };
@@ -222,6 +223,7 @@
 		C985376C260735CC00EE1F45 /* UploadImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageViewModel.swift; sourceTree = "<group>"; };
 		C985377A2607421C00EE1F45 /* UploadVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVideoViewController.swift; sourceTree = "<group>"; };
 		C98537922607496100EE1F45 /* TagFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagFlowLayout.swift; sourceTree = "<group>"; };
+		C985379F260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfilePersonalInformationViewController.swift; sourceTree = "<group>"; };
 		C99B7ECD25FFC60800EBD873 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		C99B7ED225FFC61100EBD873 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C99B7EDD25FFD01100EBD873 /* GetStarted.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GetStarted.storyboard; sourceTree = "<group>"; };
@@ -468,6 +470,7 @@
 				C9853751260727DC00EE1F45 /* PaymentMethodViewController.swift */,
 				C98537642607347B00EE1F45 /* UploadImageViewController.swift */,
 				C985377A2607421C00EE1F45 /* UploadVideoViewController.swift */,
+				C985379F260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1082,6 +1085,7 @@
 				C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */,
 				C95B62EC2605FEEA0088506C /* CreateProfileSectionTableCellViewModel.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
+				C98537A0260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
 				C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */,
 				C90C6A10260478930075D776 /* LoginProfileRejectViewModel.swift in Sources */,

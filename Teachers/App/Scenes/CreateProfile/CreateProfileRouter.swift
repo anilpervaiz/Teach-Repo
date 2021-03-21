@@ -27,6 +27,12 @@ class CreateProfileRouter: BaseRouter {
                                                  animated: true)
     }
 
+    func navigateToAddPersonalInformation() {
+        let viewControlle = CreateProfilePersonalInformationViewController.getInstance()
+        navigationController?.pushViewController(viewControlle,
+                                                 animated: true)
+    }
+
     func navigateToAddIdCard() {
         let viewController = UploadImageViewController.getInstance()
         viewController.viewModel = UploadImageViewModel(title: "ID Card",

@@ -7,5 +7,5 @@ target 'Teachers' do
 
   pod 'SVPinView'
   pod 'FlagPhoneNumber', :git => 'https://github.com/rahimkhalid/FlagPhoneNumber.git', :branch => 'UI-Fixes'
-
+  pod 'UITextView+Placeholder'
 end

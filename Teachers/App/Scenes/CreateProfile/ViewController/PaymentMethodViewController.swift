@@ -15,9 +15,17 @@ class PaymentMethodViewController: BaseViewController {
             cardNumberTextField.editTextKeyboardType = .numberPad
         }
     }
+
+    lazy var datePicker: CustomDatePickerView = {
+        let picker = CustomDatePickerView(viewModel: CustomDatePickerViewModel())
+        picker.toolbarDelegate = self
+
+        return picker
+    }()
+
     @IBOutlet weak var expiryDateTextField: LabelledTextField! {
         didSet {
-            expiryDateTextField.inputTextFieldInputPickerView = CustomDatePickerView(viewModel: CustomDatePickerViewModel())
+            expiryDateTextField.inputTextFieldInputPickerView = datePicker
             expiryDateTextField.editTextCursorColor = .init(white: 1, alpha: 0)
         }
     }
@@ -65,6 +73,20 @@ extension PaymentMethodViewController {
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
+    }
+}
+
+extension PaymentMethodViewController: CustomDatePickerViewDelegate {
+    func didTapCancelButton() {
+        view.endEditing(true)
+    }
+
+    func didTapDoneButton(picker: CustomDatePickerView, date: Date) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/YY"
+
+        expiryDateTextField.inputText = formatter.string(from: date)
+        view.endEditing(true)
     }
 }
 
