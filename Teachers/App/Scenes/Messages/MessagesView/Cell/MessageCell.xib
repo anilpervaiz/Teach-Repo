@@ -9,6 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
         <array key="Poppins-Regular.ttf">
             <string>Poppins-Regular</string>
         </array>
@@ -28,7 +31,6 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8oz-bE-tEW">
                         <rect key="frame" x="16" y="16" width="48" height="48"/>
-                        <color key="backgroundColor" name="gray"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="8oz-bE-tEW" secondAttribute="height" id="Arl-on-wan"/>
                             <constraint firstAttribute="width" constant="48" id="mFz-pT-WYW"/>
@@ -51,44 +53,44 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8t-ax-Til">
-                        <rect key="frame" x="76" y="18" width="43.5" height="22.5"/>
+                        <rect key="frame" x="76" y="18" width="39.5" height="19"/>
                         <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="16"/>
                         <color key="textColor" red="0.066666666666666666" green="0.10588235294117647" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG3-go-0m2">
-                        <rect key="frame" x="362.5" y="18" width="37.5" height="20"/>
+                        <rect key="frame" x="365.5" y="18" width="34.5" height="16.5"/>
                         <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
-                        <color key="textColor" red="0.72156862745098038" green="0.73333333333333328" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="textColor" name="lightGray"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHk-W4-yNY">
-                        <rect key="frame" x="76" y="40.5" width="42" height="21"/>
+                        <rect key="frame" x="76" y="37" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5y-Pf-2Pp">
-                        <rect key="frame" x="346.5" y="38" width="53.5" height="24.5"/>
+                        <rect key="frame" x="356" y="34.5" width="44" height="17.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMb-Tv-KkW">
-                                <rect key="frame" x="6" y="2" width="41.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="6" y="1" width="32" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                                <color key="textColor" name="pureWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" name="halfBaked"/>
                         <constraints>
-                            <constraint firstItem="gMb-Tv-KkW" firstAttribute="top" secondItem="k5y-Pf-2Pp" secondAttribute="top" constant="2" id="c8f-sd-YiO"/>
+                            <constraint firstItem="gMb-Tv-KkW" firstAttribute="top" secondItem="k5y-Pf-2Pp" secondAttribute="top" constant="1" id="c8f-sd-YiO"/>
                             <constraint firstItem="gMb-Tv-KkW" firstAttribute="leading" secondItem="k5y-Pf-2Pp" secondAttribute="leading" constant="6" id="dkM-pl-Th6"/>
                             <constraint firstAttribute="trailing" secondItem="gMb-Tv-KkW" secondAttribute="trailing" constant="6" id="jia-DO-Bcm"/>
-                            <constraint firstAttribute="bottom" secondItem="gMb-Tv-KkW" secondAttribute="bottom" constant="2" id="wS9-Zu-oyr"/>
+                            <constraint firstAttribute="bottom" secondItem="gMb-Tv-KkW" secondAttribute="bottom" constant="1" id="wS9-Zu-oyr"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TU-tX-3KG">
-                        <rect key="frame" x="76" y="79.5" width="338" height="1"/>
-                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <rect key="frame" x="76" y="76" width="338" height="1"/>
+                        <color key="backgroundColor" name="disableGray"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="mMg-IY-iTr"/>
                         </constraints>
@@ -126,15 +128,18 @@
         </tableViewCell>
     </objects>
     <resources>
-        <namedColor name="gray">
-            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="disableGray">
+            <color red="0.92156862745098034" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="halfBaked">
             <color red="0.47058823529411764" green="0.77647058823529413" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="lightGray">
+            <color red="0.67843137254901964" green="0.70196078431372544" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

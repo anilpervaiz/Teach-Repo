@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46F4BBAB8AB33C0289B96E78 /* Pods_Teachers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781F8A1176301CF2E8283669 /* Pods_Teachers.framework */; };
-		C90C69F6260471EE0075D776 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69F5260471EE0075D776 /* ErrorView.swift */; };
-		C90C69FB260473E90075D776 /* LoginPendingProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */; };
-		C90C6A00260473FF0075D776 /* LoginPendingProcessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */; };
-		C90C6A0B260476700075D776 /* LoginAccountWaitingReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */; };
-		C90C6A10260478930075D776 /* LoginProfileRejectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */; };
 		B2656CDB2603D8F1007609F6 /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CDA2603D8F1007609F6 /* ChatHeaderView.swift */; };
 		B2656CE32603DB73007609F6 /* ChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656CE22603DB73007609F6 /* ChatHeaderView.xib */; };
 		B2656CE82603DEF5007609F6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CE72603DEF5007609F6 /* ChatViewController.swift */; };
@@ -23,6 +18,16 @@
 		B2656D0C26053EF0007609F6 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D0B26053EF0007609F6 /* MessageViewModel.swift */; };
 		B2656D1126062EE8007609F6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D1026062EE8007609F6 /* MockData.swift */; };
 		B2656D16260640AF007609F6 /* HeadingLabel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D15260640AF007609F6 /* HeadingLabel2.swift */; };
+		B2656D462607E89E007609F6 /* ChatMessageSentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D452607E89E007609F6 /* ChatMessageSentCell.swift */; };
+		B2656D4C2607E8C6007609F6 /* ChatMessageSentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656D4B2607E8C6007609F6 /* ChatMessageSentCell.xib */; };
+		B2656D602607EEAE007609F6 /* ChatMessageReceivedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D5F2607EEAE007609F6 /* ChatMessageReceivedCell.swift */; };
+		B2656D652607EECE007609F6 /* ChatMessageReceivedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656D642607EECE007609F6 /* ChatMessageReceivedCell.xib */; };
+		B2656D6A2607F1B5007609F6 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D692607F1B5007609F6 /* ChatViewModel.swift */; };
+		C90C69F6260471EE0075D776 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69F5260471EE0075D776 /* ErrorView.swift */; };
+		C90C69FB260473E90075D776 /* LoginPendingProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */; };
+		C90C6A00260473FF0075D776 /* LoginPendingProcessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */; };
+		C90C6A0B260476700075D776 /* LoginAccountWaitingReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */; };
+		C90C6A10260478930075D776 /* LoginProfileRejectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */; };
 		C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */; };
 		C9281F852602F775006E97CC /* SuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F842602F775006E97CC /* SuccessStateViewModel.swift */; };
 		C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */; };
@@ -209,11 +214,6 @@
 /* Begin PBXFileReference section */
 		435B834905BF7FA36344C14E /* Pods-Teachers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teachers.release.xcconfig"; path = "Target Support Files/Pods-Teachers/Pods-Teachers.release.xcconfig"; sourceTree = "<group>"; };
 		781F8A1176301CF2E8283669 /* Pods_Teachers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teachers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C90C69F5260471EE0075D776 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewController.swift; sourceTree = "<group>"; };
-		C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewModel.swift; sourceTree = "<group>"; };
-		C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAccountWaitingReviewViewModel.swift; sourceTree = "<group>"; };
-		C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProfileRejectViewModel.swift; sourceTree = "<group>"; };
 		B2656CDA2603D8F1007609F6 /* ChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
 		B2656CE22603DB73007609F6 /* ChatHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatHeaderView.xib; sourceTree = "<group>"; };
 		B2656CE72603DEF5007609F6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +224,16 @@
 		B2656D0B26053EF0007609F6 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		B2656D1026062EE8007609F6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		B2656D15260640AF007609F6 /* HeadingLabel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLabel2.swift; sourceTree = "<group>"; };
+		B2656D452607E89E007609F6 /* ChatMessageSentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageSentCell.swift; sourceTree = "<group>"; };
+		B2656D4B2607E8C6007609F6 /* ChatMessageSentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatMessageSentCell.xib; sourceTree = "<group>"; };
+		B2656D5F2607EEAE007609F6 /* ChatMessageReceivedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageReceivedCell.swift; sourceTree = "<group>"; };
+		B2656D642607EECE007609F6 /* ChatMessageReceivedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatMessageReceivedCell.xib; sourceTree = "<group>"; };
+		B2656D692607F1B5007609F6 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		C90C69F5260471EE0075D776 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewController.swift; sourceTree = "<group>"; };
+		C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewModel.swift; sourceTree = "<group>"; };
+		C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAccountWaitingReviewViewModel.swift; sourceTree = "<group>"; };
+		C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProfileRejectViewModel.swift; sourceTree = "<group>"; };
 		C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewController.swift; sourceTree = "<group>"; };
 		C9281F842602F775006E97CC /* SuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewModel.swift; sourceTree = "<group>"; };
 		C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCompletedSuccessStateViewModel.swift; sourceTree = "<group>"; };
@@ -443,12 +453,9 @@
 		B2656CD92603D8B9007609F6 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
-				B2656CFD26053C97007609F6 /* Cell */,
-				B2656CDA2603D8F1007609F6 /* ChatHeaderView.swift */,
-				B2656CE22603DB73007609F6 /* ChatHeaderView.xib */,
-				B2656CE72603DEF5007609F6 /* ChatViewController.swift */,
 				B2656CEC2603E3ED007609F6 /* Messages.storyboard */,
-				B2656CF826053C71007609F6 /* MessagesViewController.swift */,
+				B2656D412607E82A007609F6 /* MessagesView */,
+				B2656D402607E817007609F6 /* ChatView */,
 				B2656D1026062EE8007609F6 /* MockData.swift */,
 			);
 			path = Messages;
@@ -460,6 +467,38 @@
 				B2656CFE26053CA9007609F6 /* MessageCell.swift */,
 				B2656D0626053D34007609F6 /* MessageCell.xib */,
 				B2656D0B26053EF0007609F6 /* MessageViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B2656D402607E817007609F6 /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				B2656D4A2607E8A5007609F6 /* Cell */,
+				B2656CDA2603D8F1007609F6 /* ChatHeaderView.swift */,
+				B2656CE22603DB73007609F6 /* ChatHeaderView.xib */,
+				B2656CE72603DEF5007609F6 /* ChatViewController.swift */,
+				B2656D692607F1B5007609F6 /* ChatViewModel.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		B2656D412607E82A007609F6 /* MessagesView */ = {
+			isa = PBXGroup;
+			children = (
+				B2656CF826053C71007609F6 /* MessagesViewController.swift */,
+				B2656CFD26053C97007609F6 /* Cell */,
+			);
+			path = MessagesView;
+			sourceTree = "<group>";
+		};
+		B2656D4A2607E8A5007609F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B2656D452607E89E007609F6 /* ChatMessageSentCell.swift */,
+				B2656D4B2607E8C6007609F6 /* ChatMessageSentCell.xib */,
+				B2656D5F2607EEAE007609F6 /* ChatMessageReceivedCell.swift */,
+				B2656D642607EECE007609F6 /* ChatMessageReceivedCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1198,6 +1237,7 @@
 				C985373426071ED400EE1F45 /* AvailibilityHourCell.xib in Resources */,
 				C9281F942602F951006E97CC /* SuccessState.storyboard in Resources */,
 				C99B7F402601135000EBD873 /* Poppins-Black.ttf in Resources */,
+				B2656D652607EECE007609F6 /* ChatMessageReceivedCell.xib in Resources */,
 				C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */,
 				C9A0C1BB260A3C9C00C3285E /* Tabbar.storyboard in Resources */,
 				C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */,
@@ -1212,6 +1252,8 @@
 				C99B7F3E2601135000EBD873 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				C99B7F382601135000EBD873 /* Poppins-LightItalic.ttf in Resources */,
 				C99B7F332601135000EBD873 /* Poppins-Medium.ttf in Resources */,
+				B2656CE32603DB73007609F6 /* ChatHeaderView.xib in Resources */,
+				B2656D4C2607E8C6007609F6 /* ChatMessageSentCell.xib in Resources */,
 				C95B62E12605FE1F0088506C /* CreateProfileSectionTableViewCell.xib in Resources */,
 				C9A0C28E260B476100C3285E /* Notification.storyboard in Resources */,
 				C95B6344260623120088506C /* BottomSheetListCell.xib in Resources */,
@@ -1230,6 +1272,7 @@
 				C9A0C27B260B423D00C3285E /* DashboardCard.xib in Resources */,
 				C95B633A26061DF00088506C /* BottomSheet.storyboard in Resources */,
 				B2656D0726053D34007609F6 /* MessageCell.xib in Resources */,
+				C95B633A26061DF00088506C /* BottomSheet.storyboard in Resources */,
 				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
 				C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */,
 				C99B7FE526012BE700EBD873 /* Signup.storyboard in Resources */,
@@ -1339,6 +1382,7 @@
 				C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */,
 				B2656CE82603DEF5007609F6 /* ChatViewController.swift in Sources */,
 				B2656D0C26053EF0007609F6 /* MessageViewModel.swift in Sources */,
+				C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */,
 				C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */,
 				C9A0C1FF260ADCAC00C3285E /* LoginViewModel.swift in Sources */,
 				C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */,
@@ -1358,6 +1402,7 @@
 				C9A0C293260B480600C3285E /* DashboardSceneRouter.swift in Sources */,
 				C92821362603CD4D006E97CC /* OnboardingCollectionViewCell.swift in Sources */,
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
+				B2656D462607E89E007609F6 /* ChatMessageSentCell.swift in Sources */,
 				C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */,
 				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,
 				C95B631F26061AA00088506C /* RegisteredSubjectsViewController.swift in Sources */,
@@ -1380,6 +1425,7 @@
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
 				C9A0C1DE260AD44200C3285E /* DashboardViewController.swift in Sources */,
+				B2656CF926053C71007609F6 /* MessagesViewController.swift in Sources */,
 				C985374D2607208F00EE1F45 /* AvailibilityCellViewModel.swift in Sources */,
 				C9A0C306260BB9A700C3285E /* StudentTableViewCell.swift in Sources */,
 				C95B633226061DD40088506C /* BottomSheet.swift in Sources */,
@@ -1401,6 +1447,9 @@
 				C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */,
 				B2656CDB2603D8F1007609F6 /* ChatHeaderView.swift in Sources */,
 				B2656D1126062EE8007609F6 /* MockData.swift in Sources */,
+				C9853752260727DC00EE1F45 /* PaymentMethodViewController.swift in Sources */,
+				C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */,
+				B2656D6A2607F1B5007609F6 /* ChatViewModel.swift in Sources */,
 				C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */,
 				C95B62E62605FEC40088506C /* CreateProfileSectionTableViewCell.swift in Sources */,
 				C95B636B26070AF20088506C /* RegisteredSubjectTableViewCell.swift in Sources */,
@@ -1417,6 +1466,7 @@
 				C92821062603BD80006E97CC /* OnboardingViewController.swift in Sources */,
 				C9A0C289260B475700C3285E /* NotificationViewController.swift in Sources */,
 				C9A0C316260BBD4900C3285E /* StudentListingRouter.swift in Sources */,
+				B2656CFF26053CA9007609F6 /* MessageCell.swift in Sources */,
 				C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */,
 				C95B62EC2605FEEA0088506C /* CreateProfileSectionTableCellViewModel.swift in Sources */,
 				C9A0C225260AFDB600C3285E /* ScheduleSceneBuilder.swift in Sources */,
@@ -1425,6 +1475,7 @@
 				C9A0C2FC260BB8DC00C3285E /* StudentMock.swift in Sources */,
 				C98537A0260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift in Sources */,
 				C9A0C1FA260ADBEC00C3285E /* LoginRouter.swift in Sources */,
+				B2656D602607EEAE007609F6 /* ChatMessageReceivedCell.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
 				C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */,
 				C90C6A10260478930075D776 /* LoginProfileRejectViewModel.swift in Sources */,

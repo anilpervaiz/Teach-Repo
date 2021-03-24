@@ -92,6 +92,8 @@ internal enum Asset {
     internal static let forwardIcon = ImageAsset(name: "forwardIcon")
     internal static let getStartedIllustration = ImageAsset(name: "getStartedIllustration")
     internal static let male = ImageAsset(name: "male")
+    internal static let messages = ImageAsset(name: "messages")
+    internal static let parent = ImageAsset(name: "parent")
     internal static let profilePlaceholder = ImageAsset(name: "profilePlaceholder")
     internal static let radioButtonEmpty = ImageAsset(name: "radioButtonEmpty")
     internal static let radioButtonSelected = ImageAsset(name: "radioButtonSelected")
