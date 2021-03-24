@@ -4,26 +4,104 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Chat View Controller-->
         <scene sceneID="YcI-zk-aJa">
             <objects>
-                <viewController id="LWV-Oj-Mkc" customClass="ChatViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatViewController" id="LWV-Oj-Mkc" customClass="ChatViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ep2-CC-kBj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nvy-4N-0hP">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSu-HP-d2g">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85d-z2-xXY">
+                                        <rect key="frame" x="17" y="16" width="35" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="sapphireLight"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhg-3S-hgw">
+                                        <rect key="frame" x="62" y="16" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jhg-3S-hgw" secondAttribute="height" id="6xW-eM-p1v"/>
+                                            <constraint firstAttribute="width" constant="24" id="MJP-dn-eLS"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="pureWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wsq-KB-ugv">
+                                        <rect key="frame" x="94" y="16" width="29.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" name="aquaMarine"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ck5-9L-oIL">
+                                        <rect key="frame" x="377" y="16" width="24" height="24"/>
+                                        <state key="normal" image="messages"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="primary"/>
+                                <constraints>
+                                    <constraint firstItem="Wsq-KB-ugv" firstAttribute="top" secondItem="BSu-HP-d2g" secondAttribute="top" constant="16" id="C4S-XP-vky"/>
+                                    <constraint firstItem="Ck5-9L-oIL" firstAttribute="top" secondItem="BSu-HP-d2g" secondAttribute="top" constant="16" id="EXe-Dw-c5M"/>
+                                    <constraint firstItem="jhg-3S-hgw" firstAttribute="top" secondItem="BSu-HP-d2g" secondAttribute="top" constant="16" id="HYM-0u-iJ7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ck5-9L-oIL" secondAttribute="trailing" constant="13" id="S0O-yk-poJ"/>
+                                    <constraint firstItem="85d-z2-xXY" firstAttribute="leading" secondItem="BSu-HP-d2g" secondAttribute="leading" constant="17" id="SyY-Nu-RRV"/>
+                                    <constraint firstAttribute="height" constant="56" id="TEd-NV-3Lz"/>
+                                    <constraint firstItem="Wsq-KB-ugv" firstAttribute="leading" secondItem="jhg-3S-hgw" secondAttribute="trailing" constant="8" id="dd5-hZ-tzk"/>
+                                    <constraint firstAttribute="bottom" secondItem="85d-z2-xXY" secondAttribute="bottom" constant="16" id="gKq-NE-L7S"/>
+                                    <constraint firstItem="85d-z2-xXY" firstAttribute="top" secondItem="BSu-HP-d2g" secondAttribute="top" constant="16" id="jdT-WG-MJL"/>
+                                    <constraint firstAttribute="bottom" secondItem="jhg-3S-hgw" secondAttribute="bottom" constant="16" id="lGU-le-d6J"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ck5-9L-oIL" secondAttribute="bottom" constant="16" id="ofw-ib-xlh"/>
+                                    <constraint firstItem="jhg-3S-hgw" firstAttribute="leading" secondItem="85d-z2-xXY" secondAttribute="trailing" constant="10" id="tmW-By-GGT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wsq-KB-ugv" secondAttribute="bottom" constant="16" id="zYT-UT-ktt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hYR-Zp-E4b"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BSu-HP-d2g" firstAttribute="leading" secondItem="hYR-Zp-E4b" secondAttribute="leading" id="Feg-ps-lSb"/>
+                            <constraint firstItem="nvy-4N-0hP" firstAttribute="top" secondItem="BSu-HP-d2g" secondAttribute="bottom" id="L6G-Zp-nYY"/>
+                            <constraint firstItem="hYR-Zp-E4b" firstAttribute="trailing" secondItem="nvy-4N-0hP" secondAttribute="trailing" id="L6L-Nf-2y8"/>
+                            <constraint firstItem="hYR-Zp-E4b" firstAttribute="bottom" secondItem="nvy-4N-0hP" secondAttribute="bottom" id="Y5j-RN-dqL"/>
+                            <constraint firstItem="hYR-Zp-E4b" firstAttribute="trailing" secondItem="BSu-HP-d2g" secondAttribute="trailing" id="j6Z-nO-QkG"/>
+                            <constraint firstItem="nvy-4N-0hP" firstAttribute="leading" secondItem="hYR-Zp-E4b" secondAttribute="leading" id="swR-N1-b9r"/>
+                            <constraint firstItem="BSu-HP-d2g" firstAttribute="top" secondItem="hYR-Zp-E4b" secondAttribute="top" id="zJ6-K1-Mbv"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BXN-Wa-lkg"/>
+                    <connections>
+                        <outlet property="parentImageView" destination="jhg-3S-hgw" id="Mjr-61-9JL"/>
+                        <outlet property="parentName" destination="Wsq-KB-ugv" id="nPr-jU-91r"/>
+                        <outlet property="tableView" destination="nvy-4N-0hP" id="mz5-YK-dOw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUO-Jh-BXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918.84057971014499" y="81.696428571428569"/>
+            <point key="canvasLocation" x="1810" y="-607"/>
         </scene>
         <!--Messages View Controller-->
         <scene sceneID="s3L-MK-ETH">
@@ -72,6 +150,19 @@
         </designable>
     </designables>
     <resources>
+        <image name="messages" width="24" height="24"/>
+        <namedColor name="aquaMarine">
+            <color red="0.27058823529411763" green="0.99607843137254903" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.16862745098039217" green="0.27843137254901962" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pureWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="sapphireLight">
+            <color red="0.83921568627450982" green="0.8901960784313725" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
