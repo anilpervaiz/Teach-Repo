@@ -53,6 +53,7 @@ internal enum Asset {
     internal static let recording = ImageAsset(name: "Recording")
     internal static let facebookIcon = ImageAsset(name: "facebookIcon")
     internal static let googleIcon = ImageAsset(name: "googleIcon")
+    internal static let avatar = ImageAsset(name: "avatar")
     internal static let backArrow = ImageAsset(name: "backArrow")
     internal static let calendarIcon = ImageAsset(name: "calendarIcon")
     internal static let camera = ImageAsset(name: "camera")
@@ -68,6 +69,7 @@ internal enum Asset {
     internal static let profilePlaceholder = ImageAsset(name: "profilePlaceholder")
     internal static let radioButtonEmpty = ImageAsset(name: "radioButtonEmpty")
     internal static let radioButtonSelected = ImageAsset(name: "radioButtonSelected")
+    internal static let search = ImageAsset(name: "search")
     internal static let uploadFile = ImageAsset(name: "uploadFile")
   }
 }
