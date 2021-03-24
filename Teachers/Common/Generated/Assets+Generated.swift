@@ -78,6 +78,7 @@ internal enum Asset {
     internal static let tabbarScheduleSelected = ImageAsset(name: "tabbarScheduleSelected")
     internal static let tabbarStudentNormal = ImageAsset(name: "tabbarStudentNormal")
     internal static let tabbarStudentSelected = ImageAsset(name: "tabbarStudentSelected")
+    internal static let avatar = ImageAsset(name: "avatar")
     internal static let backArrow = ImageAsset(name: "backArrow")
     internal static let calendarIcon = ImageAsset(name: "calendarIcon")
     internal static let camera = ImageAsset(name: "camera")
@@ -94,7 +95,7 @@ internal enum Asset {
     internal static let profilePlaceholder = ImageAsset(name: "profilePlaceholder")
     internal static let radioButtonEmpty = ImageAsset(name: "radioButtonEmpty")
     internal static let radioButtonSelected = ImageAsset(name: "radioButtonSelected")
-    internal static let searchIcon = ImageAsset(name: "searchIcon")
+    internal static let search = ImageAsset(name: "search")
     internal static let uploadFile = ImageAsset(name: "uploadFile")
   }
 }

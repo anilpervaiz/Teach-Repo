@@ -13,6 +13,16 @@
 		C90C6A00260473FF0075D776 /* LoginPendingProcessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */; };
 		C90C6A0B260476700075D776 /* LoginAccountWaitingReviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */; };
 		C90C6A10260478930075D776 /* LoginProfileRejectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */; };
+		B2656CDB2603D8F1007609F6 /* ChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CDA2603D8F1007609F6 /* ChatHeaderView.swift */; };
+		B2656CE32603DB73007609F6 /* ChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656CE22603DB73007609F6 /* ChatHeaderView.xib */; };
+		B2656CE82603DEF5007609F6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CE72603DEF5007609F6 /* ChatViewController.swift */; };
+		B2656CED2603E3ED007609F6 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2656CEC2603E3ED007609F6 /* Messages.storyboard */; };
+		B2656CF926053C71007609F6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CF826053C71007609F6 /* MessagesViewController.swift */; };
+		B2656CFF26053CA9007609F6 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CFE26053CA9007609F6 /* MessageCell.swift */; };
+		B2656D0726053D34007609F6 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656D0626053D34007609F6 /* MessageCell.xib */; };
+		B2656D0C26053EF0007609F6 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D0B26053EF0007609F6 /* MessageViewModel.swift */; };
+		B2656D1126062EE8007609F6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D1026062EE8007609F6 /* MockData.swift */; };
+		B2656D16260640AF007609F6 /* HeadingLabel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D15260640AF007609F6 /* HeadingLabel2.swift */; };
 		C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */; };
 		C9281F852602F775006E97CC /* SuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F842602F775006E97CC /* SuccessStateViewModel.swift */; };
 		C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */; };
@@ -204,6 +214,16 @@
 		C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewModel.swift; sourceTree = "<group>"; };
 		C90C6A0A260476700075D776 /* LoginAccountWaitingReviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAccountWaitingReviewViewModel.swift; sourceTree = "<group>"; };
 		C90C6A0F260478930075D776 /* LoginProfileRejectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProfileRejectViewModel.swift; sourceTree = "<group>"; };
+		B2656CDA2603D8F1007609F6 /* ChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHeaderView.swift; sourceTree = "<group>"; };
+		B2656CE22603DB73007609F6 /* ChatHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatHeaderView.xib; sourceTree = "<group>"; };
+		B2656CE72603DEF5007609F6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B2656CEC2603E3ED007609F6 /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
+		B2656CF826053C71007609F6 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		B2656CFE26053CA9007609F6 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		B2656D0626053D34007609F6 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		B2656D0B26053EF0007609F6 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		B2656D1026062EE8007609F6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		B2656D15260640AF007609F6 /* HeadingLabel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLabel2.swift; sourceTree = "<group>"; };
 		C9281F7E2602F75B006E97CC /* SuccessStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewController.swift; sourceTree = "<group>"; };
 		C9281F842602F775006E97CC /* SuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewModel.swift; sourceTree = "<group>"; };
 		C9281F892602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCompletedSuccessStateViewModel.swift; sourceTree = "<group>"; };
@@ -420,6 +440,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B2656CD92603D8B9007609F6 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				B2656CFD26053C97007609F6 /* Cell */,
+				B2656CDA2603D8F1007609F6 /* ChatHeaderView.swift */,
+				B2656CE22603DB73007609F6 /* ChatHeaderView.xib */,
+				B2656CE72603DEF5007609F6 /* ChatViewController.swift */,
+				B2656CEC2603E3ED007609F6 /* Messages.storyboard */,
+				B2656CF826053C71007609F6 /* MessagesViewController.swift */,
+				B2656D1026062EE8007609F6 /* MockData.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		B2656CFD26053C97007609F6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B2656CFE26053CA9007609F6 /* MessageCell.swift */,
+				B2656D0626053D34007609F6 /* MessageCell.xib */,
+				B2656D0B26053EF0007609F6 /* MessageViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C9281F7D2602F731006E97CC /* SuccessState */ = {
 			isa = PBXGroup;
 			children = (
@@ -626,6 +670,7 @@
 				C99B7F852601232D00EBD873 /* Base */,
 				C99B7EDC25FFD00300EBD873 /* GettingStarted */,
 				C99B7EDB25FFCFF000EBD873 /* Signup */,
+				B2656CD92603D8B9007609F6 /* Messages */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -721,6 +766,7 @@
 				C99B7F442601145200EBD873 /* PrimaryCTAButton.swift */,
 				C99B7F64260117F700EBD873 /* SecondaryCTAButton.swift */,
 				C99B7F7D260122C000EBD873 /* HeadingLabel.swift */,
+				B2656D15260640AF007609F6 /* HeadingLabel2.swift */,
 				C99B7FA02601253100EBD873 /* PaddedTextField.swift */,
 				C99B7FBD260125D200EBD873 /* CustomNibView.swift */,
 				C99B7FF32601301300EBD873 /* FlowDescriptionLabel.swift */,
@@ -1155,6 +1201,7 @@
 				C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */,
 				C9A0C1BB260A3C9C00C3285E /* Tabbar.storyboard in Resources */,
 				C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */,
+				B2656CED2603E3ED007609F6 /* Messages.storyboard in Resources */,
 				C99B7F2F2601135000EBD873 /* Poppins-Bold.ttf in Resources */,
 				C95B62DB2605FD520088506C /* CreateProfile.storyboard in Resources */,
 				C95B6357260685470088506C /* AddSubject.storyboard in Resources */,
@@ -1168,6 +1215,7 @@
 				C95B62E12605FE1F0088506C /* CreateProfileSectionTableViewCell.xib in Resources */,
 				C9A0C28E260B476100C3285E /* Notification.storyboard in Resources */,
 				C95B6344260623120088506C /* BottomSheetListCell.xib in Resources */,
+				B2656CE32603DB73007609F6 /* ChatHeaderView.xib in Resources */,
 				C99B7FAF2601258A00EBD873 /* LabelledTextField.xib in Resources */,
 				C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */,
 				C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */,
@@ -1181,6 +1229,7 @@
 				C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */,
 				C9A0C27B260B423D00C3285E /* DashboardCard.xib in Resources */,
 				C95B633A26061DF00088506C /* BottomSheet.storyboard in Resources */,
+				B2656D0726053D34007609F6 /* MessageCell.xib in Resources */,
 				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
 				C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */,
 				C99B7FE526012BE700EBD873 /* Signup.storyboard in Resources */,
@@ -1244,7 +1293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# If you're running on Apple Silicon with SwiftGen installed through Homebrew\n# and you need to force it to run through Rosetta, put the following lines\n# in ~/.bash_profile\n#\n# alias swiftgen=\"arch -x86_64 swiftgen\"\n#\n# As of 20/12/2020 Homebrew's SwiftGen seems to be a universal binary,\n# but the arm64 slice doesn't execute.\n\nPROFILE_PATH=\"$HOME/.bash_profile\"\n\nif [[ -f \"$PROFILE_PATH\" ]]; then\n  source \"$PROFILE_PATH\"\nfi\n\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
+			shellScript = "# If you're running on Apple Silicon with SwiftGen installed through Homebrew\n# and you need to force it to run through Rosetta, put the following lines\n# in ~/.bash_profile\n#\n# alias swiftgen=\"arch -x86_64 swiftgen\"\n#\n# As of 20/12/2020 Homebrew's SwiftGen seems to be a universal binary,\n# but the arm64 slice doesn't execute.\nif [ -f \"${PROJECT_DIR}/swiftgen/bin/swiftgen\" ]; then\n\"${PROJECT_DIR}/swiftgen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
 		};
 		FF213B3082E00371F37A628F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1270,6 +1319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2656D16260640AF007609F6 /* HeadingLabel2.swift in Sources */,
 				C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */,
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
 				C9A0C1E3260AD4C700C3285E /* RequestsViewController.swift in Sources */,
@@ -1287,6 +1337,8 @@
 				C99B7FDA260126E100EBD873 /* CustomDatePickerViewModel.swift in Sources */,
 				C92821212603CA82006E97CC /* OnboardingPage.swift in Sources */,
 				C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */,
+				B2656CE82603DEF5007609F6 /* ChatViewController.swift in Sources */,
+				B2656D0C26053EF0007609F6 /* MessageViewModel.swift in Sources */,
 				C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */,
 				C9A0C1FF260ADCAC00C3285E /* LoginViewModel.swift in Sources */,
 				C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */,
@@ -1332,6 +1384,7 @@
 				C9A0C306260BB9A700C3285E /* StudentTableViewCell.swift in Sources */,
 				C95B633226061DD40088506C /* BottomSheet.swift in Sources */,
 				C95B635C260685590088506C /* AddSubjectViewController.swift in Sources */,
+				B2656CF926053C71007609F6 /* MessagesViewController.swift in Sources */,
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
 				C95B6349260625650088506C /* BottomSheetListCellViewModel.swift in Sources */,
 				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,
@@ -1346,6 +1399,8 @@
 				C9A0C1E8260AD4D100C3285E /* MyScheduleViewController.swift in Sources */,
 				C9A0C280260B424900C3285E /* DashboardCard.swift in Sources */,
 				C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */,
+				B2656CDB2603D8F1007609F6 /* ChatHeaderView.swift in Sources */,
+				B2656D1126062EE8007609F6 /* MockData.swift in Sources */,
 				C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */,
 				C95B62E62605FEC40088506C /* CreateProfileSectionTableViewCell.swift in Sources */,
 				C95B636B26070AF20088506C /* RegisteredSubjectTableViewCell.swift in Sources */,
@@ -1365,6 +1420,7 @@
 				C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */,
 				C95B62EC2605FEEA0088506C /* CreateProfileSectionTableCellViewModel.swift in Sources */,
 				C9A0C225260AFDB600C3285E /* ScheduleSceneBuilder.swift in Sources */,
+				B2656CFF26053CA9007609F6 /* MessageCell.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
 				C9A0C2FC260BB8DC00C3285E /* StudentMock.swift in Sources */,
 				C98537A0260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift in Sources */,

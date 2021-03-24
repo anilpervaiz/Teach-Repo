@@ -23,13 +23,12 @@ class StudentsListingViewController: BaseViewController {
     }()
 
     lazy var searchBarButton: UIBarButtonItem = {
-        let view = NavigationBarItem()
-        view.itemImage = Asset.Media.searchIcon.image
-
-        let barButton = UIBarButtonItem(customView: view)
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapSearchButton))
-        view.addGestureRecognizer(gesture)
-        return barButton
+        return UIBarButtonItem(
+            image: Asset.Media.search.image,
+            style: .plain,
+            target: self,
+            action: #selector(didTapSearchButton)
+        )
     }()
 
     lazy var notificationNavigationBarButton: UIBarButtonItem = {
@@ -60,7 +59,7 @@ class StudentsListingViewController: BaseViewController {
         setLeftAlignNavBarTitle(with: "Students",
                                 font: .init(commonFont: PoppinsFontStyle.semiBold, size: 20),
                                 textColor: Asset.Colors.darkBlue.color)
-        navigationItem.rightBarButtonItems = [notificationNavigationBarButton, chatNavigationBarButton]
+        navigationItem.rightBarButtonItems = [notificationNavigationBarButton, chatNavigationBarButton, searchBarButton]
     }
 }
 

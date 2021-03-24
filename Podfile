@@ -10,4 +10,6 @@ target 'Teachers' do
   pod 'UITextView+Placeholder'
   pod 'Cosmos'
   pod 'DateToolsSwift'
+  pod 'SwiftGen'
+
 end
