@@ -102,4 +102,11 @@ extension UICollectionView {
     func registerSupplementaryView<T>(_ :T.Type, kind: String) where T: ReusableView, T: UICollectionReusableView {
         register(T.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: T.identifier)
     }
+
+    /// Register Programatic Header
+    func registerSupplementaryViewFromNib<T>(_ :T.Type, kind: String) where T: ReusableView, T: UICollectionReusableView {
+        let nib = UINib(nibName: T.nibName, bundle: nil)
+        register(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: T.identifier)
+    }
+
 }

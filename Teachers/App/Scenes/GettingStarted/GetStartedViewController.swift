@@ -48,7 +48,7 @@ class GetStartedViewController: BaseViewController {
     }
 }
 
-// MARK: - label section tapped handling.
+// MARK:- label section tapped handling.
 extension GetStartedViewController {
     @objc func labelTapped(gesture: UITapGestureRecognizer) {
         guard let text = termsAndConditionLabel.text,
@@ -61,17 +61,22 @@ extension GetStartedViewController {
                                                inRange: termsNSRange) {
             // Perform Terms and condition navigation
             print("Terms and condition tapped")
-
-            let viewController = BottomSheet.getInstance()
-            viewController.modalPresentationStyle = .overCurrentContext
-            viewController.modalTransitionStyle = .crossDissolve
-            viewController.viewModel = BottomSheetViewModel(with: "Education Type", items: [
-                BottomSheetListCellViewModel(isSelected: false, title: "Kindergarten"),
-                BottomSheetListCellViewModel(isSelected: false, title: "Kindergarten"),
-                BottomSheetListCellViewModel(isSelected: true, title: "Kindergarten"),
-            ])
-            present(viewController, animated: true, completion: nil)
         }
+    }
+}
+
+// MARK:- IBActions
+extension GetStartedViewController {
+    @IBAction func didTapSignupButton(_ sender: Any) {
+        let controller = SignupPersonalInformationViewController.getInstance()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+
+
+    @IBAction func didTapLoginButton(_ sender: Any) {
+        let controller = LoginViewController.getInstance()
+        controller.viewModel = LoginViewModel(router: LoginRouter(with: navigationController as? BaseNavigationController))
+        navigationController?.pushViewController(controller, animated: true)
     }
 }
 

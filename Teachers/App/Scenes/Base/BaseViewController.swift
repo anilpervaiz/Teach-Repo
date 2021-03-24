@@ -27,4 +27,14 @@ class BaseViewController: UIViewController {
     func removeBackButtonTitleOfPushedController() {
         navigationItem.backBarButtonItem = .empty
     }
+
+    func setLeftAlignNavBarTitle(with title: String,
+                                 font: UIFont = .init(commonFont: PoppinsFontStyle.medium, size: 14),
+                                 textColor: UIColor = Asset.Colors.gray.color) {
+        let label = UILabel()
+        label.textColor = textColor
+        label.text = title
+        label.font = font
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
+    }
 }

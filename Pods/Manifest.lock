@@ -1,4 +1,6 @@
 PODS:
+  - Cosmos (23.0.0)
+  - DateToolsSwift (5.0.0)
   - FlagPhoneNumber (0.8.0):
     - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
   - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
@@ -6,12 +8,16 @@ PODS:
   - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
+  - Cosmos
+  - DateToolsSwift
   - FlagPhoneNumber (from `https://github.com/rahimkhalid/FlagPhoneNumber.git`, branch `UI-Fixes`)
   - SVPinView
   - "UITextView+Placeholder"
 
 SPEC REPOS:
   trunk:
+    - Cosmos
+    - DateToolsSwift
     - SVPinView
     - "UITextView+Placeholder"
 
@@ -26,10 +32,12 @@ CHECKOUT OPTIONS:
     :git: https://github.com/rahimkhalid/FlagPhoneNumber.git
 
 SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
   SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 4cd7bf0774d90d7d6ef9f4796694b7f15ef405ec
+PODFILE CHECKSUM: 052fa8775678adfbdfe183fdb1c2d2d664f092b7
 
 COCOAPODS: 1.10.0

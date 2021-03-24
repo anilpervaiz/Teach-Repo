@@ -98,6 +98,11 @@ extension SignupPersonalInformationViewController: ItemPickerViewDelegate {
     }
 }
 
+extension SignupPersonalInformationViewController: Initializable {
+    static var storyboardName: UIStoryboard.Name { .signup }
+}
+
+
 enum GenderOption: String,
                    OptionCaseIterable {
     case male = "male"

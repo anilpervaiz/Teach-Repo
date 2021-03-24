@@ -24,7 +24,7 @@
         <!--Signup Personal Information View Controller-->
         <scene sceneID="MGP-nN-pIX">
             <objects>
-                <viewController id="Ffr-Ac-r7l" customClass="SignupPersonalInformationViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupPersonalInformationViewController" id="Ffr-Ac-r7l" customClass="SignupPersonalInformationViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dRb-0m-whk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

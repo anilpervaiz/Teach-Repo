@@ -9,6 +9,7 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
+    var viewModel: LoginViewModel?
     @IBOutlet weak var emailTextField: LabelledTextField!
     @IBOutlet weak var passwordTextField: LabelledTextField! {
         didSet {
@@ -26,28 +27,14 @@ class LoginViewController: BaseViewController {
     }
 
     @IBAction func didTapFacebookLoginButton(_ sender: Any) {
-        //TODO: for the purpose of demo i have linked login failed screen here
-        let viewController = LoginPendingProcessViewController.getInstance()
-        viewController.viewModel = LoginProfileRejectViewModel()
 
-        viewController.modalPresentationStyle = .fullScreen
-        viewController.modalTransitionStyle = .coverVertical
-
-        self.present(viewController,
-                     animated: true,
-                     completion: nil)
     }
 
     @IBAction func didTapLoginButton(_ sender: Any) {
-
-        let viewController = LoginPendingProcessViewController.getInstance()
-        viewController.viewModel = LoginAccountWaitingReviewViewModel()
-
-        viewController.modalPresentationStyle = .fullScreen
-        viewController.modalTransitionStyle = .coverVertical
-
-        self.present(viewController,
-                     animated: true,
-                     completion: nil)
+        viewModel?.didTapLoginButton()
     }
+}
+
+extension LoginViewController: Initializable {
+    static var storyboardName: UIStoryboard.Name { .login }
 }

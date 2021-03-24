@@ -35,5 +35,12 @@ extension UIStoryboard {
         case addSubject = "AddSubject"
         case imagePickerBottomSheet = "ImagePickerOptionSheet"
         case getStarted = "GetStarted"
+        case tabbar = "Tabbar"
+        case profile = "Profile"
+        case student = "Students"
+        case schedule = "Schedule"
+        case requests = "Requests"
+        case dashboard = "Dashboard"
+        case notification = "Notification"
     }
 }
