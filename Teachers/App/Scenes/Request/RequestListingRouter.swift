@@ -11,11 +11,13 @@ class RequestListingRouter: BaseRouter {
 
     func navigateToNotificationView() {
         let viewController = NotificationViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 
     func navigateToChatView() {
         let viewController = MessagesViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

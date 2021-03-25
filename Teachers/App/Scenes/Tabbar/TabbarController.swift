@@ -37,6 +37,7 @@ class TabbarController: UITabBarController {
             StudentSceneBuilder().makeViewController(),
             ProfileSceneBuilder().makeViewController()
         ]
+
         for tab in Tabs.allCases {
             tabBar.items?[tab.rawValue].image = tab.normalStyleImageName.image
             tabBar.items?[tab.rawValue].selectedImage = tab.selectedStyleImageName.image
