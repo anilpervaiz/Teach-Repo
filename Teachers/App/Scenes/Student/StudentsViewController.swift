@@ -23,12 +23,12 @@ class StudentsListingViewController: BaseViewController {
     }()
 
     lazy var searchBarButton: UIBarButtonItem = {
-        return UIBarButtonItem(
-            image: Asset.Media.search.image,
-            style: .plain,
-            target: self,
-            action: #selector(didTapSearchButton)
-        )
+        let view = NavigationBarItem()
+        view.itemImage = Asset.Media.icSearch.image
+
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapSearchButton))
+        view.addGestureRecognizer(gesture)
+        return UIBarButtonItem(customView: view)
     }()
 
     lazy var notificationNavigationBarButton: UIBarButtonItem = {

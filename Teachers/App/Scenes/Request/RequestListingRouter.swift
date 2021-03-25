@@ -1,13 +1,13 @@
 //
-//  StudentListingRouter.swift
+//  RequestListingRouter.swift
 //  Teachers
 //
-//  Created by Rahim on 24/03/2021.
+//  Created by Rahim on 25/03/2021.
 //
 
 import Foundation
 
-class StudentListingRouter: BaseRouter {
+class RequestListingRouter: BaseRouter {
 
     func navigateToNotificationView() {
         let viewController = NotificationViewController.getInstance()

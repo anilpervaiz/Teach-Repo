@@ -10,7 +10,8 @@ import Foundation
 struct RequestSceneBuilder {
     func makeViewController() -> BaseNavigationController {
         let controller = RequestsViewController.getInstance()
-
-        return BaseNavigationController(rootViewController: controller)
+        let navigationController = BaseNavigationController(rootViewController: controller)
+        controller.viewModel = RequestListingViewModel(router: RequestListingRouter(with: navigationController))
+        return navigationController
     }
 }

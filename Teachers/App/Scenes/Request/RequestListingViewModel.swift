@@ -1,16 +1,16 @@
 //
-//  StudentListingViewModel.swift
+//  RequestListingViewModel.swift
 //  Teachers
 //
-//  Created by Rahim on 24/03/2021.
+//  Created by Rahim on 25/03/2021.
 //
 
 import Foundation
 
-class StudentListingViewModel {
-    var router: StudentListingRouter
+class RequestListingViewModel {
+    var router: RequestListingRouter
 
-    init(router: StudentListingRouter) {
+    init(router: RequestListingRouter) {
         self.router = router
     }
 
@@ -20,8 +20,5 @@ class StudentListingViewModel {
 
     func didTapChatButton() {
         router.navigateToChatView()
-    }
-
-    func didTapSeachButton() {
     }
 }

@@ -48,7 +48,7 @@
                 <constraint firstItem="PEO-Wm-Gf9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="eo3-6i-9FN"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="223.18840579710147" y="130.58035714285714"/>
+            <point key="canvasLocation" x="-242" y="138"/>
         </view>
     </objects>
     <resources>
