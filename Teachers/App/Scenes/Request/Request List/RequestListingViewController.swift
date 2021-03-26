@@ -1,5 +1,5 @@
 //
-//  StudentsListingViewController.swift
+//  RequestListingViewController.swift
 //  Teachers
 //
 //  Created by Rahim on 24/03/2021.
@@ -7,11 +7,9 @@
 
 import UIKit
 
-class StudentsListingViewController: BaseViewController {
+class RequestListingViewController: BaseViewController {
 
-
-    var viewModel: StudentListingViewModel?
-
+    var viewModel: RequestListingViewModel?
     lazy var chatNavigationBarButton: UIBarButtonItem = {
         let view = NavigationBarItem()
         view.itemImage = Asset.Media.chat.image
@@ -20,15 +18,6 @@ class StudentsListingViewController: BaseViewController {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChatButton))
         view.addGestureRecognizer(gesture)
         return barButton
-    }()
-
-    lazy var searchBarButton: UIBarButtonItem = {
-        let view = NavigationBarItem()
-        view.itemImage = Asset.Media.icSearch.image
-
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapSearchButton))
-        view.addGestureRecognizer(gesture)
-        return UIBarButtonItem(customView: view)
     }()
 
     lazy var notificationNavigationBarButton: UIBarButtonItem = {
@@ -45,9 +34,11 @@ class StudentsListingViewController: BaseViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.registerNibCell(with: StudentTableViewCell.self)
+            tableView.registerNibCell(with: RequestListingTableViewCell.self)
+            tableView.tableFooterView = UIView()
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,27 +47,33 @@ class StudentsListingViewController: BaseViewController {
     }
 
     func setupNavigationBar() {
-        setLeftAlignNavBarTitle(with: "Students",
+        setLeftAlignNavBarTitle(with: "Requests",
                                 font: .init(commonFont: PoppinsFontStyle.semiBold, size: 20),
                                 textColor: Asset.Colors.darkBlue.color)
-        navigationItem.rightBarButtonItems = [notificationNavigationBarButton, chatNavigationBarButton, searchBarButton]
+        navigationItem.rightBarButtonItems = [notificationNavigationBarButton, chatNavigationBarButton]
     }
 }
 
-extension StudentsListingViewController: UITableViewDelegate, UITableViewDataSource {
+extension RequestListingViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        Student.mockData.count
+        Session.mockData.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withType: StudentTableViewCell.self)
-        cell.configure(student: Student.mockData[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withType: RequestListingTableViewCell.self)
+        cell.configure(session: Session.mockData[indexPath.row])
+
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
+
 @objc
-extension StudentsListingViewController {
+extension RequestListingViewController {
     func didTapNotificationButton() {
         viewModel?.didTapNotificationButton()
     }
@@ -84,12 +81,8 @@ extension StudentsListingViewController {
     func didTapChatButton() {
         viewModel?.didTapChatButton()
     }
-
-    func didTapSearchButton() {
-        viewModel?.didTapSeachButton()
-    }
 }
 
-extension StudentsListingViewController: Initializable {
-    static var storyboardName: UIStoryboard.Name { .student }
+extension RequestListingViewController: Initializable {
+    static var storyboardName: UIStoryboard.Name { .requests }
 }

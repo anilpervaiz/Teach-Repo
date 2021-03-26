@@ -1,5 +1,5 @@
 //
-//  MyScheduleViewController.swift
+//  ScheduleListingViewController.swift
 //  Teachers
 //
 //  Created by Rahim on 24/03/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyScheduleViewController: UIViewController {
+class ScheduleListingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,6 @@ class MyScheduleViewController: UIViewController {
     }
 }
 
-extension MyScheduleViewController: Initializable {
+extension ScheduleListingViewController: Initializable {
     static var storyboardName: UIStoryboard.Name { .schedule }
 }

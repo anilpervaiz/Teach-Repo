@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Requests View Controller-->
+        <!--Request Listing View Controller-->
         <scene sceneID="0c6-yY-9NP">
             <objects>
-                <viewController storyboardIdentifier="RequestsViewController" id="Km0-Lh-x6C" customClass="RequestsViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RequestListingViewController" id="Km0-Lh-x6C" customClass="RequestListingViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eod-7Z-017">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

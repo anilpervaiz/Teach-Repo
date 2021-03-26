@@ -37,7 +37,7 @@ extension UIStoryboard {
         case getStarted = "GetStarted"
         case tabbar = "Tabbar"
         case profile = "Profile"
-        case student = "Students"
+        case student = "Student"
         case schedule = "Schedule"
         case requests = "Requests"
         case dashboard = "Dashboard"

@@ -1,5 +1,5 @@
 //
-//  StudentSceneBuilder.swift
+//  RequestListingSceneBuilder.swift
 //  Teachers
 //
 //  Created by Rahim on 24/03/2021.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct StudentSceneBuilder {
+struct RequestListingSceneBuilder {
     func makeViewController() -> BaseNavigationController {
-        let controller = StudentsListingViewController.getInstance()
+        let controller = RequestListingViewController.getInstance()
         let navigationController = BaseNavigationController(rootViewController: controller)
-        controller.viewModel = StudentListingViewModel(router: StudentListingRouter(with: navigationController))
+        controller.viewModel = RequestListingViewModel(router: RequestListingRouter(with: navigationController))
         return navigationController
     }
 }

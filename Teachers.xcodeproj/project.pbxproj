@@ -77,8 +77,8 @@
 		C95B637026070AFB0088506C /* RegisteredSubjectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95B636F26070AFB0088506C /* RegisteredSubjectTableViewCell.xib */; };
 		C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */; };
 		C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */; };
-		C95CD814260D0A0F001C2E2D /* RequestListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD813260D0A0F001C2E2D /* RequestListTableViewCell.swift */; };
-		C95CD819260D0A16001C2E2D /* RequestListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95CD818260D0A16001C2E2D /* RequestListTableViewCell.xib */; };
+		C95CD814260D0A0F001C2E2D /* RequestListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD813260D0A0F001C2E2D /* RequestListingTableViewCell.swift */; };
+		C95CD819260D0A16001C2E2D /* RequestListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95CD818260D0A16001C2E2D /* RequestListingTableViewCell.xib */; };
 		C95CD81E260D0CBD001C2E2D /* RequestListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */; };
 		C95CD823260D0CD7001C2E2D /* RequestListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */; };
 		C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */; };
@@ -152,12 +152,12 @@
 		C9A0C1C5260AD3FB00C3285E /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1C4260AD3FB00C3285E /* Dashboard.storyboard */; };
 		C9A0C1CA260AD40500C3285E /* Requests.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1C9260AD40500C3285E /* Requests.storyboard */; };
 		C9A0C1CF260AD40C00C3285E /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1CE260AD40C00C3285E /* Schedule.storyboard */; };
-		C9A0C1D4260AD41600C3285E /* Students.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1D3260AD41600C3285E /* Students.storyboard */; };
+		C9A0C1D4260AD41600C3285E /* Student.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1D3260AD41600C3285E /* Student.storyboard */; };
 		C9A0C1D9260AD41F00C3285E /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1D8260AD41F00C3285E /* Profile.storyboard */; };
 		C9A0C1DE260AD44200C3285E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1DD260AD44200C3285E /* DashboardViewController.swift */; };
-		C9A0C1E3260AD4C700C3285E /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1E2260AD4C700C3285E /* RequestsViewController.swift */; };
-		C9A0C1E8260AD4D100C3285E /* MyScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1E7260AD4D100C3285E /* MyScheduleViewController.swift */; };
-		C9A0C1F0260AD50A00C3285E /* StudentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1EF260AD50A00C3285E /* StudentsViewController.swift */; };
+		C9A0C1E3260AD4C700C3285E /* RequestListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1E2260AD4C700C3285E /* RequestListingViewController.swift */; };
+		C9A0C1E8260AD4D100C3285E /* ScheduleListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1E7260AD4D100C3285E /* ScheduleListingViewController.swift */; };
+		C9A0C1F0260AD50A00C3285E /* StudentListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1EF260AD50A00C3285E /* StudentListingViewController.swift */; };
 		C9A0C1F5260AD51C00C3285E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1F4260AD51C00C3285E /* ProfileViewController.swift */; };
 		C9A0C1FA260ADBEC00C3285E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1F9260ADBEC00C3285E /* LoginRouter.swift */; };
 		C9A0C1FF260ADCAC00C3285E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1FE260ADCAC00C3285E /* LoginViewModel.swift */; };
@@ -165,8 +165,8 @@
 		C9A0C20A260AF8E500C3285E /* NavigationBarItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C209260AF8E500C3285E /* NavigationBarItem.xib */; };
 		C9A0C20F260AFA0B00C3285E /* NavigationBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C20E260AFA0B00C3285E /* NavigationBarItem.swift */; };
 		C9A0C214260AFD4E00C3285E /* DashboardSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C213260AFD4E00C3285E /* DashboardSceneBuilder.swift */; };
-		C9A0C21A260AFD9B00C3285E /* RequestSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C219260AFD9B00C3285E /* RequestSceneBuilder.swift */; };
-		C9A0C225260AFDB600C3285E /* ScheduleSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C224260AFDB600C3285E /* ScheduleSceneBuilder.swift */; };
+		C9A0C21A260AFD9B00C3285E /* RequestListingSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C219260AFD9B00C3285E /* RequestListingSceneBuilder.swift */; };
+		C9A0C225260AFDB600C3285E /* ScheduleListingSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C224260AFDB600C3285E /* ScheduleListingSceneBuilder.swift */; };
 		C9A0C22A260AFDC000C3285E /* StudentListingSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C229260AFDC000C3285E /* StudentListingSceneBuilder.swift */; };
 		C9A0C22F260AFDCA00C3285E /* ProfileSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C22E260AFDCA00C3285E /* ProfileSceneBuilder.swift */; };
 		C9A0C27B260B423D00C3285E /* DashboardCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C27A260B423D00C3285E /* DashboardCard.xib */; };
@@ -287,8 +287,8 @@
 		C95B636F26070AFB0088506C /* RegisteredSubjectTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisteredSubjectTableViewCell.xib; sourceTree = "<group>"; };
 		C95C30EB2602798F00115317 /* NumberVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberVerificationViewController.swift; sourceTree = "<group>"; };
 		C95C30F726027D9F00115317 /* SignupMobileNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupMobileNumberViewController.swift; sourceTree = "<group>"; };
-		C95CD813260D0A0F001C2E2D /* RequestListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListTableViewCell.swift; sourceTree = "<group>"; };
-		C95CD818260D0A16001C2E2D /* RequestListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestListTableViewCell.xib; sourceTree = "<group>"; };
+		C95CD813260D0A0F001C2E2D /* RequestListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingTableViewCell.swift; sourceTree = "<group>"; };
+		C95CD818260D0A16001C2E2D /* RequestListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestListingTableViewCell.xib; sourceTree = "<group>"; };
 		C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingViewModel.swift; sourceTree = "<group>"; };
 		C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingRouter.swift; sourceTree = "<group>"; };
 		C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailibilityDayCell.xib; sourceTree = "<group>"; };
@@ -362,12 +362,12 @@
 		C9A0C1C4260AD3FB00C3285E /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		C9A0C1C9260AD40500C3285E /* Requests.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Requests.storyboard; sourceTree = "<group>"; };
 		C9A0C1CE260AD40C00C3285E /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
-		C9A0C1D3260AD41600C3285E /* Students.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Students.storyboard; path = Teachers/App/Scenes/Schedule/Students.storyboard; sourceTree = SOURCE_ROOT; };
+		C9A0C1D3260AD41600C3285E /* Student.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Student.storyboard; path = Teachers/App/Scenes/Schedule/Student.storyboard; sourceTree = SOURCE_ROOT; };
 		C9A0C1D8260AD41F00C3285E /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C9A0C1DD260AD44200C3285E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		C9A0C1E2260AD4C700C3285E /* RequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
-		C9A0C1E7260AD4D100C3285E /* MyScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleViewController.swift; sourceTree = "<group>"; };
-		C9A0C1EF260AD50A00C3285E /* StudentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentsViewController.swift; sourceTree = "<group>"; };
+		C9A0C1E2260AD4C700C3285E /* RequestListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingViewController.swift; sourceTree = "<group>"; };
+		C9A0C1E7260AD4D100C3285E /* ScheduleListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListingViewController.swift; sourceTree = "<group>"; };
+		C9A0C1EF260AD50A00C3285E /* StudentListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListingViewController.swift; sourceTree = "<group>"; };
 		C9A0C1F4260AD51C00C3285E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C9A0C1F9260ADBEC00C3285E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		C9A0C1FE260ADCAC00C3285E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -375,8 +375,8 @@
 		C9A0C209260AF8E500C3285E /* NavigationBarItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBarItem.xib; sourceTree = "<group>"; };
 		C9A0C20E260AFA0B00C3285E /* NavigationBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarItem.swift; sourceTree = "<group>"; };
 		C9A0C213260AFD4E00C3285E /* DashboardSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSceneBuilder.swift; sourceTree = "<group>"; };
-		C9A0C219260AFD9B00C3285E /* RequestSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSceneBuilder.swift; sourceTree = "<group>"; };
-		C9A0C224260AFDB600C3285E /* ScheduleSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleSceneBuilder.swift; sourceTree = "<group>"; };
+		C9A0C219260AFD9B00C3285E /* RequestListingSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingSceneBuilder.swift; sourceTree = "<group>"; };
+		C9A0C224260AFDB600C3285E /* ScheduleListingSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListingSceneBuilder.swift; sourceTree = "<group>"; };
 		C9A0C229260AFDC000C3285E /* StudentListingSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListingSceneBuilder.swift; sourceTree = "<group>"; };
 		C9A0C22E260AFDCA00C3285E /* ProfileSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSceneBuilder.swift; sourceTree = "<group>"; };
 		C9A0C27A260B423D00C3285E /* DashboardCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCard.xib; sourceTree = "<group>"; };
@@ -602,6 +602,59 @@
 			path = LoginErrorState;
 			sourceTree = "<group>";
 		};
+		C93DB119260E3DFB00106AFC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C95B62D92605FD440088506C /* CreateProfile */,
+				C928214E26045FC0006E97CC /* ResetPassword */,
+				C9282143260455ED006E97CC /* Login */,
+				C99B7EDB25FFCFF000EBD873 /* Signup */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C93DB11A260E3E0B00106AFC /* Social Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C92820FF2603BD5A006E97CC /* OnboardingViewController */,
+				C99B7EDC25FFD00300EBD873 /* GettingStarted */,
+			);
+			path = "Social Onboarding";
+			sourceTree = "<group>";
+		};
+		C93DB11B260E3E3B00106AFC /* Request List */ = {
+			isa = PBXGroup;
+			children = (
+				C95CD812260D09FA001C2E2D /* Cell */,
+				C9A0C1E2260AD4C700C3285E /* RequestListingViewController.swift */,
+				C9A0C219260AFD9B00C3285E /* RequestListingSceneBuilder.swift */,
+				C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */,
+				C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */,
+			);
+			path = "Request List";
+			sourceTree = "<group>";
+		};
+		C93DB134260E3F3600106AFC /* Schedule listing */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0C1E7260AD4D100C3285E /* ScheduleListingViewController.swift */,
+				C9A0C224260AFDB600C3285E /* ScheduleListingSceneBuilder.swift */,
+			);
+			path = "Schedule listing";
+			sourceTree = "<group>";
+		};
+		C93DB13E260E3F9600106AFC /* Student Listing */ = {
+			isa = PBXGroup;
+			children = (
+				C9A0C1EF260AD50A00C3285E /* StudentListingViewController.swift */,
+				C9A0C229260AFDC000C3285E /* StudentListingSceneBuilder.swift */,
+				C9A0C310260BBCAD00C3285E /* StudentListingViewModel.swift */,
+				C9A0C315260BBD4900C3285E /* StudentListingRouter.swift */,
+				C9A0C2F7260BB67500C3285E /* Cell */,
+			);
+			path = "Student Listing";
+			sourceTree = "<group>";
+		};
 		C95B62D92605FD440088506C /* CreateProfile */ = {
 			isa = PBXGroup;
 			children = (
@@ -691,8 +744,8 @@
 		C95CD812260D09FA001C2E2D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				C95CD813260D0A0F001C2E2D /* RequestListTableViewCell.swift */,
-				C95CD818260D0A16001C2E2D /* RequestListTableViewCell.xib */,
+				C95CD813260D0A0F001C2E2D /* RequestListingTableViewCell.swift */,
+				C95CD818260D0A16001C2E2D /* RequestListingTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -709,6 +762,8 @@
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C93DB11A260E3E0B00106AFC /* Social Onboarding */,
+				C93DB119260E3DFB00106AFC /* Authentication */,
 				C9A0C2A0260B756600C3285E /* MockData */,
 				C9A0C287260B474600C3285E /* Notification */,
 				C9A0C1C3260AD3EE00C3285E /* Profile */,
@@ -718,14 +773,8 @@
 				C9A0C1BF260AD3CD00C3285E /* Dashboard */,
 				C9A0C1B4260A3C6800C3285E /* Tabbar */,
 				C95B63552606853C0088506C /* AddSubject */,
-				C95B62D92605FD440088506C /* CreateProfile */,
-				C928214E26045FC0006E97CC /* ResetPassword */,
-				C9282143260455ED006E97CC /* Login */,
-				C92820FF2603BD5A006E97CC /* OnboardingViewController */,
 				C9281F7D2602F731006E97CC /* SuccessState */,
 				C99B7F852601232D00EBD873 /* Base */,
-				C99B7EDC25FFD00300EBD873 /* GettingStarted */,
-				C99B7EDB25FFCFF000EBD873 /* Signup */,
 				B2656CD92603D8B9007609F6 /* Messages */,
 			);
 			path = Scenes;
@@ -961,12 +1010,8 @@
 		C9A0C1C0260AD3D500C3285E /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				C95CD812260D09FA001C2E2D /* Cell */,
 				C9A0C1C9260AD40500C3285E /* Requests.storyboard */,
-				C9A0C1E2260AD4C700C3285E /* RequestsViewController.swift */,
-				C9A0C219260AFD9B00C3285E /* RequestSceneBuilder.swift */,
-				C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */,
-				C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */,
+				C93DB11B260E3E3B00106AFC /* Request List */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -975,8 +1020,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A0C1CE260AD40C00C3285E /* Schedule.storyboard */,
-				C9A0C1E7260AD4D100C3285E /* MyScheduleViewController.swift */,
-				C9A0C224260AFDB600C3285E /* ScheduleSceneBuilder.swift */,
+				C93DB134260E3F3600106AFC /* Schedule listing */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -984,12 +1028,8 @@
 		C9A0C1C2260AD3EA00C3285E /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				C9A0C2F7260BB67500C3285E /* Cell */,
-				C9A0C1D3260AD41600C3285E /* Students.storyboard */,
-				C9A0C1EF260AD50A00C3285E /* StudentsViewController.swift */,
-				C9A0C229260AFDC000C3285E /* StudentListingSceneBuilder.swift */,
-				C9A0C310260BBCAD00C3285E /* StudentListingViewModel.swift */,
-				C9A0C315260BBD4900C3285E /* StudentListingRouter.swift */,
+				C9A0C1D3260AD41600C3285E /* Student.storyboard */,
+				C93DB13E260E3F9600106AFC /* Student Listing */,
 			);
 			path = Student;
 			sourceTree = "<group>";
@@ -1243,7 +1283,7 @@
 				C99B7F3D2601135000EBD873 /* Poppins-SemiBoldItalic.ttf in Resources */,
 				C95B637026070AFB0088506C /* RegisteredSubjectTableViewCell.xib in Resources */,
 				C99B7F3B2601135000EBD873 /* Poppins-Light.ttf in Resources */,
-				C9A0C1D4260AD41600C3285E /* Students.storyboard in Resources */,
+				C9A0C1D4260AD41600C3285E /* Student.storyboard in Resources */,
 				C92821012603BD6B006E97CC /* Onboarding.storyboard in Resources */,
 				C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */,
 				C92821192603BFCA006E97CC /* OnboardingCollectionViewCell.xib in Resources */,
@@ -1280,7 +1320,7 @@
 				B2656CE32603DB73007609F6 /* ChatHeaderView.xib in Resources */,
 				C99B7FAF2601258A00EBD873 /* LabelledTextField.xib in Resources */,
 				C99B7F3F2601135000EBD873 /* Poppins-SemiBold.ttf in Resources */,
-				C95CD819260D0A16001C2E2D /* RequestListTableViewCell.xib in Resources */,
+				C95CD819260D0A16001C2E2D /* RequestListingTableViewCell.xib in Resources */,
 				C99B7F3A2601135000EBD873 /* Poppins-ExtraBold.ttf in Resources */,
 				C9A0C2B4260B75B400C3285E /* DashboardReviewCollectionViewCell.xib in Resources */,
 				C9A0C2C3260B75F700C3285E /* CollectionViewTitleHeader.xib in Resources */,
@@ -1387,7 +1427,7 @@
 				B2656D16260640AF007609F6 /* HeadingLabel2.swift in Sources */,
 				C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */,
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
-				C9A0C1E3260AD4C700C3285E /* RequestsViewController.swift in Sources */,
+				C9A0C1E3260AD4C700C3285E /* RequestListingViewController.swift in Sources */,
 				C95B630C26060B3C0088506C /* UIWindow+RootView.swift in Sources */,
 				C9A0C2E3260B95BB00C3285E /* SessionMock.swift in Sources */,
 				C99B7FF92601B23200EBD873 /* OptionSelectionView.swift in Sources */,
@@ -1431,7 +1471,7 @@
 				C95B62FF260606F70088506C /* CreateProfileViewModel.swift in Sources */,
 				C95B631A26060ED60088506C /* CreateProfileRouter.swift in Sources */,
 				C95C30EC2602798F00115317 /* NumberVerificationViewController.swift in Sources */,
-				C9A0C1F0260AD50A00C3285E /* StudentsViewController.swift in Sources */,
+				C9A0C1F0260AD50A00C3285E /* StudentListingViewController.swift in Sources */,
 				CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */,
 				C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */,
 				C9A0C311260BBCAD00C3285E /* StudentListingViewModel.swift in Sources */,
@@ -1464,7 +1504,7 @@
 				C99B7FA12601253100EBD873 /* PaddedTextField.swift in Sources */,
 				C9853752260727DC00EE1F45 /* PaymentMethodViewController.swift in Sources */,
 				C9A0C214260AFD4E00C3285E /* DashboardSceneBuilder.swift in Sources */,
-				C9A0C1E8260AD4D100C3285E /* MyScheduleViewController.swift in Sources */,
+				C9A0C1E8260AD4D100C3285E /* ScheduleListingViewController.swift in Sources */,
 				C9A0C280260B424900C3285E /* DashboardCard.swift in Sources */,
 				C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */,
 				B2656CDB2603D8F1007609F6 /* ChatHeaderView.swift in Sources */,
@@ -1480,19 +1520,19 @@
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
 				C9A0C2BB260B75F200C3285E /* CollectionViewTitleHeader.swift in Sources */,
-				C9A0C21A260AFD9B00C3285E /* RequestSceneBuilder.swift in Sources */,
+				C9A0C21A260AFD9B00C3285E /* RequestListingSceneBuilder.swift in Sources */,
 				C928215A26046172006E97CC /* NewPasswordViewController.swift in Sources */,
 				C9281F9A260304C0006E97CC /* NumberVerificationViewModel.swift in Sources */,
 				C9A0C2E8260BAB4400C3285E /* NotificationMock.swift in Sources */,
 				C928215F2604625D006E97CC /* UINavigationController+Pop.swift in Sources */,
 				C92821062603BD80006E97CC /* OnboardingViewController.swift in Sources */,
 				C9A0C289260B475700C3285E /* NotificationViewController.swift in Sources */,
-				C95CD814260D0A0F001C2E2D /* RequestListTableViewCell.swift in Sources */,
+				C95CD814260D0A0F001C2E2D /* RequestListingTableViewCell.swift in Sources */,
 				C9A0C316260BBD4900C3285E /* StudentListingRouter.swift in Sources */,
 				B2656CFF26053CA9007609F6 /* MessageCell.swift in Sources */,
 				C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */,
 				C95B62EC2605FEEA0088506C /* CreateProfileSectionTableCellViewModel.swift in Sources */,
-				C9A0C225260AFDB600C3285E /* ScheduleSceneBuilder.swift in Sources */,
+				C9A0C225260AFDB600C3285E /* ScheduleListingSceneBuilder.swift in Sources */,
 				B2656CFF26053CA9007609F6 /* MessageCell.swift in Sources */,
 				C99B7FF42601301300EBD873 /* FlowDescriptionLabel.swift in Sources */,
 				C9A0C2FC260BB8DC00C3285E /* StudentMock.swift in Sources */,

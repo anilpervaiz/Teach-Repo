@@ -1,5 +1,5 @@
 //
-//  RequestListTableViewCell.swift
+//  RequestListingTableViewCell.swift
 //  Teachers
 //
 //  Created by Rahim on 25/03/2021.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class RequestListTableViewCell: UITableViewCell,
-                                ReusableView {
+class RequestListingTableViewCell: UITableViewCell,
+                                   ReusableView {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var sessionStateView: UIView!
