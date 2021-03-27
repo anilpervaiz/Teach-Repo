@@ -11,6 +11,8 @@ struct Student {
     var parent: User
     var rating: Double
     var name: String
+    var learningHours: Int = 100
+    var sessionCount: Int = 30
     var profileImage: String // For the sake of UI, considering it as asset image atm.
 
     static var mockData: [Student] {

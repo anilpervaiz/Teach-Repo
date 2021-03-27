@@ -10,9 +10,12 @@ import Foundation
 struct User {
     var name: String
     var profileImage: String // For the sake of UI, considering it as asset image atm.
-
+    var rating: Double
+    
     static var mockData: User {
-        User(name: "Ahmed Mohammed", profileImage: Asset.Media.userProfileImage.name)
+        User(name: "Ahmed Mohammed",
+             profileImage: Asset.Media.userProfileImage.name,
+             rating: 4.5)
     }
 }
 

@@ -43,5 +43,6 @@ extension UIStoryboard {
         case dashboard = "Dashboard"
         case notification = "Notification"
         case message = "Messages"
+        case rateAndReview = "RateAndReview"
     }
 }

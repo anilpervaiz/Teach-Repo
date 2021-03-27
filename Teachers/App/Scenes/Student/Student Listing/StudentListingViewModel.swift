@@ -24,4 +24,8 @@ class StudentListingViewModel {
 
     func didTapSeachButton() {
     }
+
+    func didTapStudent(at index: Int) {
+        router.navigateToStudentProfile()
+    }
 }

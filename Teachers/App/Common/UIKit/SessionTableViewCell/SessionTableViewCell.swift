@@ -7,9 +7,10 @@
 
 import UIKit
 
-class RequestListingTableViewCell: UITableViewCell,
-                                   ReusableView {
+class SessionTableViewCell: UITableViewCell,
+                            ReusableView {
 
+    @IBOutlet weak var userDetailsView: UIStackView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var sessionStateView: UIView!
     @IBOutlet weak var sessionState: UILabel!
@@ -19,9 +20,9 @@ class RequestListingTableViewCell: UITableViewCell,
     @IBOutlet weak var sessionModeImageView: UIImageView!
     @IBOutlet weak var sessionModeLabel: UILabel!
 
-    func configure(session: Session) {
+    func configure(session: Session, hiddenUserDetails: Bool = false) {
         var session = session
-        titleLabel.text = "\(session.subject)-\(session.curriculum)"
+        titleLabel.text = "\(session.subject) - \(session.curriculum)"
         sessionState.text = session.state.title
         sessionState.textColor = session.state.titleColor.color
         sessionStateView.backgroundColor = session.state.backgroundColor.color
@@ -31,11 +32,13 @@ class RequestListingTableViewCell: UITableViewCell,
         sessionModeImageView.image = session.medium.icon.image
         sessionModeLabel.textColor = session.medium.themeColor.color
         sessionTimeLabel.text = session.sessionDate
+        userDetailsView.isHidden = hiddenUserDetails
+        sessionStateView.isHidden = hiddenUserDetails
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
-
+        
         titleLabel.text = ""
         sessionState.text = ""
         sessionState.textColor = .clear

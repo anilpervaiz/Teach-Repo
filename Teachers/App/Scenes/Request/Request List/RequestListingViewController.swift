@@ -34,7 +34,7 @@ class RequestListingViewController: BaseViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
-            tableView.registerNibCell(with: RequestListingTableViewCell.self)
+            tableView.registerNibCell(with: SessionTableViewCell.self)
             tableView.tableFooterView = UIView()
         }
     }
@@ -60,7 +60,7 @@ extension RequestListingViewController: UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withType: RequestListingTableViewCell.self)
+        let cell = tableView.dequeueReusableCell(withType: SessionTableViewCell.self)
         cell.configure(session: Session.mockData[indexPath.row])
 
         return cell

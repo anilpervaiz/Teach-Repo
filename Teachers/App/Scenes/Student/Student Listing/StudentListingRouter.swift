@@ -20,4 +20,11 @@ class StudentListingRouter: BaseRouter {
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
+
+    func navigateToStudentProfile() {
+        let viewController = StudentProfileViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        viewController.viewModel = StudentProfileViewModel(router: StudentProfileRouter(with: navigationController))
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
