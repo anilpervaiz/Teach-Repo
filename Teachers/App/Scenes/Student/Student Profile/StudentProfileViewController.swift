@@ -50,6 +50,14 @@ class StudentProfileViewController: BaseViewController {
             }
         }
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle { .lightContent }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNeedsStatusBarAppearanceUpdate()
+        navigationController?.navigationBar.barStyle = .blackTranslucent
+    }
 }
 
 extension StudentProfileViewController: UITableViewDelegate, UITableViewDataSource {

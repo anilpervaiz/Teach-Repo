@@ -17,8 +17,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBarItem" customModule="Teachers" customModuleProvider="target">
             <connections>
                 <outlet property="badgeLabel" destination="of4-y8-Ufc" id="aeP-Xx-sxj"/>
+                <outlet property="badgeTrailingConstraint" destination="7fT-A3-RDw" id="J0e-3h-LAs"/>
                 <outlet property="badgeView" destination="5hF-5y-1U0" id="Z5a-Q3-sSy"/>
                 <outlet property="imageView" destination="xYZ-mQ-DKS" id="NDb-hY-DN1"/>
+                <outlet property="imageViewTop" destination="yhq-0M-xD1" id="bTE-jB-IGv"/>
+                <outlet property="imageViewTrailing" destination="F4x-Sf-2PC" id="tIe-15-CcA"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

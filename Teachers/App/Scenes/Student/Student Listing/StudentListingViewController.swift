@@ -15,7 +15,7 @@ class StudentListingViewController: BaseViewController {
     lazy var chatNavigationBarButton: UIBarButtonItem = {
         let view = NavigationBarItem()
         view.itemImage = Asset.Media.chat.image
-
+        view.tintColor = Asset.Colors.gray.color
         let barButton = UIBarButtonItem(customView: view)
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChatButton))
         view.addGestureRecognizer(gesture)
@@ -60,6 +60,11 @@ class StudentListingViewController: BaseViewController {
                                 font: .init(commonFont: PoppinsFontStyle.semiBold, size: 20),
                                 textColor: Asset.Colors.darkBlue.color)
         navigationItem.rightBarButtonItems = [notificationNavigationBarButton, chatNavigationBarButton, searchBarButton]
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.barStyle = .default
     }
 }
 

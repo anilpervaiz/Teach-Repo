@@ -56,6 +56,9 @@
 		C93DB158260E424400106AFC /* CollapsedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93DB157260E424400106AFC /* CollapsedTableViewCell.swift */; };
 		C93DB177260E476F00106AFC /* StudentProfileTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93DB176260E476F00106AFC /* StudentProfileTableHeaderView.swift */; };
 		C93DB17C260E478300106AFC /* StudentProfileTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93DB17B260E478300106AFC /* StudentProfileTableHeaderView.xib */; };
+		C95220A92610B30100F9676D /* ScheduleListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95220A82610B30100F9676D /* ScheduleListingViewModel.swift */; };
+		C95220AE2610B30D00F9676D /* ScheduleListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95220AD2610B30D00F9676D /* ScheduleListingRouter.swift */; };
+		C95220B42610BE0300F9676D /* SessionEndNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95220B32610BE0300F9676D /* SessionEndNoteViewController.swift */; };
 		C95B62DB2605FD520088506C /* CreateProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95B62DA2605FD520088506C /* CreateProfile.storyboard */; };
 		C95B62E12605FE1F0088506C /* CreateProfileSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95B62E02605FE1F0088506C /* CreateProfileSectionTableViewCell.xib */; };
 		C95B62E62605FEC40088506C /* CreateProfileSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B62E52605FEC40088506C /* CreateProfileSectionTableViewCell.swift */; };
@@ -290,6 +293,9 @@
 		C93DB157260E424400106AFC /* CollapsedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsedTableViewCell.swift; sourceTree = "<group>"; };
 		C93DB176260E476F00106AFC /* StudentProfileTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileTableHeaderView.swift; sourceTree = "<group>"; };
 		C93DB17B260E478300106AFC /* StudentProfileTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentProfileTableHeaderView.xib; sourceTree = "<group>"; };
+		C95220A82610B30100F9676D /* ScheduleListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListingViewModel.swift; sourceTree = "<group>"; };
+		C95220AD2610B30D00F9676D /* ScheduleListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleListingRouter.swift; sourceTree = "<group>"; };
+		C95220B32610BE0300F9676D /* SessionEndNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionEndNoteViewController.swift; sourceTree = "<group>"; };
 		C95B62DA2605FD520088506C /* CreateProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateProfile.storyboard; sourceTree = "<group>"; };
 		C95B62E02605FE1F0088506C /* CreateProfileSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateProfileSectionTableViewCell.xib; sourceTree = "<group>"; };
 		C95B62E52605FEC40088506C /* CreateProfileSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileSectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -686,6 +692,8 @@
 			children = (
 				C9A0C1E7260AD4D100C3285E /* ScheduleListingViewController.swift */,
 				C9A0C224260AFDB600C3285E /* ScheduleListingSceneBuilder.swift */,
+				C95220A82610B30100F9676D /* ScheduleListingViewModel.swift */,
+				C95220AD2610B30D00F9676D /* ScheduleListingRouter.swift */,
 			);
 			path = "Schedule listing";
 			sourceTree = "<group>";
@@ -731,6 +739,14 @@
 				C93DB157260E424400106AFC /* CollapsedTableViewCell.swift */,
 			);
 			path = CollapsedTableViewCell;
+			sourceTree = "<group>";
+		};
+		C95220B22610BDE300F9676D /* SessionEndNote */ = {
+			isa = PBXGroup;
+			children = (
+				C95220B32610BE0300F9676D /* SessionEndNoteViewController.swift */,
+			);
+			path = SessionEndNote;
 			sourceTree = "<group>";
 		};
 		C95B62D92605FD440088506C /* CreateProfile */ = {
@@ -1102,6 +1118,7 @@
 		C9A0C1C1260AD3DC00C3285E /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				C95220B22610BDE300F9676D /* SessionEndNote */,
 				C9A0C1CE260AD40C00C3285E /* Schedule.storyboard */,
 				C93DB134260E3F3600106AFC /* Schedule listing */,
 			);
@@ -1576,6 +1593,7 @@
 				C9A0C2E3260B95BB00C3285E /* SessionMock.swift in Sources */,
 				C93DB14D260E414500106AFC /* ReviewTableViewCell.swift in Sources */,
 				C99B7FF92601B23200EBD873 /* OptionSelectionView.swift in Sources */,
+				C95220B42610BE0300F9676D /* SessionEndNoteViewController.swift in Sources */,
 				C9281FA326030B54006E97CC /* ItemPickerView.swift in Sources */,
 				C99B7F0825FFD66C00EBD873 /* UILabel+TapGesture.swift in Sources */,
 				C99B7F942601238400EBD873 /* UIViewController+Keyboard.swift in Sources */,
@@ -1593,6 +1611,7 @@
 				C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */,
 				C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */,
 				C9A0C1FF260ADCAC00C3285E /* LoginViewModel.swift in Sources */,
+				C95220A92610B30100F9676D /* ScheduleListingViewModel.swift in Sources */,
 				C9281FB026030C0B006E97CC /* LocationPickerViewModel.swift in Sources */,
 				C95B62F12605FF130088506C /* ProfileSection.swift in Sources */,
 				C99B7FBE260125D200EBD873 /* CustomNibView.swift in Sources */,
@@ -1636,6 +1655,7 @@
 				C9FCCC5E260E5E8F00D1CD56 /* StudentProfileViewController.swift in Sources */,
 				C9FCCCC826101E7500D1CD56 /* RejectSessionViewController.swift in Sources */,
 				C928214A26045E2F006E97CC /* LoginViewController.swift in Sources */,
+				C95220AE2610B30D00F9676D /* ScheduleListingRouter.swift in Sources */,
 				C928210B2603BDC3006E97CC /* PageControlView.swift in Sources */,
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C9FCCCA2260F7BDF00D1CD56 /* SessionDetailViewController.swift in Sources */,

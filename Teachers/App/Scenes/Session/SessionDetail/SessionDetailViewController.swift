@@ -87,6 +87,10 @@ class SessionDetailViewController: BaseViewController {
     @IBAction func didTapStartSessionButton(_ sender: Any) {
         viewModel?.didTapStartSessionButton()
     }
+
+    @IBAction func didTapEndSessionButton(_ sender: Any) {
+        viewModel?.didTapEndSessionButton()
+    }
 }
 
 extension SessionDetailViewController: Initializable {

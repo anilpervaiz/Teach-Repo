@@ -10,7 +10,8 @@ import Foundation
 struct ScheduleListingSceneBuilder {
     func makeViewController() -> BaseNavigationController {
         let controller = ScheduleListingViewController.getInstance()
-
-        return BaseNavigationController(rootViewController: controller)
+        let navigationController = BaseNavigationController(rootViewController: controller)
+        controller.viewModel = ScheduleListingViewModel(router: ScheduleListingRouter(with: navigationController))
+        return navigationController
     }
 }

@@ -13,6 +13,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         hideKeyboardOnTappingOutsideArea()
         setBackButtonStyle()
+        navigationController?.navigationBar.barStyle = .default
     }
 
     private func setBackButtonStyle() {

@@ -98,6 +98,7 @@ internal enum Asset {
     internal static let getStartedIllustration = ImageAsset(name: "getStartedIllustration")
     internal static let icSearch = ImageAsset(name: "icSearch")
     internal static let inpersonIcon = ImageAsset(name: "inpersonIcon")
+    internal static let listIcon = ImageAsset(name: "listIcon")
     internal static let male = ImageAsset(name: "male")
     internal static let messages = ImageAsset(name: "messages")
     internal static let parent = ImageAsset(name: "parent")

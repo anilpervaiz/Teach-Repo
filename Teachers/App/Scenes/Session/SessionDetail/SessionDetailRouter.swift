@@ -14,6 +14,7 @@ class SessionDetailRouter: BaseRouter {
     }
 
     func navigteToSessionEndFlow() {
-        
+        let viewController = SessionEndNoteViewController.getInstance()
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

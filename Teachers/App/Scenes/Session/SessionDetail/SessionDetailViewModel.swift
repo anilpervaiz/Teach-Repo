@@ -33,7 +33,7 @@ class SessionDetailViewModel {
     }
 
     func didTapEndSessionButton() {
-
+        router.navigteToSessionEndFlow()
     }
 
     enum Output {

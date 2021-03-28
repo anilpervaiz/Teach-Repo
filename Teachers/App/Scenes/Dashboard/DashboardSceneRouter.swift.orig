@@ -1,0 +1,26 @@
+//
+//  DashboardSceneRouter.swift
+//  Teachers
+//
+//  Created by Rahim on 24/03/2021.
+//
+
+import Foundation
+
+class DashboardSceneRouter: BaseRouter {
+    func navigateToNotificationView() {
+        let viewController = NotificationViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func navigateToChatView() {
+<<<<<<< HEAD
+        let viewController = MessagesListViewController.getInstance()
+=======
+        let viewController = MessagesViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+>>>>>>> development
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+}

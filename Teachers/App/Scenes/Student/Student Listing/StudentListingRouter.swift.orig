@@ -1,0 +1,34 @@
+//
+//  StudentListingRouter.swift
+//  Teachers
+//
+//  Created by Rahim on 24/03/2021.
+//
+
+import Foundation
+
+class StudentListingRouter: BaseRouter {
+
+    func navigateToNotificationView() {
+        let viewController = NotificationViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func navigateToChatView() {
+<<<<<<< HEAD:Teachers/App/Scenes/Student/StudentListingRouter.swift
+        let viewController = MessagesListViewController.getInstance()
+=======
+        let viewController = MessagesViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+>>>>>>> development:Teachers/App/Scenes/Student/Student Listing/StudentListingRouter.swift
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func navigateToStudentProfile() {
+        let viewController = StudentProfileViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        viewController.viewModel = StudentProfileViewModel(router: StudentProfileRouter(with: navigationController))
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+}
