@@ -15,7 +15,7 @@ class StudentListingRouter: BaseRouter {
     }
 
     func navigateToChatView() {
-        let viewController = MessagesViewController.getInstance()
+        let viewController = MessagesListViewController.getInstance()
         navigationController?.pushViewController(viewController, animated: true)
     }
 

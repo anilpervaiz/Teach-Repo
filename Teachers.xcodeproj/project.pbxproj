@@ -12,7 +12,7 @@
 		B2656CE32603DB73007609F6 /* ChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656CE22603DB73007609F6 /* ChatHeaderView.xib */; };
 		B2656CE82603DEF5007609F6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CE72603DEF5007609F6 /* ChatViewController.swift */; };
 		B2656CED2603E3ED007609F6 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2656CEC2603E3ED007609F6 /* Messages.storyboard */; };
-		B2656CF926053C71007609F6 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CF826053C71007609F6 /* MessagesViewController.swift */; };
+		B2656CF926053C71007609F6 /* MessagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CF826053C71007609F6 /* MessagesListViewController.swift */; };
 		B2656CFF26053CA9007609F6 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656CFE26053CA9007609F6 /* MessageCell.swift */; };
 		B2656D0726053D34007609F6 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656D0626053D34007609F6 /* MessageCell.xib */; };
 		B2656D0C26053EF0007609F6 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D0B26053EF0007609F6 /* MessageViewModel.swift */; };
@@ -23,6 +23,8 @@
 		B2656D602607EEAE007609F6 /* ChatMessageReceivedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D5F2607EEAE007609F6 /* ChatMessageReceivedCell.swift */; };
 		B2656D652607EECE007609F6 /* ChatMessageReceivedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2656D642607EECE007609F6 /* ChatMessageReceivedCell.xib */; };
 		B2656D6A2607F1B5007609F6 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2656D692607F1B5007609F6 /* ChatViewModel.swift */; };
+		B2A067EC260F4C55005477C8 /* ChatParentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A067EB260F4C55005477C8 /* ChatParentView.xib */; };
+		B2A067F1260F4E6C005477C8 /* ChatParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A067F0260F4E6C005477C8 /* ChatParentView.swift */; };
 		C90C69F6260471EE0075D776 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69F5260471EE0075D776 /* ErrorView.swift */; };
 		C90C69FB260473E90075D776 /* LoginPendingProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */; };
 		C90C6A00260473FF0075D776 /* LoginPendingProcessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */; };
@@ -218,7 +220,7 @@
 		B2656CE22603DB73007609F6 /* ChatHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatHeaderView.xib; sourceTree = "<group>"; };
 		B2656CE72603DEF5007609F6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B2656CEC2603E3ED007609F6 /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
-		B2656CF826053C71007609F6 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		B2656CF826053C71007609F6 /* MessagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesListViewController.swift; sourceTree = "<group>"; };
 		B2656CFE26053CA9007609F6 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		B2656D0626053D34007609F6 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		B2656D0B26053EF0007609F6 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
@@ -229,6 +231,8 @@
 		B2656D5F2607EEAE007609F6 /* ChatMessageReceivedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageReceivedCell.swift; sourceTree = "<group>"; };
 		B2656D642607EECE007609F6 /* ChatMessageReceivedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatMessageReceivedCell.xib; sourceTree = "<group>"; };
 		B2656D692607F1B5007609F6 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		B2A067EB260F4C55005477C8 /* ChatParentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatParentView.xib; sourceTree = "<group>"; };
+		B2A067F0260F4E6C005477C8 /* ChatParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatParentView.swift; sourceTree = "<group>"; };
 		C90C69F5260471EE0075D776 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		C90C69FA260473E90075D776 /* LoginPendingProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewController.swift; sourceTree = "<group>"; };
 		C90C69FF260473FF0075D776 /* LoginPendingProcessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPendingProcessViewModel.swift; sourceTree = "<group>"; };
@@ -479,6 +483,8 @@
 				B2656CE22603DB73007609F6 /* ChatHeaderView.xib */,
 				B2656CE72603DEF5007609F6 /* ChatViewController.swift */,
 				B2656D692607F1B5007609F6 /* ChatViewModel.swift */,
+				B2A067EB260F4C55005477C8 /* ChatParentView.xib */,
+				B2A067F0260F4E6C005477C8 /* ChatParentView.swift */,
 			);
 			path = ChatView;
 			sourceTree = "<group>";
@@ -486,7 +492,7 @@
 		B2656D412607E82A007609F6 /* MessagesView */ = {
 			isa = PBXGroup;
 			children = (
-				B2656CF826053C71007609F6 /* MessagesViewController.swift */,
+				B2656CF826053C71007609F6 /* MessagesListViewController.swift */,
 				B2656CFD26053C97007609F6 /* Cell */,
 			);
 			path = MessagesView;
@@ -1231,6 +1237,7 @@
 				C99B7F392601135000EBD873 /* Poppins-Italic.ttf in Resources */,
 				C99B7F322601135000EBD873 /* Poppins-MediumItalic.ttf in Resources */,
 				C99B7ECE25FFC60800EBD873 /* Media.xcassets in Resources */,
+				B2A067EC260F4C55005477C8 /* ChatParentView.xib in Resources */,
 				C9A0C20A260AF8E500C3285E /* NavigationBarItem.xib in Resources */,
 				C9A0C1C5260AD3FB00C3285E /* Dashboard.storyboard in Resources */,
 				C9A0C1CA260AD40500C3285E /* Requests.storyboard in Resources */,
@@ -1363,6 +1370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2656D16260640AF007609F6 /* HeadingLabel2.swift in Sources */,
+				B2A067F1260F4E6C005477C8 /* ChatParentView.swift in Sources */,
 				C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */,
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
 				C9A0C1E3260AD4C700C3285E /* RequestsViewController.swift in Sources */,
@@ -1425,12 +1433,12 @@
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
 				C9A0C1DE260AD44200C3285E /* DashboardViewController.swift in Sources */,
-				B2656CF926053C71007609F6 /* MessagesViewController.swift in Sources */,
+				B2656CF926053C71007609F6 /* MessagesListViewController.swift in Sources */,
 				C985374D2607208F00EE1F45 /* AvailibilityCellViewModel.swift in Sources */,
 				C9A0C306260BB9A700C3285E /* StudentTableViewCell.swift in Sources */,
 				C95B633226061DD40088506C /* BottomSheet.swift in Sources */,
 				C95B635C260685590088506C /* AddSubjectViewController.swift in Sources */,
-				B2656CF926053C71007609F6 /* MessagesViewController.swift in Sources */,
+				B2656CF926053C71007609F6 /* MessagesListViewController.swift in Sources */,
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
 				C95B6349260625650088506C /* BottomSheetListCellViewModel.swift in Sources */,
 				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,

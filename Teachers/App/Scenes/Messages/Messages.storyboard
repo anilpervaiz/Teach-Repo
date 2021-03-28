@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0KI-0R-MOs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0KI-0R-MOs">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,10 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nvy-4N-0hP">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSu-HP-d2g">
                                 <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <subviews>
@@ -84,29 +80,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BSu-HP-d2g" firstAttribute="leading" secondItem="hYR-Zp-E4b" secondAttribute="leading" id="Feg-ps-lSb"/>
-                            <constraint firstItem="nvy-4N-0hP" firstAttribute="top" secondItem="BSu-HP-d2g" secondAttribute="bottom" id="L6G-Zp-nYY"/>
-                            <constraint firstItem="hYR-Zp-E4b" firstAttribute="trailing" secondItem="nvy-4N-0hP" secondAttribute="trailing" id="L6L-Nf-2y8"/>
-                            <constraint firstItem="hYR-Zp-E4b" firstAttribute="bottom" secondItem="nvy-4N-0hP" secondAttribute="bottom" id="Y5j-RN-dqL"/>
                             <constraint firstItem="hYR-Zp-E4b" firstAttribute="trailing" secondItem="BSu-HP-d2g" secondAttribute="trailing" id="j6Z-nO-QkG"/>
-                            <constraint firstItem="nvy-4N-0hP" firstAttribute="leading" secondItem="hYR-Zp-E4b" secondAttribute="leading" id="swR-N1-b9r"/>
                             <constraint firstItem="BSu-HP-d2g" firstAttribute="top" secondItem="hYR-Zp-E4b" secondAttribute="top" id="zJ6-K1-Mbv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BXN-Wa-lkg"/>
-                    <connections>
-                        <outlet property="parentImageView" destination="jhg-3S-hgw" id="Mjr-61-9JL"/>
-                        <outlet property="parentName" destination="Wsq-KB-ugv" id="nPr-jU-91r"/>
-                        <outlet property="tableView" destination="nvy-4N-0hP" id="mz5-YK-dOw"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUO-Jh-BXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1810" y="-607"/>
         </scene>
-        <!--Messages View Controller-->
+        <!--Messages List View Controller-->
         <scene sceneID="s3L-MK-ETH">
             <objects>
-                <viewController storyboardIdentifier="MessagesViewController" id="0KI-0R-MOs" customClass="MessagesViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MessagesListViewController" id="0KI-0R-MOs" customClass="MessagesListViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t1w-Tr-BdU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

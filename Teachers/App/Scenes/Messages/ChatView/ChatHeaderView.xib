@@ -17,7 +17,13 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatHeaderView" customModule="Teachers" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatHeaderView" customModule="Teachers" customModuleProvider="target">
+            <connections>
+                <outlet property="chatPersonActiveStatus" destination="lgs-df-Osa" id="h1e-TT-zXG"/>
+                <outlet property="chatPersonImage" destination="FA5-ov-MS5" id="M9m-ga-ocd"/>
+                <outlet property="chatPersonName" destination="fgk-Dv-9xk" id="AeE-pW-WrY"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
@@ -53,6 +59,7 @@
             <constraints>
                 <constraint firstItem="16K-Qb-cZN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="31b-aS-rwb"/>
                 <constraint firstItem="FA5-ov-MS5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="FmG-BC-fxx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FA5-ov-MS5" secondAttribute="bottom" constant="8" id="KHK-as-fT1"/>
                 <constraint firstItem="FA5-ov-MS5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gwD-zN-ek9"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="16K-Qb-cZN" secondAttribute="bottom" constant="4" id="kUN-qW-AOd"/>
                 <constraint firstItem="16K-Qb-cZN" firstAttribute="leading" secondItem="FA5-ov-MS5" secondAttribute="trailing" constant="8" id="tzs-BA-3fE"/>

@@ -1,11 +1,11 @@
 //
-//  MessagesViewController.swift
+//  MessagesListViewController.swift
 //  Teachers
 //
 
 import UIKit
 
-class MessagesViewController: BaseViewController {
+class MessagesListViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -16,10 +16,10 @@ class MessagesViewController: BaseViewController {
         tableView.delegate = self
         tableView.registerNibCell(with: MessageCell.self)
         tableView.separatorStyle = .none
-        navigationController?.navigationBar.barStyle = .default
     }
     
     private func setupNavBar() {
+        navigationController?.navigationBar.barStyle = .default
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: Asset.Media.search.image,
             style: .plain,
@@ -34,7 +34,7 @@ class MessagesViewController: BaseViewController {
     }
 }
 
-extension MessagesViewController: UITableViewDataSource {
+extension MessagesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         MockData.messages.count
     }
@@ -46,18 +46,19 @@ extension MessagesViewController: UITableViewDataSource {
     }
 }
 
-extension MessagesViewController: UITableViewDelegate {
+extension MessagesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let storyboard = UIStoryboard(name: "Messages", bundle: nil)
         if let chatViewController = storyboard.instantiateViewController(
             withIdentifier: String(describing: ChatViewController.self)
         ) as? ChatViewController {
+            chatViewController.viewModel = MockData.chatViewModel
             navigationController?.pushViewController(chatViewController, animated: true)
         }
     }
 }
 
-extension MessagesViewController: Initializable {
+extension MessagesListViewController: Initializable {
     static var storyboardName: UIStoryboard.Name { .message }
 }
