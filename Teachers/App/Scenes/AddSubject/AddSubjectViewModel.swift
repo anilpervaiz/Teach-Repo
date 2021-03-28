@@ -12,6 +12,10 @@ struct Subject {
     var curriculum: String
     var subject: String
     var rate: String
+
+    static var mockData: Subject {
+        Subject(educationType: "Grade 6", curriculum: "American Curriculum", subject: "History", rate: "4.0")
+    }
 }
 
 class AddSubjectViewModel {

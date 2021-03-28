@@ -209,6 +209,12 @@
 		C9FCCC8C260F529000D1CD56 /* RateAndReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC8B260F529000D1CD56 /* RateAndReviewViewController.swift */; };
 		C9FCCC92260F52A300D1CD56 /* RateAndReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FCCC91260F52A300D1CD56 /* RateAndReview.storyboard */; };
 		C9FCCC97260F57F500D1CD56 /* RateAndReviewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC96260F57F500D1CD56 /* RateAndReviewBuilder.swift */; };
+		C9FCCC9D260F7BD400D1CD56 /* SessionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9FCCC9C260F7BD400D1CD56 /* SessionDetail.storyboard */; };
+		C9FCCCA2260F7BDF00D1CD56 /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCCA1260F7BDF00D1CD56 /* SessionDetailViewController.swift */; };
+		C9FCCCA7260F7BE900D1CD56 /* SessionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCCA6260F7BE900D1CD56 /* SessionDetailViewModel.swift */; };
+		C9FCCCAC260F7BF200D1CD56 /* SessionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCCAB260F7BF200D1CD56 /* SessionDetailRouter.swift */; };
+		C9FCCCB1260F7BFC00D1CD56 /* SessionDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCCB0260F7BFC00D1CD56 /* SessionDetailBuilder.swift */; };
+		C9FCCCC826101E7500D1CD56 /* RejectSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCCC726101E7500D1CD56 /* RejectSessionViewController.swift */; };
 		CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */; };
 		CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE66C68025FF8F3A00A2FA72 /* Teachers.xcdatamodeld */; };
 		CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE66C68525FF8F3E00A2FA72 /* LaunchScreen.storyboard */; };
@@ -437,6 +443,12 @@
 		C9FCCC8B260F529000D1CD56 /* RateAndReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateAndReviewViewController.swift; sourceTree = "<group>"; };
 		C9FCCC91260F52A300D1CD56 /* RateAndReview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RateAndReview.storyboard; sourceTree = "<group>"; };
 		C9FCCC96260F57F500D1CD56 /* RateAndReviewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateAndReviewBuilder.swift; sourceTree = "<group>"; };
+		C9FCCC9C260F7BD400D1CD56 /* SessionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SessionDetail.storyboard; sourceTree = "<group>"; };
+		C9FCCCA1260F7BDF00D1CD56 /* SessionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
+		C9FCCCA6260F7BE900D1CD56 /* SessionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailViewModel.swift; sourceTree = "<group>"; };
+		C9FCCCAB260F7BF200D1CD56 /* SessionDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailRouter.swift; sourceTree = "<group>"; };
+		C9FCCCB0260F7BFC00D1CD56 /* SessionDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailBuilder.swift; sourceTree = "<group>"; };
+		C9FCCCC726101E7500D1CD56 /* RejectSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectSessionViewController.swift; sourceTree = "<group>"; };
 		CE66C67425FF8F3A00A2FA72 /* Teachers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teachers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE66C67725FF8F3A00A2FA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE66C68125FF8F3A00A2FA72 /* Teachers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Teachers.xcdatamodel; sourceTree = "<group>"; };
@@ -828,6 +840,7 @@
 		C99B7EBA25FFC55400EBD873 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C9FCCC9B260F7BC700D1CD56 /* Session */,
 				C9FCCC90260F529500D1CD56 /* RateAndReview */,
 				C93DB11A260E3E0B00106AFC /* Social Onboarding */,
 				C93DB119260E3DFB00106AFC /* Authentication */,
@@ -1215,6 +1228,35 @@
 			path = RateAndReview;
 			sourceTree = "<group>";
 		};
+		C9FCCC9B260F7BC700D1CD56 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCCCC326101E5400D1CD56 /* SessionDetail */,
+				C9FCCCC226101E4D00D1CD56 /* RejectSession */,
+				C9FCCC9C260F7BD400D1CD56 /* SessionDetail.storyboard */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		C9FCCCC226101E4D00D1CD56 /* RejectSession */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCCCC726101E7500D1CD56 /* RejectSessionViewController.swift */,
+			);
+			path = RejectSession;
+			sourceTree = "<group>";
+		};
+		C9FCCCC326101E5400D1CD56 /* SessionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C9FCCCA1260F7BDF00D1CD56 /* SessionDetailViewController.swift */,
+				C9FCCCA6260F7BE900D1CD56 /* SessionDetailViewModel.swift */,
+				C9FCCCAB260F7BF200D1CD56 /* SessionDetailRouter.swift */,
+				C9FCCCB0260F7BFC00D1CD56 /* SessionDetailBuilder.swift */,
+			);
+			path = SessionDetail;
+			sourceTree = "<group>";
+		};
 		CE66C66B25FF8F3A00A2FA72 = {
 			isa = PBXGroup;
 			children = (
@@ -1395,6 +1437,7 @@
 				C9281F942602F951006E97CC /* SuccessState.storyboard in Resources */,
 				C99B7F402601135000EBD873 /* Poppins-Black.ttf in Resources */,
 				B2656D652607EECE007609F6 /* ChatMessageReceivedCell.xib in Resources */,
+				C9FCCC9D260F7BD400D1CD56 /* SessionDetail.storyboard in Resources */,
 				C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */,
 				C9A0C1BB260A3C9C00C3285E /* Tabbar.storyboard in Resources */,
 				C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */,
@@ -1567,11 +1610,13 @@
 				C928215526046168006E97CC /* ResetPasswordViewController.swift in Sources */,
 				C99B7FB9260125B100EBD873 /* String+Regex.swift in Sources */,
 				C9A0C293260B480600C3285E /* DashboardSceneRouter.swift in Sources */,
+				C9FCCCB1260F7BFC00D1CD56 /* SessionDetailBuilder.swift in Sources */,
 				C92821362603CD4D006E97CC /* OnboardingCollectionViewCell.swift in Sources */,
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
 				B2656D462607E89E007609F6 /* ChatMessageSentCell.swift in Sources */,
 				C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */,
 				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,
+				C9FCCCAC260F7BF200D1CD56 /* SessionDetailRouter.swift in Sources */,
 				C95B631F26061AA00088506C /* RegisteredSubjectsViewController.swift in Sources */,
 				C95B62FF260606F70088506C /* CreateProfileViewModel.swift in Sources */,
 				C95B631A26060ED60088506C /* CreateProfileRouter.swift in Sources */,
@@ -1589,9 +1634,11 @@
 				C95B635126062F9B0088506C /* BottomSheetViewModel.swift in Sources */,
 				C98537482607202800EE1F45 /* AvailibilityViewModel.swift in Sources */,
 				C9FCCC5E260E5E8F00D1CD56 /* StudentProfileViewController.swift in Sources */,
+				C9FCCCC826101E7500D1CD56 /* RejectSessionViewController.swift in Sources */,
 				C928214A26045E2F006E97CC /* LoginViewController.swift in Sources */,
 				C928210B2603BDC3006E97CC /* PageControlView.swift in Sources */,
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
+				C9FCCCA2260F7BDF00D1CD56 /* SessionDetailViewController.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
 				C9A0C1DE260AD44200C3285E /* DashboardViewController.swift in Sources */,
 				B2656CF926053C71007609F6 /* MessagesViewController.swift in Sources */,
@@ -1639,6 +1686,7 @@
 				C95CD814260D0A0F001C2E2D /* SessionTableViewCell.swift in Sources */,
 				C9A0C316260BBD4900C3285E /* StudentListingRouter.swift in Sources */,
 				B2656CFF26053CA9007609F6 /* MessageCell.swift in Sources */,
+				C9FCCCA7260F7BE900D1CD56 /* SessionDetailViewModel.swift in Sources */,
 				C9FCCC87260F4AD800D1CD56 /* StudentProfileRouter.swift in Sources */,
 				C985377B2607421C00EE1F45 /* UploadVideoViewController.swift in Sources */,
 				C95B62EC2605FEEA0088506C /* CreateProfileSectionTableCellViewModel.swift in Sources */,

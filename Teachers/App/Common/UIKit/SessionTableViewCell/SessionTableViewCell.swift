@@ -23,9 +23,7 @@ class SessionTableViewCell: UITableViewCell,
     func configure(session: Session, hiddenUserDetails: Bool = false) {
         var session = session
         titleLabel.text = "\(session.subject) - \(session.curriculum)"
-        sessionState.text = session.state.title
-        sessionState.textColor = session.state.titleColor.color
-        sessionStateView.backgroundColor = session.state.backgroundColor.color
+
         profileImageView.image = UIImage(named:session.user.profileImage)
         userNameLabel.text = session.user.name
         sessionModeLabel.text = session.medium.title
@@ -34,6 +32,16 @@ class SessionTableViewCell: UITableViewCell,
         sessionTimeLabel.text = session.sessionDate
         userDetailsView.isHidden = hiddenUserDetails
         sessionStateView.isHidden = hiddenUserDetails
+
+        if session.isUpcoming {
+            sessionState.text = "Upcoming"
+            sessionState.textColor = Asset.Colors.halfBaked.color
+            sessionStateView.backgroundColor = Asset.Colors.lightHalfBaked.color
+        } else {
+            sessionState.text = "Past"
+            sessionState.textColor = Asset.Colors.tomatoRed.color
+            sessionStateView.backgroundColor = Asset.Colors.tomatoRedLight.color
+        }
     }
 
     override func prepareForReuse() {

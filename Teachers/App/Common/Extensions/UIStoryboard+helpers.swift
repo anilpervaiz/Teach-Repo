@@ -44,5 +44,7 @@ extension UIStoryboard {
         case notification = "Notification"
         case message = "Messages"
         case rateAndReview = "RateAndReview"
+        case sessionDetail = "SessionDetail"
+        case rejectSession = "RejectSession"
     }
 }

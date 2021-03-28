@@ -20,4 +20,10 @@ class RequestListingRouter: BaseRouter {
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
+
+    func navigateToSessionDetail() {
+        let viewController = SessionDetailBuilder().makeViewController(navigationController: navigationController, sessionState: .requested)
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

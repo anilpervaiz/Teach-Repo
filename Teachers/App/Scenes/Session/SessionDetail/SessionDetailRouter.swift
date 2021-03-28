@@ -1,0 +1,19 @@
+//
+//  SessionDetailRouter.swift
+//  Teachers
+//
+//  Created by Rahim on 27/03/2021.
+//
+
+import Foundation
+
+class SessionDetailRouter: BaseRouter {
+    func navigateToRejectSessionRequest() {
+        let viewController = RejectSessionViewController.getInstance()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func navigteToSessionEndFlow() {
+        
+    }
+}

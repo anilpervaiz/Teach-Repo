@@ -21,4 +21,8 @@ class RequestListingViewModel {
     func didTapChatButton() {
         router.navigateToChatView()
     }
+
+    func didTapRequest(at index: Int) {
+        router.navigateToSessionDetail()
+    }
 }
