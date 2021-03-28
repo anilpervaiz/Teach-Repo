@@ -147,6 +147,13 @@ extension UIView {
         } )
     }
 
+    func getConstraints(attribute: NSLayoutConstraint.Attribute) -> [NSLayoutConstraint] {
+        return getAllConstraints().filter( {
+            ($0.firstAttribute == attribute && $0.firstItem as? UIView == self) ||
+                ($0.secondAttribute == attribute && $0.secondItem as? UIView == self)
+        } )
+    }
+
     func changeWidth(to value: CGFloat) {
         getAllConstraints().filter( {
             $0.firstAttribute == .width &&

@@ -32,11 +32,12 @@ class TabbarController: UITabBarController {
         tabBar.tintColor = Asset.Colors.primary.color
         viewControllers = [
             DashboardSceneBuilder().makeViewController(),
-            RequestSceneBuilder().makeViewController(),
-            ScheduleSceneBuilder().makeViewController(),
-            StudentSceneBuilder().makeViewController(),
+            RequestListingSceneBuilder().makeViewController(),
+            ScheduleListingSceneBuilder().makeViewController(),
+            StudentListingSceneBuilder().makeViewController(),
             ProfileSceneBuilder().makeViewController()
         ]
+
         for tab in Tabs.allCases {
             tabBar.items?[tab.rawValue].image = tab.normalStyleImageName.image
             tabBar.items?[tab.rawValue].selectedImage = tab.selectedStyleImageName.image

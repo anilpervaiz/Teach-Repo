@@ -11,7 +11,8 @@ import InputBarAccessoryView
 class ChatViewController: MessagesViewController {
             
     var viewModel: ChatViewModel? = nil
-    
+    var bottomConstraint: NSLayoutConstraint?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,19 +51,23 @@ class ChatViewController: MessagesViewController {
         }
         let chatParentView = ChatParentView()
         chatParentView.translatesAutoresizingMaskIntoConstraints = false
-        chatParentView.transform = CGAffineTransform(rotationAngle: .pi)
         let chatParentViewHeight: CGFloat = 56.0
-        messagesCollectionView.addSubview(chatParentView)
+        view.addSubview(chatParentView)
+        chatParentView.fillSuperviewHorizontally()
         NSLayoutConstraint.activate([
-            chatParentView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -8.0),
-            chatParentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            chatParentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            chatParentView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             chatParentView.heightAnchor.constraint(equalToConstant: chatParentViewHeight)
         ])
         chatParentView.configureWith(parentName: vm.parentName, parentImage: Asset.Media.parent.image, onMessageTapped: {
             print("Message to parent tapped")
         })
-        messagesCollectionView.contentInset.top = chatParentViewHeight
+
+        let topConstraint = messagesCollectionView.getConstraints(attribute: .top)
+        topConstraint.first?.isActive = false
+
+        bottomConstraint = messagesCollectionView.getConstraints(attribute: .bottom).first
+        bottomConstraint?.constant = -66
+        messagesCollectionView.topAnchor.constraint(equalTo: chatParentView.bottomAnchor).isActive = true
     }
     
     private func configureMessageCollectionView() {

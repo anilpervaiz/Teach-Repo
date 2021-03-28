@@ -10,11 +10,14 @@ import Foundation
 class DashboardSceneRouter: BaseRouter {
     func navigateToNotificationView() {
         let viewController = NotificationViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 
     func navigateToChatView() {
+
         let viewController = MessagesListViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

@@ -8,7 +8,16 @@ import UIKit
 class MessagesListViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
+
+    lazy var searchBarButton: UIBarButtonItem = {
+        let view = NavigationBarItem()
+        view.itemImage = Asset.Media.icSearch.image
+
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(searchTapped))
+        view.addGestureRecognizer(gesture)
+        return UIBarButtonItem(customView: view)
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
@@ -19,13 +28,7 @@ class MessagesListViewController: BaseViewController {
     }
     
     private func setupNavBar() {
-        navigationController?.navigationBar.barStyle = .default
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: Asset.Media.search.image,
-            style: .plain,
-            target: self,
-            action: #selector(searchTapped)
-        )
+        self.navigationItem.rightBarButtonItem = searchBarButton
     }
     
     @objc

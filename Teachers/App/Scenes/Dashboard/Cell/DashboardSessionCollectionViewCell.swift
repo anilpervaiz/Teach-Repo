@@ -22,15 +22,22 @@ class DashboardSessionCollectionViewCell: UICollectionViewCell,
     func configure(session: Session) {
         var session = session
         titleLabel.text = "\(session.subject)-\(session.curriculum)"
-        sessionState.text = session.state.title
-        sessionState.textColor = session.state.titleColor.color
-        sessionStateView.backgroundColor = session.state.backgroundColor.color
         profileImageView.image = UIImage(named:session.user.profileImage)
         userNameLabel.text = session.user.name
         sessionModeLabel.text = session.medium.title
         sessionModeImageView.image = session.medium.icon.image
         sessionModeLabel.textColor = session.medium.themeColor.color
         sessionTimeLabel.text = session.sessionDate
+
+        if session.isUpcoming {
+            sessionState.text = "Upcoming"
+            sessionState.textColor = Asset.Colors.halfBaked.color
+            sessionStateView.backgroundColor = Asset.Colors.lightHalfBaked.color
+        } else {
+            sessionState.text = "Past"
+            sessionState.textColor = Asset.Colors.tomatoRed.color
+            sessionStateView.backgroundColor = Asset.Colors.tomatoRedLight.color
+        }
     }
 
     override func prepareForReuse() {

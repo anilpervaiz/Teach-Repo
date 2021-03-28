@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Schedule View Controller-->
+        <!--Schedule Listing View Controller-->
         <scene sceneID="fR6-Vc-i14">
             <objects>
-                <viewController storyboardIdentifier="MyScheduleViewController" id="CNS-sw-kRc" customClass="MyScheduleViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScheduleListingViewController" id="CNS-sw-kRc" customClass="ScheduleListingViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Oo-si-FbO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -56,9 +56,9 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="243.5" height="21"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="starIconEmpty"/>
-                                                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="starIconFilled"/>
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="NO"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="starIconFilled"/>
+                                                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="starIconEmpty"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQv-1k-zsR">
