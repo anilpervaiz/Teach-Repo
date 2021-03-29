@@ -12,6 +12,15 @@ class NavigationBarItem: CustomNibView {
     @IBOutlet private weak var badgeView: UIView!
     @IBOutlet private weak var badgeLabel: UILabel!
     @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet weak var badgeTrailingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageViewTrailing: NSLayoutConstraint!
+    @IBOutlet weak var imageViewTop: NSLayoutConstraint!
+
+    override var tintColor: UIColor! {
+        didSet {
+            imageView.tintColor = tintColor
+        }
+    }
 
     var itemImage: UIImage? = nil {
         didSet {
@@ -23,9 +32,15 @@ class NavigationBarItem: CustomNibView {
             if badgeCount > 0 {
                 badgeLabel?.text = "\(badgeCount)"
                 badgeView?.isHidden = false
+                badgeTrailingConstraint.constant = 8
+                imageViewTrailing.constant = 8
+                imageViewTop.constant = 4
             } else {
                 badgeLabel?.text = ""
                 badgeView?.isHidden = true
+                badgeTrailingConstraint.constant = 4
+                imageViewTrailing.constant = 4
+                imageViewTop.constant = 0
             }
         }
     }
@@ -41,9 +56,15 @@ class NavigationBarItem: CustomNibView {
         if badgeCount > 0 {
             badgeLabel.text = "\(badgeCount)"
             badgeView.isHidden = false
+            badgeTrailingConstraint.constant = 8
+            imageViewTrailing.constant = 8
+            imageViewTop.constant = 4
         } else {
             badgeLabel.text = ""
             badgeView.isHidden = true
+            badgeTrailingConstraint.constant = 4
+            imageViewTrailing.constant = 4
+            imageViewTop.constant = 0
         }
     }
 

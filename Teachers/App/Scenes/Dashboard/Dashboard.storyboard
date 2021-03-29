@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-On-MFd">
-                                <rect key="frame" x="0.0" y="102" width="414" height="744"/>
+                                <rect key="frame" x="0.0" y="102" width="414" height="760"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ywS-nQ-gCJ">
                                         <rect key="frame" x="16" y="0.0" width="382" height="264"/>
@@ -138,7 +138,7 @@
                             <constraint firstItem="8bA-On-MFd" firstAttribute="top" secondItem="Rk0-Rw-5lp" secondAttribute="bottom" constant="16" id="aPR-Ih-f6k"/>
                             <constraint firstItem="ywS-nQ-gCJ" firstAttribute="width" secondItem="y7X-lt-yVL" secondAttribute="width" constant="-32" id="ay3-Ki-pnP"/>
                             <constraint firstItem="8bA-On-MFd" firstAttribute="leading" secondItem="FY0-LI-RJ6" secondAttribute="leading" id="cc6-yh-h1h"/>
-                            <constraint firstItem="FY0-LI-RJ6" firstAttribute="bottom" secondItem="8bA-On-MFd" secondAttribute="bottom" constant="16" id="rqj-Ao-bFp"/>
+                            <constraint firstItem="FY0-LI-RJ6" firstAttribute="bottom" secondItem="8bA-On-MFd" secondAttribute="bottom" id="rqj-Ao-bFp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E8h-nJ-87Y"/>
