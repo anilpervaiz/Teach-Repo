@@ -135,7 +135,8 @@ class ChatViewController: MessagesViewController {
         messageInputBar.inputTextView.layer.cornerRadius = 18.0
         messageInputBar.inputTextView.layer.masksToBounds = true
         //messageInputBar.middleContentViewPadding = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 16)
-        
+        messageInputBar.delegate = self
+
         configureInputBarItems()
     }
     
@@ -157,14 +158,14 @@ class ChatViewController: MessagesViewController {
 extension ChatViewController {
     func isNextMessageSameSender(at indexPath: IndexPath) -> Bool {
         guard let vm = viewModel else { return false }
-        let messageList = vm.showableChat
+        let messageList = vm.chatMessages
         guard indexPath.section + 1 < messageList.count else { return false }
         return messageList[indexPath.section].sentBy == messageList[indexPath.section + 1].sentBy
     }
 
     func isPreviousMessageSameSender(at indexPath: IndexPath) -> Bool {
         guard let vm = viewModel else { return false }
-        let messageList = vm.showableChat
+        let messageList = vm.chatMessages
         let previousIndex = indexPath.section - 1
         guard previousIndex >= 0, previousIndex < messageList.count else { return false }
         return messageList[indexPath.section].sentBy == messageList[previousIndex].sentBy
@@ -177,17 +178,33 @@ extension ChatViewController {
             return MockData.chatViewModel.currentUser
         }
     }
+    
+    func insertMessage(_ message: Message) {
+        viewModel?.chatMessages.append(message)
+        guard let msgCount = viewModel?.chatMessages.count else { return }
+        // Reload last section to update header/footer labels and insert a new one
+        messagesCollectionView.performBatchUpdates({
+            messagesCollectionView.insertSections([msgCount - 1])
+            if msgCount >= 2 {
+                messagesCollectionView.reloadSections([msgCount - 2])
+            }
+        }, completion: { [weak self] _ in
+            guard let self = self else { return }
+            self.updateCollectionViewSizes(extraHeight: 0)
+            self.messagesCollectionView.scrollToLastItem(animated: true)
+        })
+    }
 }
 
 // MARK: - MessagesDataSource
 
 extension ChatViewController: MessagesDataSource {
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
-        viewModel?.showableChat.count ?? 0
+        viewModel?.chatMessages.count ?? 0
     }
     
     func messageForItem(at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> MessageType {
-        var msg = viewModel?.showableChat[indexPath.section] ?? Message(text: "", sentBy: MockData.currentUser, messageId: "", date: Date())
+        var msg = viewModel?.chatMessages[indexPath.section] ?? Message(text: "", sentBy: MockData.currentUser, messageId: "", date: Date())
         
         if case MessageKind.text(let value) = msg.kind {
             let attributes: [NSAttributedString.Key : Any] = [
@@ -200,7 +217,7 @@ extension ChatViewController: MessagesDataSource {
     }
     
     func messageBottomLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
-        if !isPreviousMessageSameSender(at: indexPath),
+        if !isNextMessageSameSender(at: indexPath),
            let message = message as? Message {
             return NSAttributedString(
                 string: viewModel?.showableDateTime(of: message) ?? "",
@@ -229,7 +246,7 @@ extension ChatViewController: MessagesLayoutDelegate {
     }
     
     func messageBottomLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
-        return !isPreviousMessageSameSender(at: indexPath) ? 16 : 0
+        return !isNextMessageSameSender(at: indexPath) ? 16 : 0
     }
 }
 
@@ -241,7 +258,7 @@ extension ChatViewController: MessagesDisplayDelegate {
     }
     
     func messageStyle(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> MessageStyle {
-        if isPreviousMessageSameSender(at: indexPath) {
+        if isNextMessageSameSender(at: indexPath) {
             return .bubble
         } else {
             let tail: MessageStyle.TailCorner = isFromCurrentSender(message: message) ? .bottomRight : .bottomLeft
@@ -253,6 +270,49 @@ extension ChatViewController: MessagesDisplayDelegate {
         avatarView.isHidden = true
     }
 }
+
+// MARK: - MessageInputBarDelegate
+
+extension ChatViewController: InputBarAccessoryViewDelegate {
+
+    @objc
+    func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
+        processInputBar(messageInputBar)
+    }
+
+    func processInputBar(_ inputBar: InputBarAccessoryView) {
+        let components = inputBar.inputTextView.components
+        inputBar.inputTextView.text = String()
+        inputBar.invalidatePlugins()
+        // Send button activity animation
+        //inputBar.sendButton.startAnimating()
+        inputBar.inputTextView.placeholder = "Sending..."
+        // Resign first responder for iPad split view
+        inputBar.inputTextView.resignFirstResponder()
+        DispatchQueue.global(qos: .default).async {
+            // fake send request task
+            //sleep(1)
+            DispatchQueue.main.async { [weak self] in
+                //inputBar.sendButton.stopAnimating()
+                inputBar.inputTextView.placeholder = "Aa"
+                self?.insertMessages(components)
+                self?.messagesCollectionView.scrollToLastItem(animated: true)
+            }
+        }
+    }
+
+    private func insertMessages(_ data: [Any]) {
+        guard let vm = viewModel else { return }
+        for component in data {
+            let user = vm.currentUser
+            if let str = component as? String {
+                let message = Message(text: str, sentBy: user, messageId: UUID().uuidString, date: Date())
+                insertMessage(message)
+            }
+        }
+    }
+}
+
 
 extension ChatViewController {
     func setupKeyboardNotification() {

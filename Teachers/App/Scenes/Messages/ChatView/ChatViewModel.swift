@@ -7,7 +7,6 @@ import Foundation
 import MessageKit
 
 struct ChatViewModel {
-    private var reversedChat: [Message] = []
     lazy private var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.timeStyle = .short
@@ -20,7 +19,6 @@ struct ChatViewModel {
     let currentUser: Sender
     let chatPerson: Sender
     
-    var showableChat: [Message] { return chatMessages.reversed() }
     var chatPersonName: String { return chatPerson.displayName }
     var chatPersonImage: UIImage { return chatPerson.displayImage }
     var chatPersonActiveStatus: String { return chatPerson.activeStatus }
