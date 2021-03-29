@@ -39,7 +39,8 @@ class StudentProfileViewModel {
     func didTapCellForRow(at indexPath: IndexPath) {
         switch indexPath.section {
         case Section.writeAReview.rawValue: router.navigateToWriteAReview()
-        case Section.parent.rawValue: router.navigateToChat()
+        case Section.parent.rawValue:
+            router.navigateToChat()
         case Section.session.rawValue:
             if sessionSectionState == .collapsed && indexPath.row == 1 {
                 sessionSectionState = .expanded
@@ -52,6 +53,10 @@ class StudentProfileViewModel {
             }
         default: break
         }
+    }
+
+    func didTapChatWithStudentButton() {
+        router.navigateToChat()
     }
 
     func numberOfRows(for section: Int) -> Int {

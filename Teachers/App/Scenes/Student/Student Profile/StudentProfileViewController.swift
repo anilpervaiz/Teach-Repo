@@ -36,7 +36,9 @@ class StudentProfileViewController: BaseViewController {
         bindViewModel()
         if let student = viewModel?.student {
             let header = StudentProfileTableHeaderView()
-            header.configure(with: student)
+            header.configure(with: student) { [weak self] in
+                self?.viewModel?.didTapChatWithStudentButton()
+            }
             header.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 232)
             tableView.tableHeaderView = header
         }

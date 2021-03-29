@@ -36,6 +36,10 @@ class SessionDetailViewModel {
         router.navigteToSessionEndFlow()
     }
 
+    func didTapChatButton() {
+        router.navigateToChatView()
+    }
+
     enum Output {
         case reloadData
     }

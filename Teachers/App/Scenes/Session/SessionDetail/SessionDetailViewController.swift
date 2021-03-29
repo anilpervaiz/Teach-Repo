@@ -70,7 +70,9 @@ class SessionDetailViewController: BaseViewController {
     }
 
     @IBAction func chatWithStudentButton(_ sender: Any) {
+        viewModel?.didTapChatButton()
     }
+    
     @IBAction func didTapAcceptButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }

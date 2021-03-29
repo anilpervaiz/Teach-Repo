@@ -17,4 +17,10 @@ class SessionDetailRouter: BaseRouter {
         let viewController = SessionEndNoteViewController.getInstance()
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    func navigateToChatView() {
+        let viewController = MessagesListViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

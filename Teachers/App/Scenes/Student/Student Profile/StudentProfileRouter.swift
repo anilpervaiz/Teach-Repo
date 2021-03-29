@@ -10,7 +10,9 @@ import Foundation
 class StudentProfileRouter: BaseRouter {
 
     func navigateToChat() {
-
+        let viewController = MessagesListViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     func navigateToWriteAReview() {
