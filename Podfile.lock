@@ -17,7 +17,7 @@ DEPENDENCIES:
   - Cosmos
   - DateToolsSwift
   - FlagPhoneNumber (from `https://github.com/rahimkhalid/FlagPhoneNumber.git`, branch `UI-Fixes`)
-  - MessageKit (from `https://github.com/rahimkhalid/MessageKit.git`, branch `master`)
+  - MessageKit
   - SVPinView
   - SwiftGen
   - "UITextView+Placeholder"
@@ -27,6 +27,7 @@ SPEC REPOS:
     - Cosmos
     - DateToolsSwift
     - InputBarAccessoryView
+    - MessageKit
     - SVPinView
     - SwiftGen
     - "UITextView+Placeholder"
@@ -35,17 +36,11 @@ EXTERNAL SOURCES:
   FlagPhoneNumber:
     :branch: UI-Fixes
     :git: https://github.com/rahimkhalid/FlagPhoneNumber.git
-  MessageKit:
-    :branch: master
-    :git: https://github.com/rahimkhalid/MessageKit.git
 
 CHECKOUT OPTIONS:
   FlagPhoneNumber:
     :commit: f03d1ab9527958b937c0c2255c3f97b8d215e835
     :git: https://github.com/rahimkhalid/FlagPhoneNumber.git
-  MessageKit:
-    :commit: 66c9b2ca28cb474ed0226af849c7bb783b84fde4
-    :git: https://github.com/rahimkhalid/MessageKit.git
 
 SPEC CHECKSUMS:
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
@@ -57,6 +52,6 @@ SPEC CHECKSUMS:
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: 58069bee8aceac836c3ae4be7cd5348f0d4c3e1a
+PODFILE CHECKSUM: b429daf0fd209d0bc9f19e9778edec137147826b
 
 COCOAPODS: 1.10.0

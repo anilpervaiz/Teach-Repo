@@ -12,6 +12,12 @@ class ChatViewController: MessagesViewController {
             
     var viewModel: ChatViewModel? = nil
     var bottomConstraint: NSLayoutConstraint?
+    var collectionViewHeightConstraint: NSLayoutConstraint?
+
+    private lazy var parentHeaderView: ChatParentView = {
+        let chatParentView = ChatParentView().preparedForAutolayout()
+        return chatParentView
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +26,7 @@ class ChatViewController: MessagesViewController {
         setupParentView()
         configureMessageCollectionView()
         configureMessageInputBar()
+        setupKeyboardNotification()
     }
     
     private func setupNavBar() {
@@ -31,6 +38,23 @@ class ChatViewController: MessagesViewController {
             action: #selector(moreOptionsTapped)
         )
         setupChatHeader()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        updateCollectionViewSizes(extraHeight: 0)
+    }
+
+    private func updateCollectionViewSizes(extraHeight: CGFloat) {
+        let collectionViewHeightToBe = UIScreen.main.bounds.height - parentHeaderView.frame.maxY
+        if messagesCollectionView.contentSize.height >= collectionViewHeightToBe {
+            collectionViewHeightConstraint?.isActive = false
+        } else {
+            let adjustedInsets = messagesCollectionView.adjustedContentInset.bottom
+            collectionViewHeightConstraint?.constant = messagesCollectionView.contentSize.height + adjustedInsets + extraHeight
+            collectionViewHeightConstraint?.isActive = true
+        }
     }
 
     private func setupChatHeader() {
@@ -49,16 +73,14 @@ class ChatViewController: MessagesViewController {
         guard let vm = viewModel else {
             return
         }
-        let chatParentView = ChatParentView()
-        chatParentView.translatesAutoresizingMaskIntoConstraints = false
         let chatParentViewHeight: CGFloat = 56.0
-        view.addSubview(chatParentView)
-        chatParentView.fillSuperviewHorizontally()
+        view.addSubview(parentHeaderView)
+        parentHeaderView.fillSuperviewHorizontally()
         NSLayoutConstraint.activate([
-            chatParentView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            chatParentView.heightAnchor.constraint(equalToConstant: chatParentViewHeight)
+            parentHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            parentHeaderView.heightAnchor.constraint(equalToConstant: chatParentViewHeight)
         ])
-        chatParentView.configureWith(parentName: vm.parentName, parentImage: Asset.Media.parent.image, onMessageTapped: {
+        parentHeaderView.configureWith(parentName: vm.parentName, parentImage: Asset.Media.parent.image, onMessageTapped: {
             print("Message to parent tapped")
         })
 
@@ -66,8 +88,9 @@ class ChatViewController: MessagesViewController {
         topConstraint.first?.isActive = false
 
         bottomConstraint = messagesCollectionView.getConstraints(attribute: .bottom).first
-        bottomConstraint?.constant = -66
-        messagesCollectionView.topAnchor.constraint(equalTo: chatParentView.bottomAnchor).isActive = true
+        messagesCollectionView.topAnchor.constraint(greaterThanOrEqualTo: parentHeaderView.bottomAnchor).isActive = true
+        collectionViewHeightConstraint = messagesCollectionView.heightAnchor.constraint(equalToConstant: 0)
+        collectionViewHeightConstraint?.isActive = false
     }
     
     private func configureMessageCollectionView() {
@@ -82,9 +105,7 @@ class ChatViewController: MessagesViewController {
         layout?.setMessageIncomingMessageBottomLabelAlignment(
             LabelAlignment(textAlignment: .left, textInsets: UIEdgeInsets(top: 0, left: 4, bottom: 0, right: 0))
         )
-        
-        messagesCollectionView.transform = CGAffineTransform(rotationAngle: .pi)
-        
+
         messagesCollectionView.messagesDataSource = self
 //        messagesCollectionView.messageCellDelegate = self
         messagesCollectionView.messagesLayoutDelegate = self
@@ -124,13 +145,7 @@ class ChatViewController: MessagesViewController {
         messageInputBar.sendButton.image = Asset.Media.send.image
         messageInputBar.sendButton.title = nil
     }
-        
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = super.collectionView(collectionView, cellForItemAt: indexPath)
-        cell.transform = CGAffineTransform(rotationAngle: .pi)
-        return cell
-    }
-         
+
     @objc
     func moreOptionsTapped() {
         print("more options button Tapped")
@@ -236,5 +251,34 @@ extension ChatViewController: MessagesDisplayDelegate {
     
     func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
         avatarView.isHidden = true
+    }
+}
+
+extension ChatViewController {
+    func setupKeyboardNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+}
+
+// MARK: - Keyboard target events
+@objc
+extension ChatViewController {
+    private func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue,
+           let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double {
+            updateCollectionViewSizes(extraHeight: keyboardSize.height)
+            UIView.animate(withDuration: duration) {
+                self.view.layoutIfNeeded()
+            }
+        }
+    }
+
+    private func keyboardWillHide(sender: NSNotification) {
+        updateCollectionViewSizes(extraHeight: 0)
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
     }
 }
