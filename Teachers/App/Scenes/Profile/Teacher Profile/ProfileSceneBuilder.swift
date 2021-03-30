@@ -10,7 +10,10 @@ import Foundation
 struct ProfileSceneBuilder {
     func makeViewController() -> BaseNavigationController {
         let controller = ProfileViewController.getInstance()
+        let navigationController = BaseNavigationController(rootViewController: controller)
 
-        return BaseNavigationController(rootViewController: controller)
+        controller.router = TeacherProfileRouter(with: navigationController)
+
+        return navigationController
     }
 }

@@ -8,8 +8,8 @@
 import Foundation
 
 struct SettingsModel {
-    enum Section: CaseIterable {
-        case account
+    enum Section: Int, CaseIterable {
+        case account = 0
         case more
 
         var title: String {
@@ -34,6 +34,19 @@ struct SettingsModel {
         case termsAndPrivacy
         case helpCenter
         case about
+
+        var rawValue: Int {
+            switch self {
+            case .changePassword: return 0
+            case .language: return 1
+            case .notification: return 2
+            case .goOffline: return 3
+            case .signout: return 4
+            case .termsAndPrivacy: return 5
+            case .helpCenter: return 6
+            case .about: return 7
+            }
+        }
 
         var title: String {
             switch self {

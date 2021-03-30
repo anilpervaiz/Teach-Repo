@@ -27,4 +27,8 @@ class SettingsViewModel {
     func header(for sectionIndex: Int) -> String {
         section[sectionIndex].title
     }
+
+    func didSelectRow(at indexPath: IndexPath) {
+        
+    }
 }

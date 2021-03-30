@@ -70,6 +70,7 @@
 		C95220E42610F62200F9676D /* SettingTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95220E32610F62200F9676D /* SettingTableHeaderView.swift */; };
 		C95220E92610F63500F9676D /* SettingTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95220E82610F63500F9676D /* SettingTableHeaderView.xib */; };
 		C95220EE2610F6A900F9676D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95220ED2610F6A900F9676D /* SettingsViewModel.swift */; };
+		C952211E2612C7EF00F9676D /* TeacherProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C952211D2612C7EF00F9676D /* TeacherProfileRouter.swift */; };
 		C95B62DB2605FD520088506C /* CreateProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95B62DA2605FD520088506C /* CreateProfile.storyboard */; };
 		C95B62E12605FE1F0088506C /* CreateProfileSectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95B62E02605FE1F0088506C /* CreateProfileSectionTableViewCell.xib */; };
 		C95B62E62605FEC40088506C /* CreateProfileSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95B62E52605FEC40088506C /* CreateProfileSectionTableViewCell.swift */; };
@@ -319,6 +320,7 @@
 		C95220E32610F62200F9676D /* SettingTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableHeaderView.swift; sourceTree = "<group>"; };
 		C95220E82610F63500F9676D /* SettingTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableHeaderView.xib; sourceTree = "<group>"; };
 		C95220ED2610F6A900F9676D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		C952211D2612C7EF00F9676D /* TeacherProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherProfileRouter.swift; sourceTree = "<group>"; };
 		C95B62DA2605FD520088506C /* CreateProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateProfile.storyboard; sourceTree = "<group>"; };
 		C95B62E02605FE1F0088506C /* CreateProfileSectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateProfileSectionTableViewCell.xib; sourceTree = "<group>"; };
 		C95B62E52605FEC40088506C /* CreateProfileSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileSectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -778,6 +780,7 @@
 			children = (
 				C9A0C1F4260AD51C00C3285E /* ProfileViewController.swift */,
 				C9A0C22E260AFDCA00C3285E /* ProfileSceneBuilder.swift */,
+				C952211D2612C7EF00F9676D /* TeacherProfileRouter.swift */,
 			);
 			path = "Teacher Profile";
 			sourceTree = "<group>";
@@ -1648,6 +1651,7 @@
 				C95CD823260D0CD7001C2E2D /* RequestListingRouter.swift in Sources */,
 				B2656D16260640AF007609F6 /* HeadingLabel2.swift in Sources */,
 				B2A067F1260F4E6C005477C8 /* ChatParentView.swift in Sources */,
+				C952211E2612C7EF00F9676D /* TeacherProfileRouter.swift in Sources */,
 				C99B7F8F2601234E00EBD873 /* BaseNavigationViewController.swift in Sources */,
 				CE66C68225FF8F3A00A2FA72 /* Teachers.xcdatamodeld in Sources */,
 				C9A0C1E3260AD4C700C3285E /* RequestListingViewController.swift in Sources */,

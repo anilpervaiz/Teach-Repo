@@ -10,14 +10,50 @@ import UIKit
 class ProfileViewController: BaseViewController {
 
     var mockData: User = User.mockData
+    var router: TeacherProfileRouter?
 
-    @IBOutlet weak var billingInformationView: UIView!
-    @IBOutlet weak var documentLibraryView: UIView!
-    @IBOutlet weak var walletView: UIView!
-    @IBOutlet weak var reviewsView: UIView!
-    @IBOutlet weak var mySessionsView: UIView!
-    @IBOutlet weak var availabilityView: UIView!
-    @IBOutlet weak var subjectsView: UIView!
+    @IBOutlet weak var billingInformationView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapBillingInformationView))
+            billingInformationView.addGestureRecognizer(gesture)
+        }
+    }
+    @IBOutlet weak var documentLibraryView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapDocumentView))
+            documentLibraryView.addGestureRecognizer(gesture)
+        }
+    }
+    @IBOutlet weak var walletView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapWalletView))
+            walletView.addGestureRecognizer(gesture)
+        }
+    }
+    @IBOutlet weak var reviewsView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapReviewView))
+            reviewsView.addGestureRecognizer(gesture)
+        }
+    }
+    @IBOutlet weak var mySessionsView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapSessionView))
+            mySessionsView.addGestureRecognizer(gesture)
+        }
+    }
+    @IBOutlet weak var availabilityView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapAvailabilityView))
+            availabilityView.addGestureRecognizer(gesture)
+        }
+    }
+    @IBOutlet weak var subjectsView: UIView! {
+        didSet {
+            let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapSubjectsView))
+            subjectsView.addGestureRecognizer(gesture)
+        }
+    }
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
@@ -62,31 +98,31 @@ class ProfileViewController: BaseViewController {
 @objc
 extension ProfileViewController {
     func didTapBillingInformationView() {
-
+        router?.didTapBillingInformationView()
     }
 
     func didTapDocumentView() {
-
+        router?.didTapDocumentView()
     }
 
     func didTapWalletView() {
-
+        router?.didTapWalletView()
     }
 
     func didTapReviewView() {
-
+        router?.didTapReviewView()
     }
 
     func didTapSessionView() {
-
+        router?.didTapSessionView()
     }
 
     func didTapAvailabilityView() {
-
+        router?.didTapAvailabilityView()
     }
 
     func didTapSubjectsView() {
-
+        router?.didTapSubjectsView()
     }
 }
 
