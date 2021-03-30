@@ -30,12 +30,17 @@ class TeacherProfileRouter: BaseRouter {
 
     @objc
     func didTapSessionView() {
-
+        let viewController = ScheduleListingSceneBuilder().makeViewController().topViewController!
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     @objc
     func didTapAvailabilityView() {
-
+        let viewController = AvailibilityViewController.getInstance()
+        viewController.viewModel = AvailibilityViewModel()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     @objc

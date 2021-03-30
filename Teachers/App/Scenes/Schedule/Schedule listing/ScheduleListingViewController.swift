@@ -62,10 +62,14 @@ class ScheduleListingViewController: BaseViewController {
     }
 
     func setupNavigationBar() {
-        setLeftAlignNavBarTitle(with: "My Schedule",
-                                font: .init(commonFont: PoppinsFontStyle.semiBold, size: 20),
-                                textColor: Asset.Colors.darkBlue.color)
-        navigationItem.rightBarButtonItems = [notificationNavigationBarButton, chatNavigationBarButton, calendarToggleButton]
+        if navigationController?.viewControllers.count == 1 {
+            setLeftAlignNavBarTitle(with: "My Schedule",
+                                    font: .init(commonFont: PoppinsFontStyle.semiBold, size: 20),
+                                    textColor: Asset.Colors.darkBlue.color)
+            navigationItem.rightBarButtonItems = [notificationNavigationBarButton, chatNavigationBarButton, calendarToggleButton]
+        } else {
+            title = "My Sessions"
+        }
     }
 }
 
