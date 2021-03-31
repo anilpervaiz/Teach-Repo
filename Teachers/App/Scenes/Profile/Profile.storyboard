@@ -505,6 +505,46 @@
             </objects>
             <point key="canvasLocation" x="661" y="209"/>
         </scene>
+        <!--Reviews View Controller-->
+        <scene sceneID="R3g-9s-PKk">
+            <objects>
+                <viewController storyboardIdentifier="ReviewsViewController" id="nQK-6K-1el" customClass="ReviewsViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="onV-J1-9Q6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52F-4v-fQL">
+                                <rect key="frame" x="0.0" y="53" width="414" height="801"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-Ym-cNj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="eRY-wk-tLV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HOr-8c-dqB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q01-Ym-cNj" firstAttribute="leading" secondItem="HOr-8c-dqB" secondAttribute="leading" id="A1L-ix-TZh"/>
+                            <constraint firstItem="52F-4v-fQL" firstAttribute="top" secondItem="Q01-Ym-cNj" secondAttribute="bottom" constant="8" id="H3p-5i-HSx"/>
+                            <constraint firstItem="52F-4v-fQL" firstAttribute="leading" secondItem="HOr-8c-dqB" secondAttribute="leading" id="PyA-8j-XKm"/>
+                            <constraint firstItem="HOr-8c-dqB" firstAttribute="trailing" secondItem="52F-4v-fQL" secondAttribute="trailing" id="WKl-R5-yCh"/>
+                            <constraint firstItem="HOr-8c-dqB" firstAttribute="trailing" secondItem="Q01-Ym-cNj" secondAttribute="trailing" id="enq-Uq-Zgc"/>
+                            <constraint firstItem="Q01-Ym-cNj" firstAttribute="top" secondItem="HOr-8c-dqB" secondAttribute="top" id="mMk-8b-jsZ"/>
+                            <constraint firstItem="HOr-8c-dqB" firstAttribute="bottom" secondItem="52F-4v-fQL" secondAttribute="bottom" constant="8" id="uUJ-hc-x9e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="52F-4v-fQL" id="RY7-a4-qXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9aR-Ib-Up5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647.826086956522" y="208.92857142857142"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Setting" width="24" height="24"/>

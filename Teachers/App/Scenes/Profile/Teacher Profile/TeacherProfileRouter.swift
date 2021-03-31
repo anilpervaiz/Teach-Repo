@@ -25,8 +25,10 @@ class TeacherProfileRouter: BaseRouter {
 
     @objc
     func didTapReviewView() {
-
-    }
+        let viewController = ReviewsViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }  
 
     @objc
     func didTapSessionView() {

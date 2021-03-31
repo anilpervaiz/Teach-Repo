@@ -594,26 +594,6 @@ the request?</string>
             <point key="canvasLocation" x="470" y="45"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="0XH-PF-qz5">
-            <size key="intrinsicContentSize" width="84" height="30"/>
-        </designable>
-        <designable name="8gU-fQ-Oh5">
-            <size key="intrinsicContentSize" width="92" height="30"/>
-        </designable>
-        <designable name="Jlp-NU-J1g">
-            <size key="intrinsicContentSize" width="44" height="30"/>
-        </designable>
-        <designable name="XrL-o7-fNz">
-            <size key="intrinsicContentSize" width="34" height="30"/>
-        </designable>
-        <designable name="YiD-cx-jBc">
-            <size key="intrinsicContentSize" width="213" height="24"/>
-        </designable>
-        <designable name="svE-lD-d9H">
-            <size key="intrinsicContentSize" width="49" height="30"/>
-        </designable>
-    </designables>
     <resources>
         <image name="chat" width="24" height="24"/>
         <image name="refreshIcon" width="25" height="24"/>

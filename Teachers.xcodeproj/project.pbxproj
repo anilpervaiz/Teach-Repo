@@ -102,6 +102,7 @@
 		C95CD819260D0A16001C2E2D /* SessionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95CD818260D0A16001C2E2D /* SessionTableViewCell.xib */; };
 		C95CD81E260D0CBD001C2E2D /* RequestListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */; };
 		C95CD823260D0CD7001C2E2D /* RequestListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */; };
+		C9799AF92614E40A00E9B888 /* ReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9799AF82614E40A00E9B888 /* ReviewsViewController.swift */; };
 		C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */; };
 		C985373426071ED400EE1F45 /* AvailibilityHourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C985373326071ED400EE1F45 /* AvailibilityHourCell.xib */; };
 		C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985373826071EFF00EE1F45 /* AvailibilityDayCell.swift */; };
@@ -352,6 +353,7 @@
 		C95CD818260D0A16001C2E2D /* SessionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionTableViewCell.xib; sourceTree = "<group>"; };
 		C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingViewModel.swift; sourceTree = "<group>"; };
 		C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingRouter.swift; sourceTree = "<group>"; };
+		C9799AF82614E40A00E9B888 /* ReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsViewController.swift; sourceTree = "<group>"; };
 		C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailibilityDayCell.xib; sourceTree = "<group>"; };
 		C985373326071ED400EE1F45 /* AvailibilityHourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailibilityHourCell.xib; sourceTree = "<group>"; };
 		C985373826071EFF00EE1F45 /* AvailibilityDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailibilityDayCell.swift; sourceTree = "<group>"; };
@@ -904,6 +906,14 @@
 			path = SessionTableViewCell;
 			sourceTree = "<group>";
 		};
+		C9799AF72614E3F800E9B888 /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				C9799AF82614E40A00E9B888 /* ReviewsViewController.swift */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
 		C985375626072F3400EE1F45 /* ImagePickerOptionSheet */ = {
 			isa = PBXGroup;
 			children = (
@@ -1198,6 +1208,7 @@
 		C9A0C1C3260AD3EE00C3285E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C9799AF72614E3F800E9B888 /* Reviews */,
 				C95220C02610E6DC00F9676D /* Settings */,
 				C95220BB2610DCC100F9676D /* Teacher Profile */,
 				C9A0C1D8260AD41F00C3285E /* Profile.storyboard */,
@@ -1764,6 +1775,7 @@
 				C9A0C2AF260B75AA00C3285E /* DashboardReviewCollectionViewCell.swift in Sources */,
 				C99B7FD5260126C900EBD873 /* CustomDatePicker.swift in Sources */,
 				C99B7F60260117CB00EBD873 /* Assets+Generated.swift in Sources */,
+				C9799AF92614E40A00E9B888 /* ReviewsViewController.swift in Sources */,
 				C9A0C2BB260B75F200C3285E /* CollectionViewTitleHeader.swift in Sources */,
 				C9A0C21A260AFD9B00C3285E /* RequestListingSceneBuilder.swift in Sources */,
 				C928215A26046172006E97CC /* NewPasswordViewController.swift in Sources */,
