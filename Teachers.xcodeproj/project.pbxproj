@@ -110,6 +110,7 @@
 		C95CD819260D0A16001C2E2D /* SessionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95CD818260D0A16001C2E2D /* SessionTableViewCell.xib */; };
 		C95CD81E260D0CBD001C2E2D /* RequestListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */; };
 		C95CD823260D0CD7001C2E2D /* RequestListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */; };
+		C9799AE92614E0CC00E9B888 /* StudentParentDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9799AE82614E0CC00E9B888 /* StudentParentDetailsTableViewCell.xib */; };
 		C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */; };
 		C985373426071ED400EE1F45 /* AvailibilityHourCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C985373326071ED400EE1F45 /* AvailibilityHourCell.xib */; };
 		C985373926071EFF00EE1F45 /* AvailibilityDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C985373826071EFF00EE1F45 /* AvailibilityDayCell.swift */; };
@@ -368,6 +369,7 @@
 		C95CD818260D0A16001C2E2D /* SessionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionTableViewCell.xib; sourceTree = "<group>"; };
 		C95CD81D260D0CBD001C2E2D /* RequestListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingViewModel.swift; sourceTree = "<group>"; };
 		C95CD822260D0CD7001C2E2D /* RequestListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListingRouter.swift; sourceTree = "<group>"; };
+		C9799AE82614E0CC00E9B888 /* StudentParentDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentParentDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		C985372E26071EA700EE1F45 /* AvailibilityDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailibilityDayCell.xib; sourceTree = "<group>"; };
 		C985373326071ED400EE1F45 /* AvailibilityHourCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvailibilityHourCell.xib; sourceTree = "<group>"; };
 		C985373826071EFF00EE1F45 /* AvailibilityDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailibilityDayCell.swift; sourceTree = "<group>"; };
@@ -626,6 +628,7 @@
 				B26DCA902613C25E00921395 /* SessionFeesCell.swift */,
 				B26DCAA22613C86200921395 /* DocumentCell.xib */,
 				B26DCA9D2613C83400921395 /* DocumentCell.swift */,
+				C9799AE82614E0CC00E9B888 /* StudentParentDetailsTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1592,6 +1595,7 @@
 				C9A0C1D9260AD41F00C3285E /* Profile.storyboard in Resources */,
 				C928215026045FD1006E97CC /* ResetPassword.storyboard in Resources */,
 				C985376026072F6500EE1F45 /* ImagePickerOptionSheet.storyboard in Resources */,
+				C9799AE92614E0CC00E9B888 /* StudentParentDetailsTableViewCell.xib in Resources */,
 				C9A0C1CF260AD40C00C3285E /* Schedule.storyboard in Resources */,
 				C9A0C301260BB98B00C3285E /* StudentTableViewCell.xib in Resources */,
 				C99B7EDE25FFD01100EBD873 /* GetStarted.storyboard in Resources */,
