@@ -98,6 +98,7 @@ internal enum Asset {
     internal static let circularAddIcon = ImageAsset(name: "circularAddIcon")
     internal static let closeIcon = ImageAsset(name: "closeIcon")
     internal static let crossIcon = ImageAsset(name: "crossIcon")
+    internal static let doc = ImageAsset(name: "doc")
     internal static let downArrow = ImageAsset(name: "down-arrow")
     internal static let downArrowCircularBorder = ImageAsset(name: "downArrowCircularBorder")
     internal static let errorIcon = ImageAsset(name: "errorIcon")

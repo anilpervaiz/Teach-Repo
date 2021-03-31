@@ -90,6 +90,12 @@ extension RegisteredSubjectsViewController: UITableViewDelegate, UITableViewData
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = SubjectMainViewController.getInstance()
+        navigationController?.pushViewController(vc, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
 extension RegisteredSubjectsViewController: Initializable {
