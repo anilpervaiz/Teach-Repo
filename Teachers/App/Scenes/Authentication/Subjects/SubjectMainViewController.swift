@@ -11,13 +11,33 @@ class SubjectMainViewController: BaseViewController {
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var divider: UIView!
     
-    lazy private var subjectDetailViewController = SubjectDetailsViewController.getInstance()
-    lazy private var documentsViewController = DocumentsViewController.getInstance()
+    var viewModel: SubjectMainViewModel?
+    
+    lazy private var subjectDetailViewController: SubjectDetailsViewController = {
+        let vc = SubjectDetailsViewController.getInstance()
+        vc.viewModel = viewModel?.subjectDetalsViewModel
+        return vc
+    }()
+    
+    lazy private var documentsViewController: DocumentsViewController = {
+        let vc = DocumentsViewController.getInstance()
+        vc.viewModel = viewModel?.subjectDocumentsViewModel
+        return vc
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSegmentedControl()
         updateView()
+        configureUI()
+    }
+    
+    private func configureUI() {
+        guard let viewModel = viewModel else {
+            return
+        }
+        subjectNameLabel.text = viewModel.subjectName
+        subjectDetailLabel.text = viewModel.subjectDetail
     }
     
     @IBAction func segmentValueChanged(_ sender: Any) {
