@@ -56,7 +56,7 @@ extension MessagesListViewController: UITableViewDelegate {
         if let chatViewController = storyboard.instantiateViewController(
             withIdentifier: String(describing: ChatViewController.self)
         ) as? ChatViewController {
-            chatViewController.viewModel = MockData.chatViewModel
+            chatViewController.viewModel = MockData.chatViewModelWithParentInfo
             navigationController?.pushViewController(chatViewController, animated: true)
         }
     }

@@ -19,8 +19,9 @@ class SessionDetailRouter: BaseRouter {
     }
     
     func navigateToChatView() {
-        let viewController = MessagesListViewController.getInstance()
+        let viewController = ChatViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
+        viewController.viewModel = MockData.chatViewModelWithoutParentInfo
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

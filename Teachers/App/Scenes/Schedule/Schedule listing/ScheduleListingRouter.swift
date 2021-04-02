@@ -16,8 +16,9 @@ class ScheduleListingRouter: BaseRouter {
     }
 
     func navigateToChatView() {
-        let viewController = MessagesListViewController.getInstance()
+        let viewController = ChatViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
+        viewController.viewModel = MockData.chatViewModelWithParentInfo
         navigationController?.pushViewController(viewController, animated: true)
     }
 
