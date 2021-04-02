@@ -7,17 +7,34 @@
 
 import UIKit
 
-class TransactionTableViewCell: UITableViewCell {
+class TransactionTableViewCell: UITableViewCell,
+                                ReusableView {
 
+    @IBOutlet weak var divider: UIView!
+    @IBOutlet weak var toAccountLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var transactionTypeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    override func prepareForReuse() {
+        super.prepareForReuse()
 
-        // Configure the view for the selected state
+        toAccountLabel.text = ""
+        amountLabel.text = ""
+        dateLabel.text = ""
+        transactionTypeLabel.text = ""
+    }
+
+    func configure(transaction: Transaction) {
+        toAccountLabel.text = "To \(transaction.destinationAccount)"
+        amountLabel.text = "\(transaction.amount) AED"
+        dateLabel.text = transaction.formattedDate
+        transactionTypeLabel.text = transaction.formattedType
     }
 
 }

@@ -20,7 +20,9 @@ class TeacherProfileRouter: BaseRouter {
 
     @objc
     func didTapWalletView() {
-
+        let viewController = MyWalletViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     @objc
