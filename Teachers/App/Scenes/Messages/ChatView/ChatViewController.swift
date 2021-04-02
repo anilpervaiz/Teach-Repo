@@ -20,7 +20,9 @@ class ChatViewController: MessagesViewController {
     }()
 
     lazy private var dummySender = Sender(senderId: "", displayName: "", displayImage: UIImage(), activeStatus: "")
-    
+
+    override var preferredStatusBarStyle: UIStatusBarStyle { .default }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +33,7 @@ class ChatViewController: MessagesViewController {
         setupKeyboardNotification()
         let navController = navigationController as? BaseNavigationController
         navController?.applyCustomBackButtonStyle()
+        navigationController?.navigationBar.tintColor = Asset.Colors.gray.color
     }
     
     private func setupNavBar() {
@@ -51,11 +54,7 @@ class ChatViewController: MessagesViewController {
     }
 
     private func updateCollectionViewSizes(extraHeight: CGFloat) {
-        var parentHeaderMaxY: CGFloat = 0
-        if let _ = viewModel?.parentInfo {
-            parentHeaderMaxY = parentHeaderView.frame.maxY
-        }
-        let collectionViewHeightToBe = UIScreen.main.bounds.height - parentHeaderMaxY
+        let collectionViewHeightToBe = UIScreen.main.bounds.height - parentHeaderView.frame.maxY
         if messagesCollectionView.contentSize.height >= collectionViewHeightToBe {
             collectionViewHeightConstraint?.isActive = false
         } else {
@@ -63,6 +62,7 @@ class ChatViewController: MessagesViewController {
             collectionViewHeightConstraint?.constant = messagesCollectionView.contentSize.height + adjustedInsets + extraHeight
             collectionViewHeightConstraint?.isActive = true
         }
+        messagesCollectionView.layoutIfNeeded()
     }
 
     private func setupChatHeader() {
@@ -78,8 +78,7 @@ class ChatViewController: MessagesViewController {
     }
 
     private func setupParentView() {
-        guard let parentInfo = viewModel?.parentInfo else { return }
-        let chatParentViewHeight: CGFloat = 56.0
+        let chatParentViewHeight: CGFloat = viewModel?.parentInfo == nil ? 0 : 56
         view.addSubview(parentHeaderView)
         parentHeaderView.fillSuperviewHorizontally()
         NSLayoutConstraint.activate([
@@ -87,8 +86,8 @@ class ChatViewController: MessagesViewController {
             parentHeaderView.heightAnchor.constraint(equalToConstant: chatParentViewHeight)
         ])
         parentHeaderView.configureWith(
-            parentName: parentInfo.parentName,
-            parentImage: UIImage(named: parentInfo.parentImageName) ?? UIImage(),
+            parentName: viewModel?.parentInfo?.parentName ?? "",
+            parentImage: UIImage(named: viewModel?.parentInfo?.parentImageName ?? "") ?? UIImage(),
             onMessageTapped: {
             print("Message to parent tapped")
         })
