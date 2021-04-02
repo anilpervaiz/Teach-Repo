@@ -25,7 +25,7 @@ class StudentProfileViewController: BaseViewController {
             tableView.registerNibCell(with: ReviewTableViewCell.self)
 
             
-            tableView.registerNibHeaderFooterView(with: StudentProfileTableSectionHeaderView.self)
+            tableView.registerNibHeaderFooterView(with: TableSectionHeaderView.self)
         }
     }
 
@@ -105,7 +105,7 @@ extension StudentProfileViewController: UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if let headerDetails = viewModel?.headerDetails(for: section) {
-            let view = tableView.dequeueReusableHeaderFooterView(withType: StudentProfileTableSectionHeaderView.self)
+            let view = tableView.dequeueReusableHeaderFooterView(withType: TableSectionHeaderView.self)
             view?.titleLabel.text = headerDetails.0
             view?.descriptionLabel.text = headerDetails.1
             return view

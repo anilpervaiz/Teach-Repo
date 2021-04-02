@@ -20,7 +20,7 @@ class DocumentsViewController: BaseViewController {
 }
 
 extension DocumentsViewController: Initializable {
-    static var storyboardName: UIStoryboard.Name { .subjects }
+    static var storyboardName: UIStoryboard.Name { .profile }
 }
 
 extension DocumentsViewController: UITableViewDelegate, UITableViewDataSource {

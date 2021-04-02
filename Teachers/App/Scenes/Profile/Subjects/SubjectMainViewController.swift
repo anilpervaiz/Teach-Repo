@@ -105,17 +105,5 @@ extension SubjectMainViewController {
 }
 
 extension SubjectMainViewController: Initializable {
-    static var storyboardName: UIStoryboard.Name { .subjects }
-}
-
-extension SubjectMainViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //viewModel?.numberOfItems ?? 0
-        1
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withType: RegisteredSubjectTableViewCell.self)
-        return cell
-    }    
+    static var storyboardName: UIStoryboard.Name { .profile }
 }

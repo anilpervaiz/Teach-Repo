@@ -30,7 +30,7 @@ class SubjectDetailsViewController: BaseViewController {
 }
 
 extension SubjectDetailsViewController: Initializable {
-    static var storyboardName: UIStoryboard.Name { .subjects }
+    static var storyboardName: UIStoryboard.Name { .profile }
 }
 
 extension SubjectDetailsViewController: UITableViewDelegate, UITableViewDataSource {

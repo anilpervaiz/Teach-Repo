@@ -1,5 +1,5 @@
 //
-//  StudentProfileTableSectionHeaderView.swift
+//  TableSectionHeaderView.swift
 //  Teachers
 //
 //  Created by Rahim on 27/03/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StudentProfileTableSectionHeaderView: UITableViewHeaderFooterView,
+class TableSectionHeaderView: UITableViewHeaderFooterView,
                                             ReusableView {
 
     @IBOutlet weak var titleLabel: UILabel!

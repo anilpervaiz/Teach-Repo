@@ -13,6 +13,9 @@
         <array key="Poppins-Medium.ttf">
             <string>Poppins-Medium</string>
         </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
         <array key="Poppins-SemiBold.ttf">
             <string>Poppins-SemiBold</string>
         </array>
@@ -545,21 +548,14 @@
             </objects>
             <point key="canvasLocation" x="1647.826086956522" y="208.92857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--My Wallet View Controller-->
         <scene sceneID="Sm0-y3-Dbw">
             <objects>
-                <viewController id="EKk-v1-w7S" sceneMemberID="viewController">
+                <viewController id="EKk-v1-w7S" customClass="MyWalletViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DIr-B9-zLE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pKF-bK-CfJ">
-                                <rect key="frame" x="16" y="54" width="382" height="32"/>
-                                <segments>
-                                    <segment title="Earnings"/>
-                                    <segment title="Transactions"/>
-                                </segments>
-                            </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCw-kB-4bg">
                                 <rect key="frame" x="0.0" y="95" width="414" height="1"/>
                                 <color key="backgroundColor" name="disableGray"/>
@@ -567,29 +563,166 @@
                                     <constraint firstAttribute="height" constant="1" id="pbu-27-uXx"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQP-EV-0ng">
-                                <rect key="frame" x="0.0" y="106" width="414" height="756"/>
-                            </scrollView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-QB-5Vm">
+                                <rect key="frame" x="16" y="54" width="382" height="32"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <segments>
+                                    <segment title="Earnings"/>
+                                    <segment title="Transactions"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="primary"/>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="4NH-dy-lbo" eventType="valueChanged" id="JAq-3g-8ef"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U7l-Zb-pXv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pQP-EV-0ng" firstAttribute="leading" secondItem="U7l-Zb-pXv" secondAttribute="leading" id="Ck0-xK-VIx"/>
                             <constraint firstItem="U7l-Zb-pXv" firstAttribute="trailing" secondItem="QCw-kB-4bg" secondAttribute="trailing" id="DWs-G9-qvi"/>
-                            <constraint firstItem="pKF-bK-CfJ" firstAttribute="top" secondItem="U7l-Zb-pXv" secondAttribute="top" constant="10" id="GYT-qj-H1H"/>
-                            <constraint firstItem="QCw-kB-4bg" firstAttribute="top" secondItem="pKF-bK-CfJ" secondAttribute="bottom" constant="10" id="J6r-ck-6qw"/>
-                            <constraint firstItem="U7l-Zb-pXv" firstAttribute="trailing" secondItem="pQP-EV-0ng" secondAttribute="trailing" id="WxS-o6-KrB"/>
-                            <constraint firstItem="pQP-EV-0ng" firstAttribute="top" secondItem="QCw-kB-4bg" secondAttribute="bottom" constant="10" id="cxE-Dj-Qpp"/>
+                            <constraint firstItem="hCA-QB-5Vm" firstAttribute="leading" secondItem="U7l-Zb-pXv" secondAttribute="leading" constant="16" id="U9P-gx-Xn0"/>
+                            <constraint firstItem="hCA-QB-5Vm" firstAttribute="top" secondItem="U7l-Zb-pXv" secondAttribute="top" constant="10" id="ZbT-Bc-Ml2"/>
+                            <constraint firstItem="QCw-kB-4bg" firstAttribute="top" secondItem="hCA-QB-5Vm" secondAttribute="bottom" constant="10" id="Zla-vT-lp7"/>
                             <constraint firstItem="QCw-kB-4bg" firstAttribute="leading" secondItem="U7l-Zb-pXv" secondAttribute="leading" id="lWA-XZ-Pmc"/>
-                            <constraint firstItem="pKF-bK-CfJ" firstAttribute="leading" secondItem="U7l-Zb-pXv" secondAttribute="leading" constant="16" id="ql9-Ig-dGm"/>
-                            <constraint firstItem="U7l-Zb-pXv" firstAttribute="bottom" secondItem="pQP-EV-0ng" secondAttribute="bottom" id="xzy-Bk-WCw"/>
-                            <constraint firstItem="U7l-Zb-pXv" firstAttribute="trailing" secondItem="pKF-bK-CfJ" secondAttribute="trailing" constant="16" id="y2O-xm-eRd"/>
+                            <constraint firstItem="U7l-Zb-pXv" firstAttribute="trailing" secondItem="hCA-QB-5Vm" secondAttribute="trailing" constant="16" id="nbL-lh-9GR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="divider" destination="QCw-kB-4bg" id="E18-1T-ndD"/>
+                        <outlet property="segmentedControl" destination="hCA-QB-5Vm" id="ABo-Un-X09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZq-3e-XMH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2672.4637681159425" y="236.38392857142856"/>
+            <point key="canvasLocation" x="2629" y="192"/>
+        </scene>
+        <!--Subject Main View Controller-->
+        <scene sceneID="ZPY-gy-49h">
+            <objects>
+                <viewController storyboardIdentifier="SubjectMainViewController" id="4NH-dy-lbo" customClass="SubjectMainViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rbv-T7-Ckk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-7h-9n7">
+                                <rect key="frame" x="16" y="44" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="20"/>
+                                <color key="textColor" name="darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8c-Zl-nOP">
+                                <rect key="frame" x="16" y="67.5" width="382" height="19"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" name="gray"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H8W-cL-Mkp">
+                                <rect key="frame" x="16" y="96.5" width="382" height="32"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <segments>
+                                    <segment title="Details"/>
+                                    <segment title="Documents"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" name="primary"/>
+                                <connections>
+                                    <action selector="segmentValueChanged:" destination="4NH-dy-lbo" eventType="valueChanged" id="aXD-mM-BKi"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE0-Mw-X2X">
+                                <rect key="frame" x="0.0" y="137.5" width="414" height="1"/>
+                                <color key="backgroundColor" name="disableGray"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="NKC-R0-9eG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KFR-Km-hvn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dE0-Mw-X2X" firstAttribute="top" secondItem="H8W-cL-Mkp" secondAttribute="bottom" constant="10" id="8Ac-qr-8SL"/>
+                            <constraint firstItem="H8W-cL-Mkp" firstAttribute="top" secondItem="Z8c-Zl-nOP" secondAttribute="bottom" constant="10" id="9Pi-fZ-Kew"/>
+                            <constraint firstItem="H8W-cL-Mkp" firstAttribute="leading" secondItem="Z8c-Zl-nOP" secondAttribute="leading" id="CsB-xL-sR9"/>
+                            <constraint firstItem="dE0-Mw-X2X" firstAttribute="leading" secondItem="KFR-Km-hvn" secondAttribute="leading" id="QRa-nB-btU"/>
+                            <constraint firstItem="KFR-Km-hvn" firstAttribute="trailing" secondItem="dE0-Mw-X2X" secondAttribute="trailing" id="TVk-xC-ffL"/>
+                            <constraint firstItem="hgn-7h-9n7" firstAttribute="top" secondItem="KFR-Km-hvn" secondAttribute="top" id="WDW-q0-5Zr"/>
+                            <constraint firstItem="KFR-Km-hvn" firstAttribute="trailing" secondItem="hgn-7h-9n7" secondAttribute="trailing" constant="16" id="Zy4-cC-ETB"/>
+                            <constraint firstItem="Z8c-Zl-nOP" firstAttribute="leading" secondItem="hgn-7h-9n7" secondAttribute="leading" id="gYX-19-3zn"/>
+                            <constraint firstItem="Z8c-Zl-nOP" firstAttribute="top" secondItem="hgn-7h-9n7" secondAttribute="bottom" id="mFC-Zh-6jm"/>
+                            <constraint firstItem="Z8c-Zl-nOP" firstAttribute="trailing" secondItem="hgn-7h-9n7" secondAttribute="trailing" id="rfO-It-Izz"/>
+                            <constraint firstItem="hgn-7h-9n7" firstAttribute="leading" secondItem="KFR-Km-hvn" secondAttribute="leading" constant="16" id="uVg-vj-Tvk"/>
+                            <constraint firstItem="H8W-cL-Mkp" firstAttribute="trailing" secondItem="Z8c-Zl-nOP" secondAttribute="trailing" id="ytw-j0-Hdv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="divider" destination="dE0-Mw-X2X" id="AH2-rm-fge"/>
+                        <outlet property="segmentedControl" destination="H8W-cL-Mkp" id="uZq-88-Nyk"/>
+                        <outlet property="subjectDetailLabel" destination="Z8c-Zl-nOP" id="BmM-aW-xcI"/>
+                        <outlet property="subjectNameLabel" destination="hgn-7h-9n7" id="CjQ-vg-ljL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4Y-Kb-5mn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3520" y="192"/>
+        </scene>
+        <!--Subject Details View Controller-->
+        <scene sceneID="IUU-Jt-Wpu">
+            <objects>
+                <viewController storyboardIdentifier="SubjectDetailsViewController" id="hfk-fW-3YV" customClass="SubjectDetailsViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PkX-k9-jpW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aa5-w7-rTU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="olN-ZB-t7d"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aa5-w7-rTU" firstAttribute="top" secondItem="olN-ZB-t7d" secondAttribute="top" id="2VS-Yq-jK9"/>
+                            <constraint firstItem="aa5-w7-rTU" firstAttribute="leading" secondItem="olN-ZB-t7d" secondAttribute="leading" id="Re5-FR-ILS"/>
+                            <constraint firstItem="olN-ZB-t7d" firstAttribute="bottom" secondItem="aa5-w7-rTU" secondAttribute="bottom" id="cR7-lz-KTN"/>
+                            <constraint firstItem="olN-ZB-t7d" firstAttribute="trailing" secondItem="aa5-w7-rTU" secondAttribute="trailing" id="e9U-f9-j5N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="aa5-w7-rTU" id="R0W-Ww-90p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hf3-xp-bjg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4238" y="971"/>
+        </scene>
+        <!--Documents View Controller-->
+        <scene sceneID="N93-OH-mFM">
+            <objects>
+                <viewController storyboardIdentifier="DocumentsViewController" id="8X2-Uj-asu" customClass="DocumentsViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="seW-Tb-WfG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U1k-Sp-Qpg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vCB-Nj-3Yy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vCB-Nj-3Yy" firstAttribute="bottom" secondItem="U1k-Sp-Qpg" secondAttribute="bottom" id="ObC-QO-JjD"/>
+                            <constraint firstItem="U1k-Sp-Qpg" firstAttribute="top" secondItem="seW-Tb-WfG" secondAttribute="top" id="atE-wV-qsZ"/>
+                            <constraint firstItem="U1k-Sp-Qpg" firstAttribute="leading" secondItem="vCB-Nj-3Yy" secondAttribute="leading" id="cSK-Fn-YVQ"/>
+                            <constraint firstItem="U1k-Sp-Qpg" firstAttribute="trailing" secondItem="vCB-Nj-3Yy" secondAttribute="trailing" id="dDM-bN-1YG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="U1k-Sp-Qpg" id="dcu-ka-aNW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAN-2m-eXe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5049" y="971"/>
         </scene>
     </scenes>
     <resources>
@@ -611,6 +744,9 @@
         </namedColor>
         <namedColor name="disableGray">
             <color red="0.92156862745098034" green="0.92941176470588238" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.47843137254901963" green="0.49803921568627452" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="lightBackgroundTransparent">
             <color red="0.96078431372549022" green="0.97254901960784312" blue="0.99607843137254903" alpha="0.30000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
