@@ -40,7 +40,7 @@ class StudentProfileViewModel {
         switch indexPath.section {
         case Section.writeAReview.rawValue: router.navigateToWriteAReview()
         case Section.parent.rawValue:
-            router.navigateToChat()
+            router.navigateToChat(showsParentInfo: false)
         case Section.session.rawValue:
             if sessionSectionState == .collapsed && indexPath.row == 1 {
                 sessionSectionState = .expanded
@@ -56,7 +56,7 @@ class StudentProfileViewModel {
     }
 
     func didTapChatWithStudentButton() {
-        router.navigateToChat()
+        router.navigateToChat(showsParentInfo: true)
     }
 
     func numberOfRows(for section: Int) -> Int {

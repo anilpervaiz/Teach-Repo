@@ -9,9 +9,10 @@ import Foundation
 
 class StudentProfileRouter: BaseRouter {
 
-    func navigateToChat() {
-        let viewController = MessagesListViewController.getInstance()
+    func navigateToChat(showsParentInfo: Bool) {
+        let viewController = ChatViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
+        viewController.viewModel = showsParentInfo ? MockData.chatViewModelWithParentInfo : MockData.chatViewModelWithoutParentInfo
         navigationController?.pushViewController(viewController, animated: true)
     }
 
