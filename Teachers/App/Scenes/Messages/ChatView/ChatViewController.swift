@@ -21,8 +21,6 @@ class ChatViewController: MessagesViewController {
 
     lazy private var dummySender = Sender(senderId: "", displayName: "", displayImage: UIImage(), activeStatus: "")
 
-    override var preferredStatusBarStyle: UIStatusBarStyle { .default }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +35,7 @@ class ChatViewController: MessagesViewController {
     }
     
     private func setupNavBar() {
-        navigationController?.navigationBar.barStyle = .blackOpaque
+        navigationController?.navigationBar.barStyle = .default
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: Asset.Media.moreOptions.image,
             style: .plain,
