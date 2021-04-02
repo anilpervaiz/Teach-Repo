@@ -241,6 +241,8 @@
 		C9A0C311260BBCAD00C3285E /* StudentListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C310260BBCAD00C3285E /* StudentListingViewModel.swift */; };
 		C9A0C316260BBD4900C3285E /* StudentListingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C315260BBD4900C3285E /* StudentListingRouter.swift */; };
 		C9DDE23E2617848400E4C969 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE23D2617848400E4C969 /* Transaction.swift */; };
+		C9DDE24426179D7700E4C969 /* EarningRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE24326179D7700E4C969 /* EarningRowTableViewCell.swift */; };
+		C9DDE24C26179D9300E4C969 /* EarningRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DDE24B26179D9300E4C969 /* EarningRowTableViewCell.xib */; };
 		C9FCCC5E260E5E8F00D1CD56 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC5D260E5E8F00D1CD56 /* StudentProfileViewController.swift */; };
 		C9FCCC63260E660500D1CD56 /* StudentProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC62260E660500D1CD56 /* StudentProfileViewModel.swift */; };
 		C9FCCC69260EF32300D1CD56 /* RateStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC68260EF32300D1CD56 /* RateStudentTableViewCell.swift */; };
@@ -519,6 +521,8 @@
 		C9A0C310260BBCAD00C3285E /* StudentListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListingViewModel.swift; sourceTree = "<group>"; };
 		C9A0C315260BBD4900C3285E /* StudentListingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListingRouter.swift; sourceTree = "<group>"; };
 		C9DDE23D2617848400E4C969 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		C9DDE24326179D7700E4C969 /* EarningRowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningRowTableViewCell.swift; sourceTree = "<group>"; };
+		C9DDE24B26179D9300E4C969 /* EarningRowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EarningRowTableViewCell.xib; sourceTree = "<group>"; };
 		C9FCCC5D260E5E8F00D1CD56 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileViewController.swift; sourceTree = "<group>"; };
 		C9FCCC62260E660500D1CD56 /* StudentProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileViewModel.swift; sourceTree = "<group>"; };
 		C9FCCC68260EF32300D1CD56 /* RateStudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateStudentTableViewCell.swift; sourceTree = "<group>"; };
@@ -811,6 +815,7 @@
 		C938207A26171B2C00201A51 /* Earnings */ = {
 			isa = PBXGroup;
 			children = (
+				C9DDE24226179CFA00E4C969 /* Cell */,
 				C938207C26171B4000201A51 /* MyEarningsViewController.swift */,
 				C938208B26171B7C00201A51 /* MyEarningsViewModel.swift */,
 			);
@@ -1459,6 +1464,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		C9DDE24226179CFA00E4C969 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDE24326179D7700E4C969 /* EarningRowTableViewCell.swift */,
+				C9DDE24B26179D9300E4C969 /* EarningRowTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C9FCCC67260EF31000D1CD56 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1693,6 +1707,7 @@
 				C9FCCC9D260F7BD400D1CD56 /* SessionDetail.storyboard in Resources */,
 				B2BB185F2615010100BEDB73 /* DateAndTimeTableViewCell.xib in Resources */,
 				C985372F26071EA700EE1F45 /* AvailibilityDayCell.xib in Resources */,
+				C9DDE24C26179D9300E4C969 /* EarningRowTableViewCell.xib in Resources */,
 				C95220D52610EBB100F9676D /* LinkTableViewCell.xib in Resources */,
 				C9A0C1BB260A3C9C00C3285E /* Tabbar.storyboard in Resources */,
 				C99B7F352601135000EBD873 /* Poppins-ThinItalic.ttf in Resources */,
@@ -1906,6 +1921,7 @@
 				C9A0C311260BBCAD00C3285E /* StudentListingViewModel.swift in Sources */,
 				C90C69F6260471EE0075D776 /* ErrorView.swift in Sources */,
 				C95B632726061CDA0088506C /* UIColor+Image.swift in Sources */,
+				C9DDE24426179D7700E4C969 /* EarningRowTableViewCell.swift in Sources */,
 				C9281F8A2602F7DD006E97CC /* SignupCompletedSuccessStateViewModel.swift in Sources */,
 				C9A0C2D1260B7E3B00C3285E /* ReviewsMock.swift in Sources */,
 				C99B7F4A260114BA00EBD873 /* Fonts.swift in Sources */,

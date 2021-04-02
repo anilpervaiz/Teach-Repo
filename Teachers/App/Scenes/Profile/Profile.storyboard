@@ -755,15 +755,15 @@
             </objects>
             <point key="canvasLocation" x="2164" y="971"/>
         </scene>
-        <!--View Controller-->
+        <!--My Earnings View Controller-->
         <scene sceneID="vdM-vh-twC">
             <objects>
-                <viewController id="xdV-JN-6kK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyEarningsViewController" id="xdV-JN-6kK" customClass="MyEarningsViewController" customModule="Teachers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mW1-Oy-o7Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IBE-CG-JFU">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="IBE-CG-JFU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -777,6 +777,9 @@
                             <constraint firstItem="DIS-HB-39q" firstAttribute="bottom" secondItem="IBE-CG-JFU" secondAttribute="bottom" id="oQ7-tK-PYm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="IBE-CG-JFU" id="YII-Qh-xWg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9O-aj-SBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

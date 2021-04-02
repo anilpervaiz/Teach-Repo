@@ -18,9 +18,8 @@ class MyWalletViewController: BaseViewController {
         return vc
     }()
 
-    lazy private var documentsViewController: DocumentsViewController = {
-        let vc = DocumentsViewController.getInstance()
-        vc.viewModel = viewModel?.subjectDocumentsViewModel
+    lazy private var myEarningViewController: MyEarningsViewController = {
+        let vc = MyEarningsViewController.getInstance()
         return vc
     }()
 
@@ -54,9 +53,9 @@ extension MyWalletViewController {
     private func updateView() {
         if segmentedControl.selectedSegmentIndex == 0 {
             remove(asChildViewController: transactionViewController)
-            add(asChildViewController: documentsViewController)
+            add(asChildViewController: myEarningViewController)
         } else {
-            remove(asChildViewController: documentsViewController)
+            remove(asChildViewController: myEarningViewController)
             add(asChildViewController: transactionViewController)
         }
     }
