@@ -8,8 +8,17 @@
 import Foundation
 
 class TeacherProfileRouter: BaseRouter {
-    func didTapBillingInformationView() {
 
+    func navigateToEditPersonalInformation() {
+        let viewController = CreateProfilePersonalInformationViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
+    func didTapBillingInformationView() {
+        let viewController = BillingInformationViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
     func didTapDocumentView() {

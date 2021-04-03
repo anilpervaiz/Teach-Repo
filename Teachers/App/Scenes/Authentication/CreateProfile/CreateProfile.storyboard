@@ -970,10 +970,23 @@
                                             <action selector="didTapDoneButton:" destination="ESh-Ha-X36" eventType="touchUpInside" id="rsu-Gk-X5V"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dih-Cg-wUt">
+                                        <rect key="frame" x="362" y="4" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="CZW-SA-kge"/>
+                                            <constraint firstAttribute="width" secondItem="dih-Cg-wUt" secondAttribute="height" multiplier="1:1" id="foX-Gs-KJe"/>
+                                        </constraints>
+                                        <state key="normal" image="deleteIcon"/>
+                                        <connections>
+                                            <action selector="didTapDeleteButton:" destination="ESh-Ha-X36" eventType="touchUpInside" id="4eZ-Nb-ph1"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="dih-Cg-wUt" firstAttribute="trailing" secondItem="tpg-Zl-lTf" secondAttribute="trailing" constant="4" id="OR9-0i-NOc"/>
                                     <constraint firstItem="0ZK-E1-gP8" firstAttribute="leading" secondItem="qRT-be-tFO" secondAttribute="leading" id="RYt-7S-FmC"/>
+                                    <constraint firstItem="dih-Cg-wUt" firstAttribute="top" secondItem="tpg-Zl-lTf" secondAttribute="top" constant="4" id="SNp-pg-k6E"/>
                                     <constraint firstAttribute="trailing" secondItem="0ZK-E1-gP8" secondAttribute="trailing" id="TEl-ip-wIq"/>
                                     <constraint firstAttribute="trailing" secondItem="tpg-Zl-lTf" secondAttribute="trailing" id="hbI-xQ-dat"/>
                                     <constraint firstItem="tpg-Zl-lTf" firstAttribute="top" secondItem="qRT-be-tFO" secondAttribute="top" id="iqW-Ec-7ry"/>
@@ -1285,6 +1298,7 @@
     <resources>
         <image name="Add" width="24" height="24"/>
         <image name="Recording" width="24" height="24"/>
+        <image name="deleteIcon" width="24" height="24"/>
         <image name="emailPrimaryBackground" width="28" height="28"/>
         <image name="locationPrimaryBackground" width="28" height="28"/>
         <image name="maleGenderPrimaryBackground" width="28" height="28"/>

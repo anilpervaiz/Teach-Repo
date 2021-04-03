@@ -44,7 +44,9 @@ class DocumentLibraryViewController: BaseViewController {
     }
 
     @IBAction func didTapAddDocumentButton(_ sender: Any) {
-
+        let viewController = AddDocumentViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 

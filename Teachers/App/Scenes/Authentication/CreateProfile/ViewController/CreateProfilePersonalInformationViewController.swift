@@ -143,18 +143,11 @@ class CreateProfilePersonalInformationViewController: BaseViewController {
             speakingLanguageDropDown.isTappable = true
             speakingLanguageDropDown.trailingIconStyle = .static(icon: Asset.Media.downArrow.image)
             speakingLanguageDropDown.onTextFieldTapped = { [weak self] in
-                let viewController = BottomSheet.getInstance()
-                viewController.modalPresentationStyle = .overCurrentContext
-                viewController.modalTransitionStyle = .crossDissolve
-                viewController.viewModel = BottomSheetViewModel(with: "Subjects", items: [
-                    BottomSheetListCellViewModel(isSelected: false, title: "English"),
-                    BottomSheetListCellViewModel(isSelected: false, title: "Science"),
-                    BottomSheetListCellViewModel(isSelected: true, title: "Math"),
-                ])
+                let viewController = LanguageViewController.getInstance()
                 viewController.onDismissWithSelection = { [weak self] selected in
-                    self?.speakingLanguageDropDown.inputText = selected ?? ""
+                    self?.speakingLanguageDropDown.inputText = selected.joined(separator: ", ")
                 }
-                self?.present(viewController, animated: true, completion: nil)
+                self?.navigationController?.pushViewController(viewController, animated: true)
             }
         }
     }

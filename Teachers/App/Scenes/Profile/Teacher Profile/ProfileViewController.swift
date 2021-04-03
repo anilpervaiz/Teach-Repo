@@ -87,6 +87,7 @@ class ProfileViewController: BaseViewController {
     }
 
     @IBAction func didTapEditButton(_ sender: Any) {
+        router?.navigateToEditPersonalInformation()
     }
 
     @IBAction func didTapSettingsButton(_ sender: Any) {

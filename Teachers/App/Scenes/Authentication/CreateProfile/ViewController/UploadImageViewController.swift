@@ -11,7 +11,13 @@ class UploadImageViewController: BaseViewController {
 
     var viewModel: UploadImageViewModel?
     @IBOutlet weak var emptyViewIllustrationImageView: UIImageView!
-    @IBOutlet weak var uploadedItemImageView: UIImageView!
+    @IBOutlet weak var uploadedItemImageView: UIImageView! {
+        didSet {
+            uploadedItemImageView.contentMode = .scaleAspectFill
+            uploadedItemImageView.clipsToBounds = true
+            uploadedItemImageView.cornerRadius = 4
+        }
+    }
     @IBOutlet weak var emptyStateView: UIView!
     @IBOutlet weak var normalStateView: UIView!
     @IBOutlet weak var titleLabel: HeadingLabel!
@@ -47,6 +53,12 @@ class UploadImageViewController: BaseViewController {
         present(bottomSheet,
                 animated: true,
                 completion: nil)
+    }
+
+    @IBAction func didTapDeleteButton(_ sender: Any) {
+        uploadedItemImageView.image = nil
+        emptyStateView.isHidden = false
+        normalStateView.isHidden = true
     }
 
     override func viewDidLayoutSubviews() {

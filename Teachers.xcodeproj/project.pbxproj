@@ -198,6 +198,12 @@
 		C99B7FF92601B23200EBD873 /* OptionSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FF82601B23200EBD873 /* OptionSelectionView.swift */; };
 		C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B7FFE2601B2F800EBD873 /* OptionView.swift */; };
 		C99B80072601B34300EBD873 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B80062601B34300EBD873 /* UIView+Autolayout.swift */; };
+		C99C0FC02618E93C002BB473 /* BillingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C0FBF2618E93C002BB473 /* BillingInformationViewController.swift */; };
+		C99C0FC52618E946002BB473 /* BillingInformation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99C0FC42618E946002BB473 /* BillingInformation.storyboard */; };
+		C99C0FCB2618F20F002BB473 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C0FCA2618F20F002BB473 /* LanguageViewController.swift */; };
+		C99C0FD02618F219002BB473 /* Language.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99C0FCF2618F219002BB473 /* Language.storyboard */; };
+		C99C0FD62618F233002BB473 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C0FD52618F233002BB473 /* LanguageTableViewCell.swift */; };
+		C99C0FDE2618F23D002BB473 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99C0FDD2618F23D002BB473 /* LanguageTableViewCell.xib */; };
 		C9A0C1B6260A3C8800C3285E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1B5260A3C8800C3285E /* TabbarController.swift */; };
 		C9A0C1BB260A3C9C00C3285E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1BA260A3C9C00C3285E /* Tabbar.storyboard */; };
 		C9A0C1C5260AD3FB00C3285E /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1C4260AD3FB00C3285E /* Dashboard.storyboard */; };
@@ -486,6 +492,12 @@
 		C99B7FF82601B23200EBD873 /* OptionSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionSelectionView.swift; sourceTree = "<group>"; };
 		C99B7FFE2601B2F800EBD873 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
 		C99B80062601B34300EBD873 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		C99C0FBF2618E93C002BB473 /* BillingInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingInformationViewController.swift; sourceTree = "<group>"; };
+		C99C0FC42618E946002BB473 /* BillingInformation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BillingInformation.storyboard; sourceTree = "<group>"; };
+		C99C0FCA2618F20F002BB473 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		C99C0FCF2618F219002BB473 /* Language.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Language.storyboard; sourceTree = "<group>"; };
+		C99C0FD52618F233002BB473 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		C99C0FDD2618F23D002BB473 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
 		C9A0C1B5260A3C8800C3285E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		C9A0C1BA260A3C9C00C3285E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		C9A0C1C4260AD3FB00C3285E /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
@@ -1339,6 +1351,34 @@
 			path = OptionSelectionView;
 			sourceTree = "<group>";
 		};
+		C99C0FBE2618E92D002BB473 /* Billing Information */ = {
+			isa = PBXGroup;
+			children = (
+				C99C0FBF2618E93C002BB473 /* BillingInformationViewController.swift */,
+				C99C0FC42618E946002BB473 /* BillingInformation.storyboard */,
+			);
+			path = "Billing Information";
+			sourceTree = "<group>";
+		};
+		C99C0FC92618F204002BB473 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				C99C0FD42618F220002BB473 /* cell */,
+				C99C0FCA2618F20F002BB473 /* LanguageViewController.swift */,
+				C99C0FCF2618F219002BB473 /* Language.storyboard */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		C99C0FD42618F220002BB473 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				C99C0FD52618F233002BB473 /* LanguageTableViewCell.swift */,
+				C99C0FDD2618F23D002BB473 /* LanguageTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		C9A0C1B4260A3C6800C3285E /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
@@ -1394,6 +1434,8 @@
 		C9A0C1C3260AD3EE00C3285E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C99C0FC92618F204002BB473 /* Language */,
+				C99C0FBE2618E92D002BB473 /* Billing Information */,
 				C9DDE2702618516E00E4C969 /* AddDocument */,
 				C9DDE25D2618458500E4C969 /* DocumentLibrary */,
 				B26DCA812613AD4700921395 /* Subjects */,
@@ -1731,6 +1773,7 @@
 				C9A0C1D4260AD41600C3285E /* Student.storyboard in Resources */,
 				C92821012603BD6B006E97CC /* Onboarding.storyboard in Resources */,
 				C99B7ED325FFC61100EBD873 /* Colors.xcassets in Resources */,
+				C99C0FC52618E946002BB473 /* BillingInformation.storyboard in Resources */,
 				C92821192603BFCA006E97CC /* OnboardingCollectionViewCell.xib in Resources */,
 				C99B7F372601135000EBD873 /* Poppins-BoldItalic.ttf in Resources */,
 				C99B7F392601135000EBD873 /* Poppins-Italic.ttf in Resources */,
@@ -1743,6 +1786,7 @@
 				C985373426071ED400EE1F45 /* AvailibilityHourCell.xib in Resources */,
 				C9281F942602F951006E97CC /* SuccessState.storyboard in Resources */,
 				C99B7F402601135000EBD873 /* Poppins-Black.ttf in Resources */,
+				C99C0FDE2618F23D002BB473 /* LanguageTableViewCell.xib in Resources */,
 				B2656D652607EECE007609F6 /* ChatMessageReceivedCell.xib in Resources */,
 				C9FCCC9D260F7BD400D1CD56 /* SessionDetail.storyboard in Resources */,
 				B2BB185F2615010100BEDB73 /* DateAndTimeTableViewCell.xib in Resources */,
@@ -1798,6 +1842,7 @@
 				C95B633A26061DF00088506C /* BottomSheet.storyboard in Resources */,
 				C99B7F312601135000EBD873 /* Poppins-ExtraLight.ttf in Resources */,
 				C93DB153260E422E00106AFC /* CollapsedTableViewCell.xib in Resources */,
+				C99C0FD02618F219002BB473 /* Language.storyboard in Resources */,
 				C99B7F3C2601135000EBD873 /* Poppins-BlackItalic.ttf in Resources */,
 				B2BB18682615060200BEDB73 /* PaymentMethodTableViewCell.xib in Resources */,
 				C99B7FE526012BE700EBD873 /* Signup.storyboard in Resources */,
@@ -1946,6 +1991,7 @@
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
 				B26DCA882613AD8C00921395 /* SubjectMainViewController.swift in Sources */,
 				B26DCA7D2613AC2900921395 /* DocumentsViewController.swift in Sources */,
+				C99C0FC02618E93C002BB473 /* BillingInformationViewController.swift in Sources */,
 				B2656D462607E89E007609F6 /* ChatMessageSentCell.swift in Sources */,
 				C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */,
 				C99B7F6A2601199100EBD873 /* NSAttributedString+Styling.swift in Sources */,
@@ -1979,6 +2025,7 @@
 				C99B7F452601145200EBD873 /* PrimaryCTAButton.swift in Sources */,
 				C9FCCCA2260F7BDF00D1CD56 /* SessionDetailViewController.swift in Sources */,
 				C938207D26171B4000201A51 /* MyEarningsViewController.swift in Sources */,
+				C99C0FD62618F233002BB473 /* LanguageTableViewCell.swift in Sources */,
 				C9799B1E2614E9BC00E9B888 /* MyWalletViewController.swift in Sources */,
 				C99B7FA72601256D00EBD873 /* LabelledTextField.swift in Sources */,
 				C9A0C1DE260AD44200C3285E /* DashboardViewController.swift in Sources */,
@@ -1992,6 +2039,7 @@
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
 				B26DCA912613C25E00921395 /* SessionFeesTableViewCell.swift in Sources */,
 				C95B6349260625650088506C /* BottomSheetListCellViewModel.swift in Sources */,
+				C99C0FCB2618F20F002BB473 /* LanguageViewController.swift in Sources */,
 				B26DCA782613ABF300921395 /* SubjectDetailsViewController.swift in Sources */,
 				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,
 				C9A0C2EE260BAC0500C3285E /* NotificationTableViewCell.swift in Sources */,
