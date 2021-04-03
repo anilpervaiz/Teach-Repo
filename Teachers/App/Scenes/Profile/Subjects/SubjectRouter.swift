@@ -12,4 +12,8 @@ class SubjectRouter: BaseRouter {
         viewController.viewModel = MockData.chatViewModelWithoutParentInfo
         navigationController?.pushViewController(viewController, animated: true)
     }
+
+    func navigateToAddNewDocument() {
+        
+    }
 }

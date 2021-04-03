@@ -25,12 +25,3 @@ struct SubjectMainViewModel {
         self.subjectDocumentsViewModel = subjectDocumentsViewModel
     }
 }
-
-extension SubjectMainViewModel {
-    static var mock = SubjectMainViewModel( with: SubjectRouter(),
-        subjectName: "Math",
-        subjectDetail: "American Curriculum",
-        subjectDetalsViewModel: .mock,
-        subjectDocumentsViewModel: .mock
-    )
-}

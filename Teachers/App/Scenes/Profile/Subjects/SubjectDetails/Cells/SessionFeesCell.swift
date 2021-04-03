@@ -16,13 +16,7 @@ class SessionFeesCell: UITableViewCell, ReusableView {
     }
 }
 
-struct SessionFeesViewModel {
+struct SessionFeesViewModel: SubjectDetailTableCellViewModel {
     let hoursValue: String
     let totalValue: String
 }
-
-extension SessionFeesViewModel {
-    static var mock = SessionFeesViewModel(hoursValue: "2 Hours", totalValue: "AED 80")
-}
-
-

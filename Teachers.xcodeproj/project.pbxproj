@@ -30,7 +30,7 @@
 		B26DCA992613C29800921395 /* SessionFeesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26DCA982613C29800921395 /* SessionFeesCell.xib */; };
 		B26DCA9E2613C83400921395 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DCA9D2613C83400921395 /* DocumentCell.swift */; };
 		B26DCAA32613C86200921395 /* DocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26DCAA22613C86200921395 /* DocumentCell.xib */; };
-		B2935E642618925B00057838 /* SubjectBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2935E632618925B00057838 /* SubjectBuilder.swift */; };
+		B2935E642618925B00057838 /* SubjectMainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2935E632618925B00057838 /* SubjectMainViewBuilder.swift */; };
 		B2935E71261893D900057838 /* SubjectRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2935E5E2618915200057838 /* SubjectRouter.swift */; };
 		B2A067EC260F4C55005477C8 /* ChatParentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2A067EB260F4C55005477C8 /* ChatParentView.xib */; };
 		B2A067F1260F4E6C005477C8 /* ChatParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A067F0260F4E6C005477C8 /* ChatParentView.swift */; };
@@ -319,7 +319,7 @@
 		B26DCA9D2613C83400921395 /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		B26DCAA22613C86200921395 /* DocumentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCell.xib; sourceTree = "<group>"; };
 		B2935E5E2618915200057838 /* SubjectRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectRouter.swift; sourceTree = "<group>"; };
-		B2935E632618925B00057838 /* SubjectBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectBuilder.swift; sourceTree = "<group>"; };
+		B2935E632618925B00057838 /* SubjectMainViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectMainViewBuilder.swift; sourceTree = "<group>"; };
 		B2A067EB260F4C55005477C8 /* ChatParentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatParentView.xib; sourceTree = "<group>"; };
 		B2A067F0260F4E6C005477C8 /* ChatParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatParentView.swift; sourceTree = "<group>"; };
 		B2BB18422614E31800BEDB73 /* StudentParentDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentParentDetailsTableViewCell.swift; sourceTree = "<group>"; };
@@ -675,7 +675,7 @@
 				B26DCA872613AD8C00921395 /* SubjectMainViewController.swift */,
 				B2BB188726151DD400BEDB73 /* SubjectMainViewModel.swift */,
 				B2935E5E2618915200057838 /* SubjectRouter.swift */,
-				B2935E632618925B00057838 /* SubjectBuilder.swift */,
+				B2935E632618925B00057838 /* SubjectMainViewBuilder.swift */,
 				B2BB18702615163E00BEDB73 /* SubjectDetails */,
 				B2BB187426151B4F00BEDB73 /* Documents */,
 			);
@@ -1959,7 +1959,7 @@
 				C9A0C1F0260AD50A00C3285E /* StudentListingViewController.swift in Sources */,
 				CE66C67825FF8F3A00A2FA72 /* AppDelegate.swift in Sources */,
 				C93DB158260E424400106AFC /* CollapsedTableViewCell.swift in Sources */,
-				B2935E642618925B00057838 /* SubjectBuilder.swift in Sources */,
+				B2935E642618925B00057838 /* SubjectMainViewBuilder.swift in Sources */,
 				C99B7F872601234300EBD873 /* BaseViewController.swift in Sources */,
 				C9A0C311260BBCAD00C3285E /* StudentListingViewModel.swift in Sources */,
 				C90C69F6260471EE0075D776 /* ErrorView.swift in Sources */,

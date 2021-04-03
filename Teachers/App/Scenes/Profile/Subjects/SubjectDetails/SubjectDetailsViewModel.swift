@@ -5,28 +5,44 @@
 
 import Foundation
 
+protocol SubjectDetailTableCellViewModel {}
+
 class SubjectDetailsViewModel {
-    let studentParentDetailsViewModel: StudentParentDetailsViewModel
-    let subjectDetailTableViewModel: SubjectDetailTableViewModel
-    let dateAndTimeTableViewModel: DateAndTimeTableViewModel
-    let paymentMethodTableViewModel: PaymentMethodTableViewModel
-    let sessionFeesViewModel: SessionFeesViewModel
+    lazy var studentParentDetailsViewModel: StudentParentDetailsViewModel = {
+        StudentParentDetailsViewModel(
+            studentImage: Asset.Media.student.image,
+            studentName: "Assem Mohammed",
+            parentImage: Asset.Media.studentParent.image,
+            ratingImage: Asset.Media.ratingStar.image,
+            rating: "4.5") { [weak self] in
+            self?.router.navigateToChatView()
+        }
+    }()
+    lazy var subjectDetailTableViewModel: SubjectDetailTableViewModel = {
+        SubjectDetailTableViewModel(
+            subjectThumbnailImage: Asset.Media.subject.image, subjectName: "History", subjectDetail: "American Curriculum - Grade 6")
+    }()
+    lazy var dateAndTimeTableViewModel: DateAndTimeTableViewModel = {
+        DateAndTimeTableViewModel(
+            timeImage: Asset.Media.time.image,
+            date: "Monday, 4 Feb",
+            time: "2:30 PM - 01:30 PM (1 hour)",
+            lectureModeImage: Asset.Media.lectureMode.image
+        )
+    }()
+    lazy var paymentMethodTableViewModel: PaymentMethodTableViewModel = {
+        PaymentMethodTableViewModel(
+            paymentMethodImage: Asset.Media.applePay.image,
+            paymentMethod: "Apple Pay"
+        )
+    }()
+    lazy var sessionFeesViewModel: SessionFeesViewModel = {
+        SessionFeesViewModel(hoursValue: "2 Hours", totalValue: "AED 80")
+    }()
     private let router: SubjectRouter
     
-    init(
-        router: SubjectRouter,
-        studentParentDetailsViewModel: StudentParentDetailsViewModel,
-         subjectDetailTableViewModel: SubjectDetailTableViewModel,
-         dateAndTimeTableViewModel: DateAndTimeTableViewModel,
-         paymentMethodTableViewModel: PaymentMethodTableViewModel,
-         sessionFeesViewModel: SessionFeesViewModel
-    ) {
+    init(router: SubjectRouter) {
         self.router = router
-        self.studentParentDetailsViewModel = studentParentDetailsViewModel
-        self.subjectDetailTableViewModel = subjectDetailTableViewModel
-        self.dateAndTimeTableViewModel = dateAndTimeTableViewModel
-        self.paymentMethodTableViewModel = paymentMethodTableViewModel
-        self.sessionFeesViewModel = sessionFeesViewModel
     }
     
     lazy private(set) var cells: [CellType] = [.studentParent, .rateStudent, .subject, .dateAndTime, .paymentMethod, .sessionFees]
@@ -44,27 +60,5 @@ class SubjectDetailsViewModel {
         case dateAndTime
         case paymentMethod
         case sessionFees
-        
-//        func className() -> AnyClass {
-//            switch self {
-//            case .studentParent:
-//                return StudentParentDetailsTableViewCell.self
-//            case .rateStudent:
-//                return RateStudentTableViewCell.self
-//            case .sessionFees:
-//                return SessionFeesCell.self
-//            }
-//        }
     }
-}
-
-extension SubjectDetailsViewModel {
-    static var mock = SubjectDetailsViewModel(
-        router: SubjectRouter(),
-        studentParentDetailsViewModel: .mock,
-        subjectDetailTableViewModel: .mock,
-        dateAndTimeTableViewModel: .mock,
-        paymentMethodTableViewModel: .mock,
-        sessionFeesViewModel: .mock
-    )
 }

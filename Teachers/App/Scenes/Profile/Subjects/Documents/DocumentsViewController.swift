@@ -46,9 +46,7 @@ extension DocumentsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        if let _ = viewModel?.isLastItem(index: indexPath.row) {
-            viewModel?.onNewDocumentTap?()
-        }
+        viewModel?.didTapRow(at: indexPath.row)
     }
 }
 

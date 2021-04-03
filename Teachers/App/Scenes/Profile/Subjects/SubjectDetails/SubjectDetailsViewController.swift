@@ -14,11 +14,6 @@ class SubjectDetailsViewController: BaseViewController {
             tableView.dataSource = self
             tableView.tableFooterView = UIView()
             tableView.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
-//            for index in 0..<(viewModel?.numberOfCells ?? 0) {
-//                if let cellClass = viewModel?.cell(at: index)?.className() {
-//                    tableView.registerNibCell(with: cellClass as AnyClass)
-//                }
-//            }
             tableView.registerNibCell(with: StudentParentDetailsTableViewCell.self)
             tableView.registerNibCell(with: RateStudentTableViewCell.self)
             tableView.registerNibCell(with: SessionFeesCell.self)

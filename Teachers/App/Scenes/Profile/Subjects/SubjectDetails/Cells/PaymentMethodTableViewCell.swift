@@ -16,15 +16,7 @@ class PaymentMethodTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct PaymentMethodTableViewModel {
+struct PaymentMethodTableViewModel: SubjectDetailTableCellViewModel {
     let paymentMethodImage: UIImage
     let paymentMethod: String
 }
-
-extension PaymentMethodTableViewModel {
-    static var mock = PaymentMethodTableViewModel(
-        paymentMethodImage: Asset.Media.applePay.image,
-        paymentMethod: "Apple Pay"
-    )        
-}
-

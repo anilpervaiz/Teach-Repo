@@ -14,8 +14,8 @@ class DocumentCell: UITableViewCell, ReusableView {
     
     func configure(with viewModel: DocumentCellViewModel) {
         docThumbnailImageView.image = viewModel.thumbnail
-        docNameLabel.text = viewModel.name
-        docSizeAndDateLabel.text = viewModel.sizeAndDate
+        docNameLabel.text = viewModel.document.name
+        docSizeAndDateLabel.text = viewModel.formattedDescription
         self.onMoreOptionsTapped = viewModel.onMoreOptionsTapped
     }
     
@@ -25,12 +25,11 @@ class DocumentCell: UITableViewCell, ReusableView {
 }
 
 struct DocumentCellViewModel {
-    let documentType: DocumentType
-    let name: String
-    let sizeAndDate: String
+    var document: Document
     let onMoreOptionsTapped: (()->())?
-    
-    var thumbnail: UIImage { documentType.image() }
+
+    var formattedDescription: String { "\(document.size) • \(document.formattedDate)" }
+    var thumbnail: UIImage { document.type.image() }
 }
 
 enum DocumentType {

@@ -38,22 +38,11 @@ class StudentParentDetailsTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct StudentParentDetailsViewModel {
+struct StudentParentDetailsViewModel: SubjectDetailTableCellViewModel {
     let studentImage: UIImage
     let studentName: String
     let parentImage: UIImage
     let ratingImage: UIImage
     let rating: String
     let onChatButtonTapped: (()->())?
-}
-
-extension StudentParentDetailsViewModel {
-    static var mock = StudentParentDetailsViewModel(
-        studentImage: Asset.Media.student.image,
-        studentName: "Assem Mohammed",
-        parentImage: Asset.Media.studentParent.image,
-        ratingImage: Asset.Media.ratingStar.image,
-        rating: "4.5") {
-        print("on chat button tapped")
-    }
 }

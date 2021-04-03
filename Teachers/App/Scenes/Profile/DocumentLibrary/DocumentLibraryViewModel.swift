@@ -30,10 +30,7 @@ class DocumentLibraryViewModel {
 
     func document(in indexPath: IndexPath) -> DocumentCellViewModel {
         let document = sections[indexPath.section].subject.documents[indexPath.row]
-        return DocumentCellViewModel(documentType: .doc,
-                                     name: document.name,
-                                     sizeAndDate: "\(document.size) • \(document.formattedDate)",
-                                     onMoreOptionsTapped: nil)
+        return DocumentCellViewModel(document: document, onMoreOptionsTapped: nil)
     }
 
     func isCollapsed(section: Int, row: Int) -> Bool {

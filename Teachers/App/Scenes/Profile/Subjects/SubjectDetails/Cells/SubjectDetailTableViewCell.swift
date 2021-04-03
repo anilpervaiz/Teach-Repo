@@ -18,13 +18,8 @@ class SubjectDetailTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct SubjectDetailTableViewModel {
+struct SubjectDetailTableViewModel: SubjectDetailTableCellViewModel {
     let subjectThumbnailImage: UIImage
     let subjectName: String
     let subjectDetail: String
-}
-
-extension SubjectDetailTableViewModel {
-    static var mock = SubjectDetailTableViewModel(
-        subjectThumbnailImage: Asset.Media.subject.image, subjectName: "History", subjectDetail: "American Curriculum - Grade 6")
 }

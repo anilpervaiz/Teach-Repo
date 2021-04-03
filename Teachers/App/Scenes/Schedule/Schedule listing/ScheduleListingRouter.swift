@@ -9,9 +9,9 @@ import Foundation
 
 class ProfileScheduleListingRouter: ScheduleListingRouter {
     override func navigateToSessionDetail() {
-        let vc = SubjectMainViewController.getInstance()
-        vc.viewModel = SubjectMainViewModel.mock
-        navigationController?.pushViewController(vc, animated: true)
+        let viewController = SubjectMainViewBuilder().makeViewController(navigationController: navigationController)
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
