@@ -90,8 +90,7 @@ class ProfileViewController: BaseViewController {
     }
 
     @IBAction func didTapSettingsButton(_ sender: Any) {
-        let viewController = SettingsViewController.getInstance()
-        navigationController?.pushViewController(viewController, animated: true)
+        router?.didTapSettings()
     }
 }
 

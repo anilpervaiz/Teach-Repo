@@ -8,38 +8,40 @@
 import Foundation
 
 class TeacherProfileRouter: BaseRouter {
-    @objc
     func didTapBillingInformationView() {
 
     }
 
-    @objc
     func didTapDocumentView() {
-
+        let viewController = DocumentLibraryViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
-    @objc
+    func didTapSettings() {
+        let viewController = SettingsViewController.getInstance()
+        viewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+
     func didTapWalletView() {
         let viewController = MyWalletViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 
-    @objc
     func didTapReviewView() {
         let viewController = ReviewsViewController.getInstance()
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }  
 
-    @objc
     func didTapSessionView() {
-        let viewController = ScheduleListingSceneBuilder().makeViewController().topViewController!
+        let viewController = ScheduleListingSceneBuilder().makeProfileSessionsViewController(with: navigationController)
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)
     }
 
-    @objc
     func didTapAvailabilityView() {
         let viewController = AvailibilityViewController.getInstance()
         viewController.viewModel = AvailibilityViewModel()
@@ -47,11 +49,10 @@ class TeacherProfileRouter: BaseRouter {
         navigationController?.pushViewController(viewController, animated: true)
     }
 
-    @objc
     func didTapSubjectsView() {
         let viewController = RegisteredSubjectsViewController.getInstance()
         let viewModel = RegisteredSubjectsViewModel()
-        viewModel.subjects = [Subject.mockData]
+        viewModel.subjects = [Subject.mockData.first!]
         viewController.viewModel = viewModel
         viewController.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(viewController, animated: true)

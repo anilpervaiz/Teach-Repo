@@ -14,4 +14,10 @@ struct ScheduleListingSceneBuilder {
         controller.viewModel = .init(router: .init(with: navigationController))
         return navigationController
     }
+
+    func makeProfileSessionsViewController(with navigationController: BaseNavigationController?) -> ScheduleListingViewController {
+        let controller = ScheduleListingViewController.getInstance()
+        controller.viewModel = .init(router: ProfileScheduleListingRouter(with: navigationController))
+        return controller
+    }
 }

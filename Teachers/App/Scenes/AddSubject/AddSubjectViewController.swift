@@ -124,7 +124,8 @@ class AddSubjectViewController: BaseViewController {
         let subject = Subject(educationType: educationTypeLabel.inputText ?? "",
                               curriculum: curriculumLabel.inputText ?? "",
                               subject: subjectLabel.inputText ?? "",
-                              rate: sessionRateLabel.inputText ?? "")
+                              rate: sessionRateLabel.inputText ?? "",
+                              documents: [])
         viewModel?.didTapCTAButton(subject: subject)
     }
 }

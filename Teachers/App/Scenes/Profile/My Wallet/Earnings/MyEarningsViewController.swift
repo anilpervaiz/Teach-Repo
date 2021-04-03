@@ -22,6 +22,13 @@ class MyEarningsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupTableHeaderView()
+    }
+
+    func setupTableHeaderView() {
+        let header = EarningSummaryTableHeaderView()
+        header.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 166)
+        tableView.tableHeaderView = header
     }
 }
 

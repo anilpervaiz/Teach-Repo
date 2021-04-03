@@ -243,6 +243,12 @@
 		C9DDE23E2617848400E4C969 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE23D2617848400E4C969 /* Transaction.swift */; };
 		C9DDE24426179D7700E4C969 /* EarningRowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE24326179D7700E4C969 /* EarningRowTableViewCell.swift */; };
 		C9DDE24C26179D9300E4C969 /* EarningRowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DDE24B26179D9300E4C969 /* EarningRowTableViewCell.xib */; };
+		C9DDE2512618356A00E4C969 /* EarningSummaryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE2502618356A00E4C969 /* EarningSummaryTableHeaderView.swift */; };
+		C9DDE2562618357100E4C969 /* EarningSummaryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DDE2552618357100E4C969 /* EarningSummaryTableHeaderView.xib */; };
+		C9DDE25F261845C500E4C969 /* DocumentLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE25E261845C500E4C969 /* DocumentLibraryViewController.swift */; };
+		C9DDE2672618469800E4C969 /* DocumentLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE2662618469800E4C969 /* DocumentLibraryViewModel.swift */; };
+		C9DDE26C261846EF00E4C969 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE26B261846EF00E4C969 /* Document.swift */; };
+		C9DDE2722618518700E4C969 /* AddDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDE2712618518700E4C969 /* AddDocumentViewController.swift */; };
 		C9FCCC5E260E5E8F00D1CD56 /* StudentProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC5D260E5E8F00D1CD56 /* StudentProfileViewController.swift */; };
 		C9FCCC63260E660500D1CD56 /* StudentProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC62260E660500D1CD56 /* StudentProfileViewModel.swift */; };
 		C9FCCC69260EF32300D1CD56 /* RateStudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FCCC68260EF32300D1CD56 /* RateStudentTableViewCell.swift */; };
@@ -523,6 +529,12 @@
 		C9DDE23D2617848400E4C969 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		C9DDE24326179D7700E4C969 /* EarningRowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningRowTableViewCell.swift; sourceTree = "<group>"; };
 		C9DDE24B26179D9300E4C969 /* EarningRowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EarningRowTableViewCell.xib; sourceTree = "<group>"; };
+		C9DDE2502618356A00E4C969 /* EarningSummaryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningSummaryTableHeaderView.swift; sourceTree = "<group>"; };
+		C9DDE2552618357100E4C969 /* EarningSummaryTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EarningSummaryTableHeaderView.xib; sourceTree = "<group>"; };
+		C9DDE25E261845C500E4C969 /* DocumentLibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentLibraryViewController.swift; sourceTree = "<group>"; };
+		C9DDE2662618469800E4C969 /* DocumentLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentLibraryViewModel.swift; sourceTree = "<group>"; };
+		C9DDE26B261846EF00E4C969 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		C9DDE2712618518700E4C969 /* AddDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDocumentViewController.swift; sourceTree = "<group>"; };
 		C9FCCC5D260E5E8F00D1CD56 /* StudentProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileViewController.swift; sourceTree = "<group>"; };
 		C9FCCC62260E660500D1CD56 /* StudentProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProfileViewModel.swift; sourceTree = "<group>"; };
 		C9FCCC68260EF32300D1CD56 /* RateStudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateStudentTableViewCell.swift; sourceTree = "<group>"; };
@@ -1376,6 +1388,8 @@
 		C9A0C1C3260AD3EE00C3285E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C9DDE2702618516E00E4C969 /* AddDocument */,
+				C9DDE25D2618458500E4C969 /* DocumentLibrary */,
 				B26DCA812613AD4700921395 /* Subjects */,
 				C9799B1C2614E9A800E9B888 /* My Wallet */,
 				C9799AF72614E3F800E9B888 /* Reviews */,
@@ -1433,6 +1447,7 @@
 				C9A0C2E7260BAB4400C3285E /* NotificationMock.swift */,
 				C9A0C2FB260BB8DC00C3285E /* StudentMock.swift */,
 				C9DDE23D2617848400E4C969 /* Transaction.swift */,
+				C9DDE26B261846EF00E4C969 /* Document.swift */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -1469,8 +1484,27 @@
 			children = (
 				C9DDE24326179D7700E4C969 /* EarningRowTableViewCell.swift */,
 				C9DDE24B26179D9300E4C969 /* EarningRowTableViewCell.xib */,
+				C9DDE2502618356A00E4C969 /* EarningSummaryTableHeaderView.swift */,
+				C9DDE2552618357100E4C969 /* EarningSummaryTableHeaderView.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9DDE25D2618458500E4C969 /* DocumentLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDE25E261845C500E4C969 /* DocumentLibraryViewController.swift */,
+				C9DDE2662618469800E4C969 /* DocumentLibraryViewModel.swift */,
+			);
+			path = DocumentLibrary;
+			sourceTree = "<group>";
+		};
+		C9DDE2702618516E00E4C969 /* AddDocument */ = {
+			isa = PBXGroup;
+			children = (
+				C9DDE2712618518700E4C969 /* AddDocumentViewController.swift */,
+			);
+			path = AddDocument;
 			sourceTree = "<group>";
 		};
 		C9FCCC67260EF31000D1CD56 /* Cell */ = {
@@ -1716,6 +1750,7 @@
 				C95B62DB2605FD520088506C /* CreateProfile.storyboard in Resources */,
 				C95B6357260685470088506C /* AddSubject.storyboard in Resources */,
 				C95220DF2610EBED00F9676D /* SwitchTableViewCell.xib in Resources */,
+				C9DDE2562618357100E4C969 /* EarningSummaryTableHeaderView.xib in Resources */,
 				C99B7F302601135000EBD873 /* Poppins-Thin.ttf in Resources */,
 				CE66C68725FF8F3E00A2FA72 /* LaunchScreen.storyboard in Resources */,
 				C9A0C2AA260B759400C3285E /* DashboardSessionCollectionViewCell.xib in Resources */,
@@ -1962,15 +1997,18 @@
 				C9853752260727DC00EE1F45 /* PaymentMethodViewController.swift in Sources */,
 				C93DB177260E476F00106AFC /* StudentProfileTableHeaderView.swift in Sources */,
 				C9A0C214260AFD4E00C3285E /* DashboardSceneBuilder.swift in Sources */,
+				C9DDE26C261846EF00E4C969 /* Document.swift in Sources */,
 				B2BB18432614E31800BEDB73 /* StudentParentDetailsTableViewCell.swift in Sources */,
 				C9A0C1E8260AD4D100C3285E /* ScheduleListingViewController.swift in Sources */,
 				C9A0C280260B424900C3285E /* DashboardCard.swift in Sources */,
 				C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */,
 				B2656CDB2603D8F1007609F6 /* ChatHeaderView.swift in Sources */,
+				C9DDE25F261845C500E4C969 /* DocumentLibraryViewController.swift in Sources */,
 				B2656D1126062EE8007609F6 /* MockData.swift in Sources */,
 				C9853752260727DC00EE1F45 /* PaymentMethodViewController.swift in Sources */,
 				C95B6366260709920088506C /* RegisteredSubjectsViewModel.swift in Sources */,
 				B2656D6A2607F1B5007609F6 /* ChatViewModel.swift in Sources */,
+				C9DDE2672618469800E4C969 /* DocumentLibraryViewModel.swift in Sources */,
 				C95C30F826027D9F00115317 /* SignupMobileNumberViewController.swift in Sources */,
 				C95B62E62605FEC40088506C /* CreateProfileSectionTableViewCell.swift in Sources */,
 				C95B636B26070AF20088506C /* RegisteredSubjectTableViewCell.swift in Sources */,
@@ -2009,6 +2047,7 @@
 				C98537A0260776AE00EE1F45 /* CreateProfilePersonalInformationViewController.swift in Sources */,
 				C9A0C1FA260ADBEC00C3285E /* LoginRouter.swift in Sources */,
 				C9FCCC97260F57F500D1CD56 /* RateAndReviewBuilder.swift in Sources */,
+				C9DDE2512618356A00E4C969 /* EarningSummaryTableHeaderView.swift in Sources */,
 				B2656D602607EEAE007609F6 /* ChatMessageReceivedCell.swift in Sources */,
 				C99B7F65260117F700EBD873 /* SecondaryCTAButton.swift in Sources */,
 				C9281FAB26030B69006E97CC /* ItemPickerViewModel.swift in Sources */,
@@ -2018,6 +2057,7 @@
 				C90C6A0B260476700075D776 /* LoginAccountWaitingReviewViewModel.swift in Sources */,
 				C99B7F0325FFD44500EBD873 /* GetStartedViewController.swift in Sources */,
 				C9A0C20F260AFA0B00C3285E /* NavigationBarItem.swift in Sources */,
+				C9DDE2722618518700E4C969 /* AddDocumentViewController.swift in Sources */,
 				C9A0C1B6260A3C8800C3285E /* TabbarController.swift in Sources */,
 				C98537932607496100EE1F45 /* TagFlowLayout.swift in Sources */,
 				C99B7FEF26012E7200EBD873 /* SignupAuthenticationDetailsViewController.swift in Sources */,

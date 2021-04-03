@@ -7,6 +7,14 @@
 
 import Foundation
 
+class ProfileScheduleListingRouter: ScheduleListingRouter {
+    override func navigateToSessionDetail() {
+        let vc = SubjectMainViewController.getInstance()
+        vc.viewModel = SubjectMainViewModel.mock
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
 class ScheduleListingRouter: BaseRouter {
 
     func navigateToNotificationView() {

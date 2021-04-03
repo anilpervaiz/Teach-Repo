@@ -27,6 +27,8 @@ class MyWalletViewController: BaseViewController {
         super.viewDidLoad()
         setupSegmentedControl()
         updateView()
+
+        title = "My Wallet"
     }
 
     @IBAction func segmentValueChanged(_ sender: Any) {

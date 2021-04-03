@@ -12,7 +12,7 @@ class SessionDetailViewModel {
 
     var session: Session = Session.mockData.first!
     var student: Student = Student.mockData.first!
-    var subject: Subject = Subject.mockData
+    var subject: Subject = Subject.mockData.first!
     var sessionState: Session.State
 
     var output: ((Output) -> Void)?
