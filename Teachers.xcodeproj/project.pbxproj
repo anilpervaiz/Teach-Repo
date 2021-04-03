@@ -26,8 +26,8 @@
 		B26DCA782613ABF300921395 /* SubjectDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DCA772613ABF300921395 /* SubjectDetailsViewController.swift */; };
 		B26DCA7D2613AC2900921395 /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DCA7C2613AC2900921395 /* DocumentsViewController.swift */; };
 		B26DCA882613AD8C00921395 /* SubjectMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DCA872613AD8C00921395 /* SubjectMainViewController.swift */; };
-		B26DCA912613C25E00921395 /* SessionFeesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DCA902613C25E00921395 /* SessionFeesCell.swift */; };
-		B26DCA992613C29800921395 /* SessionFeesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26DCA982613C29800921395 /* SessionFeesCell.xib */; };
+		B26DCA912613C25E00921395 /* SessionFeesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DCA902613C25E00921395 /* SessionFeesTableViewCell.swift */; };
+		B26DCA992613C29800921395 /* SessionFeesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26DCA982613C29800921395 /* SessionFeesTableViewCell.xib */; };
 		B26DCA9E2613C83400921395 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26DCA9D2613C83400921395 /* DocumentCell.swift */; };
 		B26DCAA32613C86200921395 /* DocumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26DCAA22613C86200921395 /* DocumentCell.xib */; };
 		B2935E642618925B00057838 /* SubjectMainViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2935E632618925B00057838 /* SubjectMainViewBuilder.swift */; };
@@ -314,8 +314,8 @@
 		B26DCA772613ABF300921395 /* SubjectDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectDetailsViewController.swift; sourceTree = "<group>"; };
 		B26DCA7C2613AC2900921395 /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
 		B26DCA872613AD8C00921395 /* SubjectMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectMainViewController.swift; sourceTree = "<group>"; };
-		B26DCA902613C25E00921395 /* SessionFeesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFeesCell.swift; sourceTree = "<group>"; };
-		B26DCA982613C29800921395 /* SessionFeesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionFeesCell.xib; sourceTree = "<group>"; };
+		B26DCA902613C25E00921395 /* SessionFeesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionFeesTableViewCell.swift; sourceTree = "<group>"; };
+		B26DCA982613C29800921395 /* SessionFeesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionFeesTableViewCell.xib; sourceTree = "<group>"; };
 		B26DCA9D2613C83400921395 /* DocumentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		B26DCAA22613C86200921395 /* DocumentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentCell.xib; sourceTree = "<group>"; };
 		B2935E5E2618915200057838 /* SubjectRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectRouter.swift; sourceTree = "<group>"; };
@@ -693,8 +693,8 @@
 				B2BB1859261500F000BEDB73 /* DateAndTimeTableViewCell.swift */,
 				B2BB18662615060200BEDB73 /* PaymentMethodTableViewCell.xib */,
 				B2BB18672615060200BEDB73 /* PaymentMethodTableViewCell.swift */,
-				B26DCA982613C29800921395 /* SessionFeesCell.xib */,
-				B26DCA902613C25E00921395 /* SessionFeesCell.swift */,
+				B26DCA982613C29800921395 /* SessionFeesTableViewCell.xib */,
+				B26DCA902613C25E00921395 /* SessionFeesTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1792,7 +1792,7 @@
 				C9A0C27B260B423D00C3285E /* DashboardCard.xib in Resources */,
 				C95B633A26061DF00088506C /* BottomSheet.storyboard in Resources */,
 				C95220E92610F63500F9676D /* SettingTableHeaderView.xib in Resources */,
-				B26DCA992613C29800921395 /* SessionFeesCell.xib in Resources */,
+				B26DCA992613C29800921395 /* SessionFeesTableViewCell.xib in Resources */,
 				C938209A26171BB200201A51 /* TransactionTableViewCell.xib in Resources */,
 				B2656D0726053D34007609F6 /* MessageCell.xib in Resources */,
 				C95B633A26061DF00088506C /* BottomSheet.storyboard in Resources */,
@@ -1990,7 +1990,7 @@
 				C95B635C260685590088506C /* AddSubjectViewController.swift in Sources */,
 				B2656CF926053C71007609F6 /* MessagesListViewController.swift in Sources */,
 				C99B7FCF2601266C00EBD873 /* UITextField+Placeholder.swift in Sources */,
-				B26DCA912613C25E00921395 /* SessionFeesCell.swift in Sources */,
+				B26DCA912613C25E00921395 /* SessionFeesTableViewCell.swift in Sources */,
 				C95B6349260625650088506C /* BottomSheetListCellViewModel.swift in Sources */,
 				B26DCA782613ABF300921395 /* SubjectDetailsViewController.swift in Sources */,
 				C99B7FFF2601B2F800EBD873 /* OptionView.swift in Sources */,

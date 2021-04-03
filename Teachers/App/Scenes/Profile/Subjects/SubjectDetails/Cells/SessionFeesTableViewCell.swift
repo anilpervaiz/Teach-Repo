@@ -1,22 +1,22 @@
 //
-//  SessionFeesCell.swift
+//  SessionFeesTableViewCell.swift
 //  Teachers
 
 import Foundation
 import UIKit
 
-class SessionFeesCell: UITableViewCell, ReusableView {
+class SessionFeesTableViewCell: UITableViewCell, ReusableView {
     
     @IBOutlet weak var hoursValueLabel: UILabel!
     @IBOutlet weak var totalValueLabel: UILabel!
     
-    func configure(with viewModel: SessionFeesViewModel) {        
+    func configure(with viewModel: SessionFeesTableViewCellViewModel) {        
         hoursValueLabel.text = viewModel.hoursValue
         totalValueLabel.text = viewModel.totalValue
     }
 }
 
-struct SessionFeesViewModel: SubjectDetailTableCellViewModel {
+struct SessionFeesTableViewCellViewModel: SubjectDetailTableCellViewModel {
     let hoursValue: String
     let totalValue: String
 }

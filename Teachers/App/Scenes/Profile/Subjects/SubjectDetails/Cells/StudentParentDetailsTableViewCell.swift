@@ -24,7 +24,7 @@ class StudentParentDetailsTableViewCell: UITableViewCell, ReusableView {
         parentImageView.borderColor = Asset.Colors.borderColor.color
     }
     
-    func configure(with viewModel: StudentParentDetailsViewModel) {
+    func configure(with viewModel: StudentParentDetailsTableViewCellViewModel) {
         studentImageView.image = viewModel.studentImage
         studentNameLabel.text = viewModel.studentName
         parentImageView.image = viewModel.parentImage
@@ -38,7 +38,7 @@ class StudentParentDetailsTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct StudentParentDetailsViewModel: SubjectDetailTableCellViewModel {
+struct StudentParentDetailsTableViewCellViewModel: SubjectDetailTableCellViewModel {
     let studentImage: UIImage
     let studentName: String
     let parentImage: UIImage

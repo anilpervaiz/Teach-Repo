@@ -8,8 +8,8 @@ import Foundation
 protocol SubjectDetailTableCellViewModel {}
 
 class SubjectDetailsViewModel {
-    lazy var studentParentDetailsViewModel: StudentParentDetailsViewModel = {
-        StudentParentDetailsViewModel(
+    lazy var studentParentDetailsViewModel: StudentParentDetailsTableViewCellViewModel = {
+        StudentParentDetailsTableViewCellViewModel(
             studentImage: Asset.Media.student.image,
             studentName: "Assem Mohammed",
             parentImage: Asset.Media.studentParent.image,
@@ -18,26 +18,26 @@ class SubjectDetailsViewModel {
             self?.router.navigateToChatView()
         }
     }()
-    lazy var subjectDetailTableViewModel: SubjectDetailTableViewModel = {
-        SubjectDetailTableViewModel(
+    lazy var subjectDetailTableViewModel: SubjectDetailTableViewCellViewModel = {
+        SubjectDetailTableViewCellViewModel(
             subjectThumbnailImage: Asset.Media.subject.image, subjectName: "History", subjectDetail: "American Curriculum - Grade 6")
     }()
-    lazy var dateAndTimeTableViewModel: DateAndTimeTableViewModel = {
-        DateAndTimeTableViewModel(
+    lazy var dateAndTimeTableViewModel: DateAndTimeTableViewCellViewModel = {
+        DateAndTimeTableViewCellViewModel(
             timeImage: Asset.Media.time.image,
             date: "Monday, 4 Feb",
             time: "2:30 PM - 01:30 PM (1 hour)",
             lectureModeImage: Asset.Media.lectureMode.image
         )
     }()
-    lazy var paymentMethodTableViewModel: PaymentMethodTableViewModel = {
-        PaymentMethodTableViewModel(
+    lazy var paymentMethodTableViewModel: PaymentMethodTableViewCellViewModel = {
+        PaymentMethodTableViewCellViewModel(
             paymentMethodImage: Asset.Media.applePay.image,
             paymentMethod: "Apple Pay"
         )
     }()
-    lazy var sessionFeesViewModel: SessionFeesViewModel = {
-        SessionFeesViewModel(hoursValue: "2 Hours", totalValue: "AED 80")
+    lazy var sessionFeesViewModel: SessionFeesTableViewCellViewModel = {
+        SessionFeesTableViewCellViewModel(hoursValue: "2 Hours", totalValue: "AED 80")
     }()
     private let router: SubjectRouter
     

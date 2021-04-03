@@ -11,14 +11,14 @@ class SubjectDetailTableViewCell: UITableViewCell, ReusableView {
     @IBOutlet weak var subjectNameLabel: UILabel!
     @IBOutlet weak var subjectDetailLabel: UILabel!
     
-    func configure(with viewModel: SubjectDetailTableViewModel) {
+    func configure(with viewModel: SubjectDetailTableViewCellViewModel) {
         subjectThumbnailImageView.image = viewModel.subjectThumbnailImage
         subjectNameLabel.text = viewModel.subjectName
         subjectDetailLabel.text = viewModel.subjectDetail
     }
 }
 
-struct SubjectDetailTableViewModel: SubjectDetailTableCellViewModel {
+struct SubjectDetailTableViewCellViewModel: SubjectDetailTableCellViewModel {
     let subjectThumbnailImage: UIImage
     let subjectName: String
     let subjectDetail: String

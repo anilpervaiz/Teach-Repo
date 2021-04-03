@@ -12,7 +12,7 @@ class DateAndTimeTableViewCell: UITableViewCell, ReusableView {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var lectureModeImageView: UIImageView!
 
-    func configure(with viewModel: DateAndTimeTableViewModel) {
+    func configure(with viewModel: DateAndTimeTableViewCellViewModel) {
         timeImageView.image = viewModel.timeImage
         dateLabel.text = viewModel.date
         timeLabel.text = viewModel.time
@@ -20,7 +20,7 @@ class DateAndTimeTableViewCell: UITableViewCell, ReusableView {
     }
 }
 
-struct DateAndTimeTableViewModel: SubjectDetailTableCellViewModel {
+struct DateAndTimeTableViewCellViewModel: SubjectDetailTableCellViewModel {
     let timeImage: UIImage
     let date: String
     let time: String

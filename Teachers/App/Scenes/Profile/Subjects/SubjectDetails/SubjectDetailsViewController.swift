@@ -16,7 +16,7 @@ class SubjectDetailsViewController: BaseViewController {
             tableView.separatorInset = UIEdgeInsets(top: 0, left: 16, bottom: 0, right: 0)
             tableView.registerNibCell(with: StudentParentDetailsTableViewCell.self)
             tableView.registerNibCell(with: RateStudentTableViewCell.self)
-            tableView.registerNibCell(with: SessionFeesCell.self)
+            tableView.registerNibCell(with: SessionFeesTableViewCell.self)
             tableView.registerNibCell(with: SubjectDetailTableViewCell.self)
             tableView.registerNibCell(with: DateAndTimeTableViewCell.self)
             tableView.registerNibCell(with: PaymentMethodTableViewCell.self)
@@ -55,9 +55,9 @@ extension SubjectDetailsViewController: UITableViewDelegate, UITableViewDataSour
             cell = tableView.dequeueReusableCell(withType: PaymentMethodTableViewCell.self)
             (cell as? PaymentMethodTableViewCell)?.configure(with: viewModel.paymentMethodTableViewModel)
         case .sessionFees:
-            cell = tableView.dequeueReusableCell(withType: SessionFeesCell.self)
+            cell = tableView.dequeueReusableCell(withType: SessionFeesTableViewCell.self)
             cell.separatorInset = UIEdgeInsets(top: 0, left: cell.bounds.size.width, bottom: 0, right: 0)
-            (cell as? SessionFeesCell)?.configure(with: viewModel.sessionFeesViewModel)
+            (cell as? SessionFeesTableViewCell)?.configure(with: viewModel.sessionFeesViewModel)
         }
         cell.selectionStyle = .none
         return cell
