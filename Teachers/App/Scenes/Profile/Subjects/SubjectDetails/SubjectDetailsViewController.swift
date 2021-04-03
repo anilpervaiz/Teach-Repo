@@ -62,5 +62,9 @@ extension SubjectDetailsViewController: UITableViewDelegate, UITableViewDataSour
         cell.selectionStyle = .none
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.didSelectCell(at: indexPath.row)
+    }
 }
 

@@ -53,8 +53,15 @@ class SubjectDetailsViewModel {
         return cells[index]
     }
     
-    enum CellType {
-        case studentParent
+    func didSelectCell(at index: Int) {
+        switch CellType(rawValue: index) {
+        case .rateStudent: router.navigateToWriteAReview()
+        default: break
+        }
+    }
+    
+    enum CellType: Int {
+        case studentParent = 0
         case rateStudent
         case subject
         case dateAndTime

@@ -16,4 +16,9 @@ class SubjectRouter: BaseRouter {
     func navigateToAddNewDocument() {
         
     }
+    
+    func navigateToWriteAReview() {
+        let viewController = RateAndReviewBuilder().makeViewController()
+        navigationController?.topViewController?.present(viewController, animated: true, completion: nil)
+    }
 }
