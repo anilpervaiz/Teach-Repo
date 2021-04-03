@@ -11,14 +11,17 @@ class SubjectDetailsViewModel {
     let dateAndTimeTableViewModel: DateAndTimeTableViewModel
     let paymentMethodTableViewModel: PaymentMethodTableViewModel
     let sessionFeesViewModel: SessionFeesViewModel
+    private let router: SubjectRouter
     
     init(
+        router: SubjectRouter,
         studentParentDetailsViewModel: StudentParentDetailsViewModel,
          subjectDetailTableViewModel: SubjectDetailTableViewModel,
          dateAndTimeTableViewModel: DateAndTimeTableViewModel,
          paymentMethodTableViewModel: PaymentMethodTableViewModel,
          sessionFeesViewModel: SessionFeesViewModel
     ) {
+        self.router = router
         self.studentParentDetailsViewModel = studentParentDetailsViewModel
         self.subjectDetailTableViewModel = subjectDetailTableViewModel
         self.dateAndTimeTableViewModel = dateAndTimeTableViewModel
@@ -57,6 +60,7 @@ class SubjectDetailsViewModel {
 
 extension SubjectDetailsViewModel {
     static var mock = SubjectDetailsViewModel(
+        router: SubjectRouter(),
         studentParentDetailsViewModel: .mock,
         subjectDetailTableViewModel: .mock,
         dateAndTimeTableViewModel: .mock,
