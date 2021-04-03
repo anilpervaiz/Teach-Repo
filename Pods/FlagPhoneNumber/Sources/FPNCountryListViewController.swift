@@ -21,7 +21,6 @@ open class FPNCountryListViewController: UITableViewController, UISearchResultsU
 		super.viewDidLoad()
 
 		tableView.tableFooterView = UIView()
-
 		initSearchBarController()
 	}
 

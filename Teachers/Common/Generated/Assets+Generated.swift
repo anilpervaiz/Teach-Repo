@@ -102,6 +102,7 @@ internal enum Asset {
     internal static let camera = ImageAsset(name: "camera")
     internal static let chatButtonCircularBorder = ImageAsset(name: "chatButtonCircularBorder")
     internal static let circularAddIcon = ImageAsset(name: "circularAddIcon")
+    internal static let close = ImageAsset(name: "close")
     internal static let closeIcon = ImageAsset(name: "closeIcon")
     internal static let crossIcon = ImageAsset(name: "crossIcon")
     internal static let deleteIcon = ImageAsset(name: "deleteIcon")
