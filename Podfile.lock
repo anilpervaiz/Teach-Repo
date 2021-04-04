@@ -4,6 +4,7 @@ PODS:
   - FlagPhoneNumber (0.8.0):
     - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
   - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - FSCalendar (2.8.2)
   - InputBarAccessoryView (5.3.0):
     - InputBarAccessoryView/Core (= 5.3.0)
   - InputBarAccessoryView/Core (5.3.0)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - Cosmos
   - DateToolsSwift
   - FlagPhoneNumber (from `https://github.com/rahimkhalid/FlagPhoneNumber.git`, branch `UI-Fixes`)
+  - FSCalendar
   - MessageKit
   - SVPinView
   - SwiftGen
@@ -26,6 +28,7 @@ SPEC REPOS:
   trunk:
     - Cosmos
     - DateToolsSwift
+    - FSCalendar
     - InputBarAccessoryView
     - MessageKit
     - SVPinView
@@ -46,12 +49,13 @@ SPEC CHECKSUMS:
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   DateToolsSwift: 4207ada6ad615d8dc076323d27037c94916dbfa6
   FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   InputBarAccessoryView: 1638fc3336698eaead9cd83ff2da6c6218fcb6bc
   MessageKit: 6a15a240a9a4767279de542a8fae861e83d8aedc
   SVPinView: 9b538d0ba68cdb092afe4f0f67ec84cbed079466
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: b429daf0fd209d0bc9f19e9778edec137147826b
+PODFILE CHECKSUM: bc70dcef782ee8f01519049829503a561ee77d6e
 
 COCOAPODS: 1.10.0

@@ -204,6 +204,7 @@
 		C99C0FD02618F219002BB473 /* Language.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99C0FCF2618F219002BB473 /* Language.storyboard */; };
 		C99C0FD62618F233002BB473 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C0FD52618F233002BB473 /* LanguageTableViewCell.swift */; };
 		C99C0FDE2618F23D002BB473 /* LanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C99C0FDD2618F23D002BB473 /* LanguageTableViewCell.xib */; };
+		C99C102226197D19002BB473 /* CalendarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99C102126197D19002BB473 /* CalendarStyle.swift */; };
 		C9A0C1B6260A3C8800C3285E /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0C1B5260A3C8800C3285E /* TabbarController.swift */; };
 		C9A0C1BB260A3C9C00C3285E /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1BA260A3C9C00C3285E /* Tabbar.storyboard */; };
 		C9A0C1C5260AD3FB00C3285E /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A0C1C4260AD3FB00C3285E /* Dashboard.storyboard */; };
@@ -499,6 +500,7 @@
 		C99C0FCF2618F219002BB473 /* Language.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Language.storyboard; sourceTree = "<group>"; };
 		C99C0FD52618F233002BB473 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		C99C0FDD2618F23D002BB473 /* LanguageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LanguageTableViewCell.xib; sourceTree = "<group>"; };
+		C99C102126197D19002BB473 /* CalendarStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarStyle.swift; sourceTree = "<group>"; };
 		C9A0C1B5260A3C8800C3285E /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		C9A0C1BA260A3C9C00C3285E /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		C9A0C1C4260AD3FB00C3285E /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
@@ -1329,6 +1331,7 @@
 			isa = PBXGroup;
 			children = (
 				C99B7FC32601261D00EBD873 /* AppDimension.swift */,
+				C99C102126197D19002BB473 /* CalendarStyle.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -1991,6 +1994,7 @@
 				C99B7FC42601261D00EBD873 /* AppDimension.swift in Sources */,
 				B26DCA882613AD8C00921395 /* SubjectMainViewController.swift in Sources */,
 				B26DCA7D2613AC2900921395 /* DocumentsViewController.swift in Sources */,
+				C99C102226197D19002BB473 /* CalendarStyle.swift in Sources */,
 				C99C0FC02618E93C002BB473 /* BillingInformationViewController.swift in Sources */,
 				B2656D462607E89E007609F6 /* ChatMessageSentCell.swift in Sources */,
 				C9281F7F2602F75B006E97CC /* SuccessStateViewController.swift in Sources */,

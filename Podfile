@@ -13,5 +13,6 @@ target 'Teachers' do
   pod 'SwiftGen'
   pod 'MessageKit'
 
+  pod 'FSCalendar'
   pod 'UITextView+Placeholder'
 end
