@@ -565,7 +565,7 @@
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hCA-QB-5Vm">
                                 <rect key="frame" x="16" y="54" width="382" height="32"/>
-                                <color key="backgroundColor" name="disableGray"/>
+                                <color key="backgroundColor" name="pureWhite"/>
                                 <segments>
                                     <segment title="Earnings"/>
                                     <segment title="Transactions"/>
@@ -619,7 +619,7 @@
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="H8W-cL-Mkp">
                                 <rect key="frame" x="16" y="96.5" width="382" height="32"/>
-                                <color key="backgroundColor" name="disableGray"/>
+                                <color key="backgroundColor" name="pureWhite"/>
                                 <segments>
                                     <segment title="Details"/>
                                     <segment title="Documents"/>
